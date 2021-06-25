@@ -1,0 +1,523 @@
+% Exploratory Data Analysis
+
+```{r setup, include=FALSE, echo=FALSE}
+
+knitr::opts_chunk$set(
+    echo = TRUE,
+    message = FALSE,
+    warning = FALSE,
+    error = FALSE
+)
+
+```
+
+# About the Experiments
+
+## Sites and Experimental design
+
+-   This study was conducted a two different Research Farms of Iowa State University i.e., Marsden Farm and Hinds Farm.
+
+    -   At Marsden Farm, we collected data for 4 years (2016-2019).
+
+![**Figure 1:** Quadrats (yellow boxes) in soybean plots at Marsden Farm of Iowa State University.](Marsden%20Farm.png "Marsden Farm")
+
+-   At Hinds Farm, we obtained data for 2 years (2018-2019).
+
+![**Figure 2:** Soybean quadrats at Hinds Farm Experiment.](Hinds%20Microplots.jpg "Hinds Farm")
+
+-   At each site, the experiments were designed using Randomized Complete Block Design (RCBD).
+
+## Data collection
+
+-   For data collection, soybean plots were divided into small quadrats.
+
+    -   At Marsden Farm, data were obtained from 240 quadrats each, of size 3 m W x 1.5 m L.
+
+    -   At Hinds Farm, data were obtained from 60 quadrats, each of size 3 m W x 5.3 m L.
+
+-   At these quadrats, we obtained data of multispectral reflectance, SDS severity and incidence, and yield.
+
+    -   Canopy reflectance measurements were started earlier in the seasons, way before foliar symptom onset.
+
+    ![**Figure 3:** Soybean canopy reflectance readings in marked quadrats using Handheld Multispectral Radiometer.](Radiometer%20Readings.JPG "Handheld Radiometer"){width="2500"}
+
+    -   Multispectral data consisted of 8 wavebands that were in the region of Red, Blue, Green and Near Infrared light.
+
+    -   **Disease severity** was directly assessed as the green area of the quadrat under disease.
+
+    -   **Disease incidence** was calculated as the percentage of soybean plants showing foliar SDS symptoms in the quadrat.
+
+    ![**Figure 4:** Foliar symptoms of SDS.](SDS1.jpg "SDS")
+
+    ![**Figure 5:** SDS patches (yellowing) can be seen while standing outside the field.](SDS%20in%20Field.JPG "SDS in Hinds")
+
+    -   **Note:** In 2019, we did not observe (very few symptomatic quadrats) foliar SDS symptoms at both farms; thus we do not have disease data for 2019 growing season.
+
+-   In each year, repeated canopy reflectance and disease (severity and incidence) observations were made for several weeks until crop maturity/senescence.
+
+-   The observations were made on tagged quadrats which varied in area for both farms.
+
+## Objective
+
+-   To test whether the canopy reflectance (multispectral) differs for diseased and healthy quadrats.
+
+    -   **Diseased quadrats:** With foliar disease symptoms.
+    -   **Healthy quadrats:** With no obvious foliar symptoms.
+
+-   To detect disease status before foliar symptom onset based on canopy reflectance.
+
+## Proposed data analysis method
+
+-   I propose Functional Data Analysis to compare healthy and disease quadrats in terms of canopy reflectance.
+
+    -   As the data were collected over time, we can convert the repeated measures to smooth functions and then analyze them using FDA.
+
+![**Figure 6:** Trends of canopy reflectance in Near Infrared (NIR) waveband (810 nm) over time in 2016.](FDA.png "FDA")
+
+# Setup
+
+## Loading libraries
+
+```{r setup = TRUE}
+library(readxl)
+library(tidyverse)
+library(lubridate)
+library(janitor)
+```
+
+## Import data
+
+```{r message=FALSE, warning=FALSE}
+Marsden_RFL <- read_csv("Marsden_RFL.csv")
+Marsden_SDS <- read_csv("Marsden_SDS.csv")
+Hinds_RFL <- read_csv("Hinds_RFL.csv")
+Hinds_SDS <- read_csv("Hinds_SDS.csv")
+```
+
+# Exploratory Data Analysis
+
+## Canopy Reflectance
+
+### Marsden Farm
+
+#### Data dimensions
+
+```{r}
+dim(Marsden_RFL)
+```
+
+#### Data types
+
+```{r}
+glimpse(Marsden_RFL)
+```
+
+#### Observations per Year
+
+```{r message=FALSE, warning=FALSE}
+Marsden_RFL %>%
+  mutate(Year = year(DATE)) %>%
+  tabyl(Year)
+```
+
+#### Data Distribution (by wavelength)
+
+-   Handheld multispectral radiometer captures canopy reflectance in 8 different wavebands.
+
+-   These wavebands ranges from 460 nm to 810 nm.
+
+-   These wavebands fall in the blue, green, red, red edge and NIR regions of light.
+
+    -   810 nm is the Near Infrared (NIR) waveband.
+
+##### 2016
+
+```{r fig.height=10, fig.width=10}
+Marsden_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  filter(Year == "2016") %>% 
+  ggplot(aes(x=Reflectance)) + 
+  geom_histogram(colour="black", fill="white") +
+  labs(x = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_wrap(~ Wavelength, scales = "free")
+```
+
+##### 2017
+
+```{r fig.height=10, fig.width=10}
+Marsden_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  filter(Year == "2017") %>% 
+  ggplot(aes(x=Reflectance)) + 
+  geom_histogram(colour="black", fill="white") +
+  labs(x = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_wrap(~ Wavelength, scales = "free")
+```
+
+##### 2018
+
+```{r fig.height=10, fig.width=10}
+Marsden_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  filter(Year == "2018") %>% 
+  ggplot(aes(x=Reflectance)) + 
+  geom_histogram(colour="black", fill="white") +
+  labs(x = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_wrap(~ Wavelength, scales = "free")
+```
+
+##### 2019
+
+```{r fig.height=10, fig.width=10}
+Marsden_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  filter(Year == "2019") %>% 
+  ggplot(aes(x=Reflectance)) + 
+  geom_histogram(colour="black", fill="white") +
+  labs(x = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_wrap(~ Wavelength, scales = "free")
+```
+
+##### Altogether
+
+```{r fig.height=15, fig.width=10}
+Marsden_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  #filter(Year == "2019") %>% 
+  ggplot(aes(x=Reflectance)) + 
+  geom_histogram(colour="black", fill="white") +
+  labs(x = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_grid(Wavelength~Year, scales = "free")
+```
+
+#### Data Spread (over time)
+
+##### 2016
+
+```{r fig.height=10, fig.width=10}
+Marsden_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  filter(Year == "2016") %>%
+  ggplot(aes(x = Day, y = Reflectance, group = Day)) +
+  geom_boxplot() +
+  labs(x = "Day of Year", y = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_wrap(~ Wavelength, scales = "free")
+```
+
+##### 2017
+
+```{r fig.height=10, fig.width=10}
+Marsden_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  filter(Year == "2017") %>%
+  ggplot(aes(x = Day, y = Reflectance, group = Day)) +
+  geom_boxplot() +
+  labs(x = "Day of Year", y = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_wrap(~ Wavelength, scales = "free")
+```
+
+##### 2018
+
+```{r fig.height=10, fig.width=10}
+Marsden_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  filter(Year == "2018") %>%
+  ggplot(aes(x = Day, y = Reflectance, group = Day)) +
+  geom_boxplot() +
+  labs(x = "Day of Year", y = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_wrap(~ Wavelength, scales = "free")
+```
+
+##### 2019
+
+```{r fig.height=10, fig.width=10}
+Marsden_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  filter(Year == "2019") %>%
+  ggplot(aes(x = Day, y = Reflectance, group = Day)) +
+  geom_boxplot() +
+  labs(x = "Day of Year", y = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_wrap(~ Wavelength, scales = "free")
+```
+
+##### Altogether
+
+```{r fig.height=15, fig.width=10}
+Marsden_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  ggplot(aes(x = Day, y = Reflectance, group = Day)) +
+  geom_boxplot() +
+  labs(x = "Day of Year", y = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_grid(Wavelength~Year, scales = "free")
+```
+
+### Hinds Farm
+
+#### Data dimensions
+
+```{r}
+dim(Hinds_RFL)
+```
+
+### Data types
+
+```{r}
+glimpse(Hinds_RFL)
+```
+
+#### Observations per Year
+
+```{r}
+Hinds_RFL %>%
+  mutate(Year = year(DATE)) %>%
+  tabyl(Year)
+```
+
+#### Data Distribution
+
+##### 2018
+
+```{r fig.height=10, fig.width=10}
+Hinds_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  filter(Year == "2018") %>% 
+  ggplot(aes(x=Reflectance)) + 
+  geom_histogram(colour="black", fill="white") +
+  labs(x = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_wrap(~ Wavelength, scales = "free")
+```
+
+##### 2019
+
+```{r fig.height=10, fig.width=10}
+Hinds_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  filter(Year == "2019") %>% 
+  ggplot(aes(x=Reflectance)) + 
+  geom_histogram(colour="black", fill="white") +
+  labs(x = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_wrap(~ Wavelength, scales = "free")
+```
+
+#### Data Spread
+
+##### 2018
+
+```{r fig.height=10, fig.width=10}
+Hinds_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  filter(Year == "2018") %>%
+  ggplot(aes(x = Day, y = Reflectance, group = Day)) +
+  geom_boxplot() +
+  labs(x = "Day of Year", y = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_wrap(~ Wavelength, scales = "free")
+```
+
+#### 2019
+
+```{r fig.height=10, fig.width=10}
+Hinds_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  filter(Year == "2019") %>%
+  ggplot(aes(x = Day, y = Reflectance, group = Day)) +
+  geom_boxplot() +
+  labs(x = "Day of Year", y = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_wrap(~ Wavelength, scales = "free")
+```
+
+#### Altogether
+
+```{r fig.width=6, fig.height= 12}
+Hinds_RFL %>%
+  mutate(Year = year(DATE), Day = yday(DATE)) %>%
+  ggplot(aes(x = Day, y = Reflectance, group = Day)) +
+  geom_boxplot() +
+  labs(x = "Day of Year", y = "Canopy Reflectance") +
+  theme_minimal() +
+  facet_grid(Wavelength~Year, scales = "free")
+```
+
+## SDS
+
+### Marsden Farm
+
+#### Data dimensions
+
+```{r}
+dim(Marsden_SDS)
+```
+
+#### Data types
+
+```{r}
+glimpse(Marsden_SDS)
+```
+
+#### Observations per Year
+
+```{r}
+Marsden_SDS %>%
+  mutate(Year = year(Date)) %>%
+  tabyl(Year)
+```
+
+#### Data Distribution
+
+##### 2016
+
+```{r fig.height=8, fig.width=8}
+Marsden_SDS %>%
+  gather(Disease, Intensity, Severity, Incidence, na.rm = TRUE, convert = TRUE) %>%
+  filter(ID == "SDS_2016") %>% 
+  ggplot(aes(x=Intensity, color = Disease, fill = Disease)) + 
+  geom_histogram(position = "identity", alpha=0.5) +
+  labs(x = "Disease Intensity") +
+  theme_minimal() +
+  facet_wrap(Date~., scales = "free") +
+  theme(legend.position="top")
+```
+
+##### 2017
+
+```{r fig.height=8, fig.width=8}
+Marsden_SDS %>%
+  gather(Disease, Intensity, Severity, Incidence, na.rm = TRUE, convert = TRUE) %>%
+  filter(ID == "SDS_2017") %>% 
+  ggplot(aes(x=Intensity, color = Disease, fill = Disease)) + 
+  geom_histogram(position = "identity", alpha=0.5) +
+  labs(x = "Disease Intensity") +
+  theme_minimal() +
+  facet_wrap(Date~., scales = "free") +
+  theme(legend.position="top")
+```
+
+##### 2018
+
+```{r fig.height=8, fig.width=8}
+Marsden_SDS %>%
+  gather(Disease, Intensity, Severity, Incidence, na.rm = TRUE, convert = TRUE) %>%
+  filter(ID == "SDS_2018") %>% 
+  ggplot(aes(x=Intensity, color = Disease, fill = Disease)) + 
+  geom_histogram(position = "identity", alpha=0.5) +
+  labs(x = "Disease Intensity") +
+  theme_minimal() +
+  facet_wrap(Date~., scales = "free") +
+  theme(legend.position="top")
+```
+
+#### Data Spread
+
+##### 2016
+
+```{r}
+my_palette <- colorRampPalette(c("forestgreen", "orange", "red"))(n = 299)
+
+Marsden_SDS %>%
+  gather(Disease, Intensity, Severity, Incidence, na.rm = TRUE, convert = TRUE) %>%
+  filter(ID == "SDS_2016") %>% 
+  ggplot(aes(x=Date, y = Intensity, group = Date)) + 
+  geom_boxplot(alpha = 0) +
+  geom_jitter(aes(color = Intensity), position = position_jitter(0.8), alpha = 0.5) +
+  scale_colour_gradientn(colours = my_palette) +
+  labs(x = "Date", y = "Disease Intensity") +
+  theme_minimal() +
+  facet_wrap(Disease~., scales = "free") +
+  theme(legend.position="top")
+```
+
+##### 2017
+
+```{r}
+Marsden_SDS %>%
+  gather(Disease, Intensity, Severity, Incidence, na.rm = TRUE, convert = TRUE) %>%
+  filter(ID == "SDS_2017") %>% 
+  ggplot(aes(x=Date, y = Intensity, group = Date)) + 
+  geom_boxplot(alpha = 0) +
+  geom_jitter(aes(color = Intensity), position = position_jitter(0.8), alpha = 0.5) +
+  scale_colour_gradientn(colours = my_palette) +
+  labs(x = "Date", y = "Disease Intensity") +
+  theme_minimal() +
+  facet_wrap(Disease~., scales = "free") +
+  theme(legend.position="top")
+```
+
+##### 2018
+
+```{r}
+Marsden_SDS %>%
+  gather(Disease, Intensity, Severity, Incidence, na.rm = TRUE, convert = TRUE) %>%
+  filter(ID == "SDS_2018") %>% 
+  ggplot(aes(x=Date, y = Intensity, group = Date)) + 
+  geom_boxplot(alpha = 0) +
+  geom_jitter(aes(color = Intensity), position = position_jitter(0.8), alpha = 0.5) +
+  scale_colour_gradientn(colours = my_palette) +
+  labs(x = "Date", y = "Disease Intensity") +
+  theme_minimal() +
+  facet_wrap(Disease~., scales = "free") +
+  theme(legend.position="top")
+```
+
+### Hinds Farm
+
+#### Data dimensions
+
+```{r}
+dim(Hinds_SDS)
+```
+
+#### Data types
+
+```{r}
+glimpse(Hinds_SDS)
+```
+
+#### Observations per Year
+
+```{r}
+Hinds_SDS %>%
+  mutate(Year = year(Doy)) %>%
+  tabyl(Year)
+```
+
+#### Data Distribution
+
+```{r fig.height=10, fig.width=10}
+Hinds_SDS %>%
+  gather(Disease, Intensity, Severity, Incidence, na.rm = TRUE, convert = TRUE) %>%
+  ggplot(aes(x=Intensity, color = Disease, fill = Disease)) + 
+  geom_histogram(position = "identity", alpha=0.5) +
+  labs(x = "Disease Intensity") +
+  theme_minimal() +
+  facet_wrap(Doy~., scales = "free") +
+  theme(legend.position="top")
+```
+
+#### Data Spread
+
+```{r}
+Hinds_SDS %>%
+  gather(Disease, Intensity, Severity, Incidence, na.rm = TRUE, convert = TRUE) %>%
+  #filter(ID == "SDS_2016") %>% 
+  ggplot(aes(x=Doy, y = Intensity, group = Doy)) + 
+  geom_boxplot(alpha = 0) +
+  geom_jitter(aes(color = Intensity), position = position_jitter(0.8), alpha = 0.5) +
+  scale_colour_gradientn(colours = my_palette) +
+  labs(x = "Date", y = "Disease Intensity") +
+  theme_minimal() +
+  facet_wrap(Disease~., scales = "free") +
+  theme(legend.position="top")
+```

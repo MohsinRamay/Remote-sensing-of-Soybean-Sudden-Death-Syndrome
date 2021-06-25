@@ -1,0 +1,208 @@
+% Data
+
+## Load libraries
+
+```{r}
+library(readxl)
+library(tidyverse)
+library(lubridate)
+```
+
+## Marsden Farm
+
+### Canopy reflectance
+
+#### Read data
+
+- The raw data was organized in different Excel sheets based on study year. 
+- I'll upload the data using `read_excel` and `read_csv` functions and will run some cleaning before merging all data sets. 
+
+```{r warning=FALSE}
+MR2016 <- read_excel("data/Marsden RFL 2016.xlsx")
+MR2017 <- read_excel("data/Marsden RFL 2017.xlsx")
+MR2018 <- read_csv("data/Marsden RFL 2018.csv", 
+                   col_types = cols(DATE = col_date(format = "%m/%d/%Y")))
+```
+
+#### Data cleaning
+
+- In each marked soybean quadrat (observational unit), we took two readings of remote sensing. 
+- In 2018 data set, the mean reflectance value (single reflectance value/quadrat) was not calculated like other year's data. 
+- Thus, I'll calculate the mean reflectance and then will gather the data using `gather` function. 
+
+```{r message=FALSE, warning=FALSE}
+MR2018 <- MR2018 %>%
+  group_by(DATE, Block, Plot, Rotation, Quadrat) %>%
+  summarise(`460` = mean(W460, na.rm = TRUE),`510` = mean(W510, na.rm = TRUE),
+            `560` = mean(W560, na.rm = TRUE),`610` = mean(W610, na.rm = TRUE),
+            `660` = mean(W660, na.rm = TRUE),`710` = mean(W710, na.rm = TRUE),
+            `760` = mean(W760, na.rm = TRUE),`810` = mean(W810, na.rm = TRUE)) %>%
+  gather(Wavelength, Reflectance, `460`:`810`, na.rm = TRUE, convert = TRUE)
+```
+
+#### Combining all data sets
+
+- Now, I'll combine all of the reflectance data sets from Marsden Farm and will save the final file as CSV. 
+
+```{r}
+# Cmobine all data sets
+Marsden_RFL <- rbind(MR2016, MR2017, MR2018)
+
+# Store data as .csv file
+write.csv(Marsden_RFL, "data/Marsden_RFL.csv")
+```
+
+### SDS severity and incidence
+
+#### Read data
+
+```{r}
+Marsden_SDS <- read_csv("data/Marsden_SDS.csv")
+```
+
+
+## Hinds Farm
+
+- The data from Hinds Farm is of only one year. 
+
+### Read data
+
+```{r}
+HR2018 <- read_csv("data/Hinds RFL 2018.csv", 
+                   col_types = cols(DATE = col_date(format = "%m/%d/%Y")))
+
+```
+
+### Data cleaning
+
+- Hinds data needs some cleaning like renaming some columns, adding original variety names, calculating mean canopy reflectance for each plot and gathering the canopy reflectance data. 
+
+```{r message=FALSE}
+HR2018 <- HR2018 %>%
+  mutate(Variety = ifelse(Variety  == "1", "Pioneer P20T79R2", "Syngenta NK Soybean S24-K2"))%>%
+  separate(Reading, into = c("Plot1", "Plot2"), sep = c(3), remove = FALSE, convert = TRUE) %>%
+  select(-Plot, -Plot2) %>%
+  rename(Plot = Plot1, Concentration = Conc) %>%
+  group_by(DATE, Block, Plot, Treatment, Variety, Concentration) %>%
+  summarise(`460` = mean(W460, na.rm = TRUE),`510` = mean(W510, na.rm = TRUE),
+            `560` = mean(W560, na.rm = TRUE),`610` = mean(W610, na.rm = TRUE),
+            `660` = mean(W660, na.rm = TRUE),`710` = mean(W710, na.rm = TRUE),
+            `760` = mean(W760, na.rm = TRUE),`810` = mean(W810, na.rm = TRUE)) %>%
+  gather(Wavelength, Reflectance, `460`:`810`, na.rm = TRUE, convert = TRUE)
+```
+
+### Store data as .csv file
+
+```{r}
+write.csv(HR2018, "data/Hinds_RFL.csv")
+```
+
+## Join Reflectance and Disease data
+
+### Marsden Farm 2016
+
+```{r}
+# Read disease data
+Marsden_SDS <- read_csv("data/Marsden_SDS.csv")
+
+# Data cleaning
+MS_2016 <- Marsden_SDS %>%
+  filter(ID == "SDS_2016") %>%
+  gather(key, value, Severity, Incidence, na.rm = TRUE, convert = TRUE) %>%
+  unite(Date_Severity, Date, key, sep = "_", remove = FALSE, na.rm = FALSE) %>%
+  select(-Date, -key) %>%
+  spread(Date_Severity, value) %>%
+  select(-Block, -Plot, -Rotation)
+  
+# Joining the data sets
+MRS_2016 <- Marsden_RFL %>% 
+  filter(year(DATE) == 2016) %>%
+  mutate(Quadrat = as.numeric(Quadrat)) %>% 
+  left_join(MS_2016, by = c("Quadrat" = "Quadrat"))
+```
+
+### Store data as .csv file
+
+```{r}
+write.csv(MRS_2016, "data/MRS_2016.csv")
+```
+
+### Marsden Farm 2017
+
+```{r}
+# Data cleaning
+MS_2017 <- Marsden_SDS %>%
+  filter(ID == "SDS_2017") %>%
+  gather(key, value, Severity, Incidence, na.rm = TRUE, convert = TRUE) %>%
+  unite(Date_Severity, Date, key, sep = "_", remove = FALSE, na.rm = FALSE) %>%
+  select(-Date, -key) %>%
+  spread(Date_Severity, value) %>%
+  select(-Block, -Plot, -Rotation)
+  
+# Joining the data sets
+MRS_2017 <- Marsden_RFL %>% 
+  filter(year(DATE) == 2017) %>%
+  mutate(Quadrat = as.numeric(Quadrat)) %>% 
+  left_join(MS_2017, by = c("Quadrat" = "Quadrat")) 
+```
+
+### Store data as .csv file
+
+```{r}
+write.csv(MRS_2017, "data/MRS_2017.csv")
+```
+
+### Marsden Farm 2018
+
+```{r}
+# Data cleaning
+MS_2018 <- Marsden_SDS %>%
+  filter(ID == "SDS_2018") %>%
+  gather(key, value, Severity, Incidence, na.rm = TRUE, convert = TRUE) %>%
+  unite(Date_Severity, Date, key, sep = "_", remove = FALSE, na.rm = FALSE) %>%
+  select(-Date, -key) %>%
+  spread(Date_Severity, value) %>%
+  select(-Block, -Plot, -Rotation)
+  
+# Not in multiple function
+`%nin%` = Negate(`%in%`)
+
+# Joining the data sets
+MRS_2018 <- Marsden_RFL %>% 
+  filter(year(DATE) == 2018 & Quadrat %nin% c(4811, 4812, 4911, 4912, 4913)) %>%
+  mutate(Quadrat = as.numeric(Quadrat)) %>%
+  left_join(MS_2018, by = c("Quadrat" = "Quadrat")) %>%
+  filter(!is.na(ID))
+```
+
+### Store data as .csv file
+
+```{r}
+write.csv(MRS_2018, "data/MRS_2018.csv")
+```
+
+### Hinds Farm 2018
+
+```{r}
+#  Read disease data
+Hinds_SDS <- read_csv("data/Hinds_SDS.csv")
+
+
+# Data cleaning
+HS_2018 <- Hinds_SDS %>%
+  gather(key, value, Severity, Incidence, na.rm = TRUE, convert = TRUE) %>%
+  unite(Date_Severity, Doy, key, sep = "_", remove = FALSE, na.rm = FALSE) %>%
+  select(-Doy, -key) %>%
+  spread(Date_Severity, value) %>%
+  select(-Block, -Treatment, -Variety, -Concentration)
+
+# Joining the data sets
+HRS_2018 <- HR2018 %>% 
+  left_join(HS_2018, by = c("Plot" = "Plot")) 
+```
+
+### Store data as .csv file
+
+```{r}
+write.csv(HRS_2018, "data/HRS_2018.csv")
+```

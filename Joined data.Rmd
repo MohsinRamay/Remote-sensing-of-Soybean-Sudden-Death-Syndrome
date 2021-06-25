@@ -1,0 +1,64 @@
+% Joined Data
+
+```{r setup, include=FALSE, echo=FALSE}
+
+knitr::opts_chunk$set(
+    echo = TRUE,
+    message = FALSE,
+    warning = FALSE,
+    error = FALSE
+)
+
+```
+
+## Load libraries
+
+```{r}
+library(tidyverse)
+library(skimr)
+```
+
+
+## Upload data
+
+**Data key**
+
+- I named data sets according to their location, variables stored and year. 
+- For example, in MRS_2016:
+  - M = Marsden Farm
+  - R = Canopy Reflectance (Remote sensing)
+  - S = SDS Severity and Incidence
+  - 2016 = Year 2016
+
+### Disease and Reflectance data at Marsden Farm
+
+#### 2016
+
+```{r}
+MRS_2016 <- read_csv("data/MRS_2016.csv")
+skim(MRS_2016)
+```
+
+#### 2017
+
+```{r}
+MRS_2017 <- read_csv("data/MRS_2017.csv")
+skim(MRS_2017)
+```
+
+#### 2018
+
+```{r}
+MRS_2018 <- read_csv("data/MRS_2018.csv")
+skim(MRS_2018)
+```
+
+
+### Disease and Reflectance data at Hinds Farm
+
+#### 2018
+
+```{r}
+HRS_2018 <- read_csv("data/HRS_2018.csv")
+skim(HRS_2018)
+```
