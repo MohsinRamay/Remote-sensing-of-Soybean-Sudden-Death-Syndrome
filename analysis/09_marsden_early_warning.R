@@ -5,6 +5,7 @@ suppressPackageStartupMessages({
   library(tidyr)
   library(ggplot2)
 })
+source("analysis/marsden_early_warning_methods.R")
 args <- commandArgs(trailingOnly = TRUE)
 stopifnot(length(args) <= 2L)
 out <- if (length(args)) args[[1L]] else "results/early_warning"
@@ -36,15 +37,8 @@ unit_keys <- c("year", "unit_id", "block", "plot", "rotation")
 stopifnot(nrow(anti_join(visits, bounds, by = unit_keys)) == 0L,
           nrow(anti_join(bounds, visits, by = unit_keys)) == 0L,
           all(is.na(visits$gap_days) | visits$gap_days > 0))
-spectra <- read_input("data/Marsden_RFL.csv") |>
-  filter(Wavelength %in% c(660L, 810L), is.finite(Reflectance)) |>
-  transmute(year = as.integer(substr(DATE, 1L, 4L)), unit_id = key(year, Quadrat),
-            acquisition = as.Date(DATE), band = Wavelength)
-stopifnot(!anyDuplicated(spectra[c("unit_id", "acquisition", "band")]))
-spectral_dates <- spectra |>
-  count(year, unit_id, acquisition) |>
-  filter(n == 2L) |>
-  select(-n)
+spectral_dates <- paired_spectra(read_input("data/Marsden_RFL.csv")) |>
+  select(year, unit_id, acquisition)
 upcoming <- visits |>
   left_join(spectral_dates, by = join_by(year, unit_id, closest(landmark > acquisition)),
             relationship = "many-to-one") |>
@@ -83,32 +77,20 @@ support <- sets |>
             opportunities = sum(opportunities), events = sum(events), .groups = "drop")
 save_csv(support, "within_plot_support")
 
-train_rates <- function(training, keys) {
-  training |>
-    group_by(across(all_of(keys))) |>
-    summarise(probability = (sum(event) + 0.5) / (n() + 1), .groups = "drop")
-}
 score_fold <- function(data, held_out) {
   training <- filter(data, fold != held_out)
   test <- filter(data, fold == held_out)
   stopifnot(nrow(training) > 0L, nrow(test) > 0L, !any(test$unit_id %in% training$unit_id))
-  overall <- train_rates(training, character())$probability
-  scored <- test |>
-    left_join(rename(train_rates(training, "rotation"), rotation_rate = probability),
-              by = "rotation", relationship = "many-to-one") |>
-    left_join(rename(train_rates(training, "landmark"), visit_rate = probability),
-              by = "landmark", relationship = "many-to-one") |>
-    left_join(rename(train_rates(training, c("landmark", "rotation")), joint_rate = probability),
-              by = c("landmark", "rotation"), relationship = "many-to-one")
+  scored <- baseline_rates(test, training)
   output <- function(model, risk, fallback) {
     scored |>
       select(landmark, rotation, unit_id, plot, fold, event) |>
       mutate(model = .env$model, risk = .env$risk, fallback = .env$fallback)
   }
-  bind_rows(output("Constant", overall, FALSE),
-            output("Cropping system", coalesce(scored$rotation_rate, overall), is.na(scored$rotation_rate)),
-            output("Visit", coalesce(scored$visit_rate, overall), is.na(scored$visit_rate)),
-            output("Visit × cropping system", coalesce(scored$joint_rate, scored$visit_rate, overall),
+  bind_rows(output("Constant", scored$overall_rate, FALSE),
+            output("Cropping system", coalesce(scored$rotation_rate, scored$overall_rate), is.na(scored$rotation_rate)),
+            output("Visit", coalesce(scored$visit_rate, scored$overall_rate), is.na(scored$visit_rate)),
+            output("Visit × cropping system", scored$joint_risk,
                    is.na(scored$joint_rate)))
 }
 predictions <- sets |>
@@ -122,22 +104,6 @@ stopifnot(nrow(predictions) == 4L * nrow(sets),
           all(predictions$risk > 0 & predictions$risk < 1))
 save_csv(predictions, "heldout_predictions", detail = TRUE)
 
-# Group tied scores for threshold-based average precision. AUROC uses midranks.
-metric_values <- function(risk, event) {
-  positives <- sum(event)
-  negatives <- length(event) - positives
-  ranked <- tibble(risk, event) |>
-    group_by(risk) |>
-    summarise(positive = sum(event), total = n(), .groups = "drop") |>
-    arrange(desc(risk))
-  precision <- cumsum(ranked$positive) / cumsum(ranked$total)
-  tibble(opportunities = length(event), events = positives, event_rate = mean(event),
-         brier = mean((risk - event)^2),
-         auroc = if (positives * negatives > 0) {
-           (sum(rank(risk)[event]) - positives * (positives + 1) / 2) / (positives * negatives)
-         } else NA_real_,
-         average_precision = if (positives > 0) sum(precision * ranked$positive) / positives else NA_real_)
-}
 key_columns <- c("year", "definition", "denominator", "model")
 scores <- function(keys) {
   predictions |>

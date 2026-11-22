@@ -32,7 +32,7 @@ Cropping system alone improved probability accuracy over constant risk in 2016 a
 
 Changing the threshold from any positive severity to 5% changes the at-risk set and the detection target. In 2018, the matched risk set increases from **199 to 280 opportunities**, while next-visit detections fall from **79 to 34**. Only **12** matched plot-visits have both outcomes under the 5% endpoint, compared with 22 at the primary threshold. Treat 5% as an alternate symptom target and preserve both eligibility tables. [Endpoint coverage](landmark_coverage.csv) · [Baseline comparisons](baseline_comparison.csv)
 
-The next analysis is a latest-spectrum comparator on the frozen matched rows and whole-block folds, against both cropping-system-only and visit-aware baselines. Check within-plot discrimination on the mixed-outcome strata before trying trajectory features. These results describe held-out blocks within each season.
+The [latest-spectrum comparison](LATEST_SPECTRUM.md) uses these matched rows and whole-block folds to evaluate incremental spectral performance and discrimination within mixed-outcome plot-visits.
 
 ## Reproduce
 
