@@ -1,0 +1,9 @@
+# Hinds 2018 severity-version sensitivity
+
+Use the source-keyed Phase 2 cohort and compare the `SDS` long sheet with `Reproductive Stage` entries on the same plot and date. Retain all 60 randomized microplots and eight recorded dates. Use the long sheet as the working reference to match earlier preparation, and treat the entry sheet as a sensitivity version. Three disagreements were already known when designing this comparison.
+
+For recorded symptom timing, compare the interval between the last below-threshold assessment and first assessment above zero. Treat first-visit positives as left-censored and plots never observed above zero as right-censored. Also compare first severity of at least 5% as a higher threshold for disease development. A 5% severity threshold is a sensitivity endpoint, with no claim about the first visible symptom. Keep the actual visits as the time scale.
+
+Summarize plot-level final severity and trapezoidal AUDPC over the eight observed assessments. Compare severity and cumulative first detection at each date by treatment. To quantify effects of the source version on the factorial comparison, report two marginal contrasts with equal weights within each block. Compare P20T79R2 with S24-K2 over all five doses, and compare the average of the four nonzero dose levels with zero dose over both cultivars. Average the six resulting block differences for each contrast. Report plot endpoint and date-specific estimates with descriptive pointwise paired t intervals. The pooled dose contrast describes an average of the assigned levels. Dose response and confirmatory factorial inference are outside this sensitivity check.
+
+Keep incidence, reflectance and yield out of the comparison. Preserve the affected plot IDs, worksheet cells and changed intervals in local outputs. Report aggregates in version control.

@@ -1,0 +1,9 @@
+"version","outcome","blocks","estimate","contrast","lower","upper"
+"Field entries","audpc",6,-131.643333333333,"P20T79R2 minus S24-K2",-305.484482959291,42.1978162926246
+"Field entries","final_severity",6,2.03333333333333,"P20T79R2 minus S24-K2",-8.07391782775085,12.1405844944175
+"Long sheet","audpc",6,-130.068333333333,"P20T79R2 minus S24-K2",-303.160843360306,43.0241766936398
+"Long sheet","final_severity",6,2.03333333333333,"P20T79R2 minus S24-K2",-8.07391782775085,12.1405844944175
+"Field entries","audpc",6,-100.061458333333,"Nonzero dose minus zero",-356.027341037218,155.904424370551
+"Field entries","final_severity",6,-2.91666666666667,"Nonzero dose minus zero",-8.35621328012879,2.52287994679546
+"Long sheet","audpc",6,-96.3583333333333,"Nonzero dose minus zero",-355.944231771179,163.227565104512
+"Long sheet","final_severity",6,-2.91666666666667,"Nonzero dose minus zero",-8.35621328012879,2.52287994679546

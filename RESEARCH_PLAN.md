@@ -1,6 +1,6 @@
 # Living research plan for functional analysis of SDS
 
-Version 0.5. Updated November 22, 2026.
+Version 0.6. Updated November 22, 2026.
 
 Research owner and field-design lead — Muhammad Mohsin Raza.
 
@@ -52,7 +52,7 @@ Q1, Q2, and Q4 form the proposed core. Q3 and Q5 support interpretation. Q6 depe
 | 0. Feasibility and planning | Initial review complete | Repository overview, preliminary literature map, questions, issue register | Living documents available in version control |
 | 1. Data reconstruction and quality control | Repository audit complete. Field reconciliation open | [Inventory](audit/tables/inventory.csv), [dictionary and hierarchy](audit/DATA_DICTIONARY.md), [candidate registry](audit/tables/candidate_units.csv), [issue and decision register](audit/ISSUE_REGISTER.md) | Freeze field-verified identifiers, treatment allocation and eligible cohorts. Keep discrepancies and exclusions auditable |
 | 2. Temporal exploration and protocol | Marsden 2016 exploratory protocol and Hinds source preparation complete | [Protocol](results/phase2/PROTOCOL.md), [cohort and baseline report](results/phase2/REPORT.md) | Common support and model complexity justified by observed data |
-| 3. Core epidemiological models | Marsden 2016 comparator and exploratory 2016–2018 Q4 seasonal comparison complete | Q1–Q5 models, design-aware contrasts, uncertainty bands, sensitivity analyses | Findings supported by diagnostics and appropriate experimental replication |
+| 3. Core epidemiological models | Marsden 2016 comparator, exploratory 2016–2018 Q4 comparison and Hinds severity-version sensitivity complete | Q1–Q5 models, design-aware contrasts, uncertainty bands, sensitivity analyses | Findings supported by diagnostics and appropriate experimental replication |
 | 4. Yield, early warning, and transfer | Conditional | Q6–Q8 analyses and comparisons | Dependencies satisfied and validation matches each claim |
 | 5. Evidence synthesis and manuscript | Pending | Decision memo, figures, tables, manuscript, reproducibility supplement | Claims match evidence, scope is coherent, and analysis reruns from a documented environment |
 
@@ -220,6 +220,12 @@ At the end of a session, update the phase tracker and issue register, then appen
 - Reused the 2016 date rule and model family for a [2016–2018 seasonal comparison](results/phase3_seasons/REPORT.md). Applied the source-backed metadata corrections in the derived spectra and verified all linked labels. Analysis support was five, two and three assessments in 2016, 2017 and 2018, respectively.
 - Estimated positive adjusted red slopes in all three seasons, with intervals spanning zero and block-level disagreement in 2017–2018. Near-infrared direction varied across seasons and changed when the latest eligible rating was removed in 2016 and 2018. Retained distinct seasonal estimates and treated date alignment and epidemic stage as limits on comparison.
 - The next independent analysis is the Hinds plot-level severity-version sensitivity. Extend the Marsden disease-only timing and progression summaries across seasons before setting an early-warning protocol.
+
+#### 2026-11-22 — Hinds 2018 severity-version sensitivity
+
+- Compared all 480 source-keyed ratings from two archived severity versions. Two plots have earlier first detections in the field entries, by 9 and 22 days. One becomes left-censored. The 5% detection threshold and all final severity ratings agree across versions.
+- Estimated cultivar and pooled dose contrasts within each block. The source switch shifts the early cumulative detection contrast for nonzero vs zero dose by up to 8.33 percentage points, with smaller changes in season-long AUDPC contrasts. Keep the long sheet as the working reference and retain both sources for first-positive sensitivity. [Hinds sensitivity report](results/hinds_severity/REPORT.md)
+- Next action is to extend Marsden disease-only treatment and timing analyses to 2017–2018. Hinds incidence and the two disputed spectra remain separate reconciliation tasks.
 
 ### Template for the next entry
 

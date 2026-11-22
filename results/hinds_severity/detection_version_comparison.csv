@@ -1,0 +1,3 @@
+"threshold","plots","first_visit_changed","interval_changed","censoring_changed","max_days_earlier"
+"Above zero",60,2,2,1,22
+"At least 5%",60,0,0,0,0

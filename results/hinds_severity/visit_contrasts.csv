@@ -1,0 +1,65 @@
+"version","outcome","date","blocks","estimate","contrast","lower","upper"
+"Field entries","detected_percent",2018-07-13,6,-6.66666666666667,"P20T79R2 minus S24-K2",-35.3427075574866,22.0093742241532
+"Field entries","detected_percent",2018-07-22,6,-3.33333333333333,"P20T79R2 minus S24-K2",-39.4843221521317,32.8176554854651
+"Field entries","detected_percent",2018-07-28,6,6.66666666666667,"P20T79R2 minus S24-K2",-18.7519268272022,32.0852601605355
+"Field entries","detected_percent",2018-08-06,6,13.3333333333333,"P20T79R2 minus S24-K2",-15.3427075574866,42.0093742241532
+"Field entries","detected_percent",2018-08-13,6,0,"P20T79R2 minus S24-K2",0,0
+"Field entries","detected_percent",2018-08-18,6,0,"P20T79R2 minus S24-K2",0,0
+"Field entries","detected_percent",2018-08-25,6,0,"P20T79R2 minus S24-K2",0,0
+"Field entries","detected_percent",2018-09-01,6,0,"P20T79R2 minus S24-K2",0,0
+"Field entries","severity",2018-07-13,6,-0.0333333333333333,"P20T79R2 minus S24-K2",-0.176713537787433,0.110046871120766
+"Field entries","severity",2018-07-22,6,-0.133333333333333,"P20T79R2 minus S24-K2",-0.658750311246269,0.392083644579603
+"Field entries","severity",2018-07-28,6,-0.166666666666667,"P20T79R2 minus S24-K2",-0.600207653998258,0.266874320664925
+"Field entries","severity",2018-08-06,6,0.0800000000000001,"P20T79R2 minus S24-K2",-0.641657754022506,0.801657754022506
+"Field entries","severity",2018-08-13,6,-8.36666666666667,"P20T79R2 minus S24-K2",-14.9551391767684,-1.77819415656498
+"Field entries","severity",2018-08-18,6,-17.9666666666667,"P20T79R2 minus S24-K2",-27.3412856738604,-8.59204765947292
+"Field entries","severity",2018-08-25,6,3,"P20T79R2 minus S24-K2",-5.514280312638,11.514280312638
+"Field entries","severity",2018-09-01,6,2.03333333333333,"P20T79R2 minus S24-K2",-8.07391782775085,12.1405844944175
+"Long sheet","detected_percent",2018-07-13,6,-3.33333333333333,"P20T79R2 minus S24-K2",-23.9692695308935,17.3026028642268
+"Long sheet","detected_percent",2018-07-22,6,0,"P20T79R2 minus S24-K2",-35.1208340128471,35.1208340128471
+"Long sheet","detected_percent",2018-07-28,6,10,"P20T79R2 minus S24-K2",-18.9309440450145,38.9309440450145
+"Long sheet","detected_percent",2018-08-06,6,16.6666666666667,"P20T79R2 minus S24-K2",-11.2306936866108,44.5640270199441
+"Long sheet","detected_percent",2018-08-13,6,0,"P20T79R2 minus S24-K2",0,0
+"Long sheet","detected_percent",2018-08-18,6,0,"P20T79R2 minus S24-K2",0,0
+"Long sheet","detected_percent",2018-08-25,6,0,"P20T79R2 minus S24-K2",0,0
+"Long sheet","detected_percent",2018-09-01,6,0,"P20T79R2 minus S24-K2",0,0
+"Long sheet","severity",2018-07-13,6,-0.0166666666666667,"P20T79R2 minus S24-K2",-0.119846347654467,0.086513014321134
+"Long sheet","severity",2018-07-22,6,-0.0666666666666667,"P20T79R2 minus S24-K2",-0.575038536544043,0.44170520321071
+"Long sheet","severity",2018-07-28,6,-0.0333333333333333,"P20T79R2 minus S24-K2",-0.424121898293168,0.357455231626501
+"Long sheet","severity",2018-08-06,6,0.0800000000000001,"P20T79R2 minus S24-K2",-0.641657754022506,0.801657754022506
+"Long sheet","severity",2018-08-13,6,-8.36666666666667,"P20T79R2 minus S24-K2",-14.9551391767684,-1.77819415656498
+"Long sheet","severity",2018-08-18,6,-17.9666666666667,"P20T79R2 minus S24-K2",-27.3412856738604,-8.59204765947292
+"Long sheet","severity",2018-08-25,6,3,"P20T79R2 minus S24-K2",-5.514280312638,11.514280312638
+"Long sheet","severity",2018-09-01,6,2.03333333333333,"P20T79R2 minus S24-K2",-8.07391782775085,12.1405844944175
+"Field entries","detected_percent",2018-07-13,6,-18.75,"Nonzero dose minus zero",-62.4546162846229,24.9546162846229
+"Field entries","detected_percent",2018-07-22,6,-18.75,"Nonzero dose minus zero",-51.6757818870442,14.1757818870442
+"Field entries","detected_percent",2018-07-28,6,-25,"Nonzero dose minus zero",-39.3699893155225,-10.6300106844775
+"Field entries","detected_percent",2018-08-06,6,-8.33333333333333,"Nonzero dose minus zero",-19.044090981818,2.37742431515131
+"Field entries","detected_percent",2018-08-13,6,0,"Nonzero dose minus zero",0,0
+"Field entries","detected_percent",2018-08-18,6,0,"Nonzero dose minus zero",0,0
+"Field entries","detected_percent",2018-08-25,6,0,"Nonzero dose minus zero",0,0
+"Field entries","detected_percent",2018-09-01,6,0,"Nonzero dose minus zero",0,0
+"Field entries","severity",2018-07-13,6,-0.09375,"Nonzero dose minus zero",-0.312273081423115,0.124773081423115
+"Field entries","severity",2018-07-22,6,-0.5,"Nonzero dose minus zero",-1.24668654796121,0.246686547961205
+"Field entries","severity",2018-07-28,6,-1.02083333333333,"Nonzero dose minus zero",-2.61382224931145,0.572155582644784
+"Field entries","severity",2018-08-06,6,-0.977083333333333,"Nonzero dose minus zero",-3.10034212132707,1.14617545466041
+"Field entries","severity",2018-08-13,6,-2.9375,"Nonzero dose minus zero",-11.7172185225477,5.8422185225477
+"Field entries","severity",2018-08-18,6,-3.41666666666667,"Nonzero dose minus zero",-15.7878467660772,8.95451343274389
+"Field entries","severity",2018-08-25,6,-4.58333333333333,"Nonzero dose minus zero",-19.8567385405697,10.690071873903
+"Field entries","severity",2018-09-01,6,-2.91666666666667,"Nonzero dose minus zero",-8.35621328012879,2.52287994679546
+"Long sheet","detected_percent",2018-07-13,6,-20.8333333333333,"Nonzero dose minus zero",-65.253932898835,23.5872662321683
+"Long sheet","detected_percent",2018-07-22,6,-10.4166666666667,"Nonzero dose minus zero",-47.9043184363629,27.0709851030296
+"Long sheet","detected_percent",2018-07-28,6,-16.6666666666667,"Nonzero dose minus zero",-36.4163279289655,3.08299459563213
+"Long sheet","detected_percent",2018-08-06,6,0,"Nonzero dose minus zero",-27.5164346177003,27.5164346177003
+"Long sheet","detected_percent",2018-08-13,6,0,"Nonzero dose minus zero",0,0
+"Long sheet","detected_percent",2018-08-18,6,0,"Nonzero dose minus zero",0,0
+"Long sheet","detected_percent",2018-08-25,6,0,"Nonzero dose minus zero",0,0
+"Long sheet","detected_percent",2018-09-01,6,0,"Nonzero dose minus zero",0,0
+"Long sheet","severity",2018-07-13,6,-0.104166666666667,"Nonzero dose minus zero",-0.326269664494175,0.117936331160841
+"Long sheet","severity",2018-07-22,6,-0.333333333333333,"Nonzero dose minus zero",-1.12766438001673,0.460997713350068
+"Long sheet","severity",2018-07-28,6,-0.6875,"Nonzero dose minus zero",-2.2037438462423,0.828743846242295
+"Long sheet","severity",2018-08-06,6,-0.977083333333333,"Nonzero dose minus zero",-3.10034212132707,1.14617545466041
+"Long sheet","severity",2018-08-13,6,-2.9375,"Nonzero dose minus zero",-11.7172185225477,5.8422185225477
+"Long sheet","severity",2018-08-18,6,-3.41666666666667,"Nonzero dose minus zero",-15.7878467660772,8.95451343274389
+"Long sheet","severity",2018-08-25,6,-4.58333333333333,"Nonzero dose minus zero",-19.8567385405697,10.690071873903
+"Long sheet","severity",2018-09-01,6,-2.91666666666667,"Nonzero dose minus zero",-8.35621328012879,2.52287994679546
