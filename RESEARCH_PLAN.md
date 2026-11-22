@@ -84,9 +84,9 @@ The [audit issue register](audit/ISSUE_REGISTER.md) documents D01–D13, the sou
 
 | Scope | Current decision |
 |---|---|
-| Q1–Q2, Q5 · Disease trajectories and timing | Start with within-season Marsden 2016 and descriptive Marsden 2017–2018 disease streams. Use actual assessment dates and compare candidate onset definitions. Keep Hinds source versions separate until plot identity is resolved. |
-| Q3–Q4 · Shape and spectral associations | Start with observed support and simple longitudinal comparators. Pair Marsden 2016 on eligible IDs after the registry is frozen. Disputed acquisitions, 2019 identity semantics, and Hinds plot mapping need resolution before affected paired analyses. |
-| Q6 · Yield | Marsden harvest files now identified for 2016–2018. Verify units, crosswalks and sampling coverage. The Hinds repository harvest values require plot-level reconciliation before joining. |
+| Q1–Q2, Q5 · Disease trajectories and timing | Start with within-season Marsden 2016 and descriptive Marsden 2017–2018 disease streams. Use actual assessment dates and compare candidate onset definitions. Prepare Hinds severity from the dated field lineage with independent design and harvest keys. Check rating versions and incidence denominators. |
+| Q3–Q4 · Shape and spectral associations | Start with observed support and simple longitudinal comparators. Pair Marsden 2016 on eligible IDs after the registry is frozen. Use the slide-backed Marsden 2018 assignments. Flag the unresolved acquisition IDs and prepare Hinds linkage from the dated field lineage. |
+| Q6 · Yield | Marsden harvest files now identified for 2016–2018. Verify units, crosswalks and sampling coverage. Use the sequence-verified Hinds combine workbook. Keep the legacy join quarantined. |
 | Q7–Q8 · Prediction and transfer | Pilot unreproduced. Design eligible landmarks and validation after freezing endpoints and physical plot linkage. Treat 2019 as reflectance-only pending recovery of labeled ratings. |
 
 Keep original design assignments and observation-level metadata traceable. A reproducible candidate match remains provisional until the corresponding field evidence supports it.
@@ -198,8 +198,9 @@ At the end of a session, update the phase tracker and issue register, then appen
 - Based `codex/sds-fda-phase1-audit` on the verified open draft PR #1 planning revision `aa05890b55021707da68aa0176572e7d82601260`. Repository input data remain at the audited source revision.
 - Created the [R audit](analysis/01_audit.R), [audit report](audit/REPORT.md), [candidate unit registry](audit/tables/candidate_units.csv), [sampling coverage](audit/figures/sampling_coverage.png), and detailed evidence linked from the report. Preserved all source observations and flagged unresolved records without applying corrections.
 - Cross-checked the separate SDS Paper project with a [reproducible archive script](analysis/02_check_sds_paper_sources.R). Located the full dissertation and Marsden yield files for all three seasons. Observed that the Hinds repository rating and yield values point to a different field-to-plot mapping, with 56 full trajectory and yield matches jointly pointing to the same archive plot.
-- Kept 2019 reflectance descriptive. Documented a provisional Marsden 2019 two-field identifier and the archive evidence for visual visits without plot-level ratings. Retained actual assessment dates and provisional onset bounds.
-- Next action is to resolve D12 with the dated Hinds field sheets and combine linkage, obtain the targeted Marsden crosswalks, and freeze analysis-specific data. Prepare a within-season Marsden 2016 protocol in parallel with those checks.
+- Kept 2019 reflectance descriptive. Verified 120 Marsden 2019 quadrats with two readings each and determined that the Hinds 2019 GIS sheet duplicates 2018 ratings. Retained actual assessment dates and provisional onset bounds.
+- Followed up in the archive on the original layout and linkage. The 2017 tag map corroborates all six intended assignments, the phase diagram corroborates all 12 soybean plot rotations in 2018, and the Hinds combine sequence reproduces all 60 harvest plot keys. The original logger resolves the six Marsden spectra with one acquisition tag typo, and gives a candidate sequential pairing for Hinds 507/508. The archived radiometer draft and logger headers document CROPSCAN MSR87 and percent reflectance. See [audit evidence](audit/REPORT.md).
+- Next action is to build the provenance-bearing registry, prepare the original-source Hinds severity cohort, and draft the Marsden 2016 within-season protocol. Check the remaining unresolved acquisition identities and rating or denominator differences.
 
 ### Template for the next entry
 

@@ -308,8 +308,12 @@ save_table(all_raw |> filter(site == "Hinds", plot != unit) |>
              retain(c(visit_key, "Reading", hinds_metadata)), "hinds_reading_plot_disagreements")
 
 label_fields <- union(marsden_metadata, hinds_metadata)
+# The archived 2019 workbook verifies that the repository Plot field is a
+# reading index and the actual main-plot code is the quadrat prefix.
+registry_rfl <- rfl |>
+  mutate(plot = if_else(site == "Marsden" & year == 2019L, substr(unit, 1L, 2L), plot))
 label_observations <- bind_rows(
-  rfl |> retain(c(visit_key, label_fields)) |> mutate(stream = "reflectance"),
+  registry_rfl |> retain(c(visit_key, label_fields)) |> mutate(stream = "reflectance"),
   disease |> retain(c(visit_key, label_fields)) |> mutate(stream = "disease")
 ) |>
   group_by(stream, .source, across(all_of(c(visit_key, label_fields)))) |>
@@ -375,15 +379,18 @@ visit_coverage <- function(data, stream_name) {
     left_join(mutate(observed, observed = TRUE), by = visit_key, relationship = "one-to-one") |>
     mutate(stream = stream_name, observed = coalesce(observed, FALSE))
 }
-# Use the workbook's two identifier fields together for 2019 Marsden displays.
-# These pairs distinguish spectra without assigning treatment plots.
+# Record both instrument reading indices before computing quadrat-level displays.
 marsden2019 <- filter(rfl, site == "Marsden", year == 2019L)
 save_table(marsden2019 |>
              group_by(site, year, unit, plot, block, rotation) |>
              summarise(visits = n_distinct(date), band_rows = n(), .groups = "drop") |>
-             rename(quadrat_field = unit, plot_field = plot), "marsden2019_identifier_pairs")
-rfl_trajectories <- rfl |>
-  mutate(unit = if_else(site == "Marsden" & year == 2019L, paste(unit, plot, sep = "/"), unit))
+             rename(quadrat_field = unit, workbook_plot_field = plot), "marsden2019_identifier_pairs")
+rfl_trajectories <- bind_rows(
+  filter(rfl, site != "Marsden" | year != 2019L),
+  marsden2019 |>
+    group_by(across(all_of(band_key))) |>
+    summarise(value = mean(value, na.rm = TRUE), .groups = "drop")
+)
 coverage <- bind_rows(visit_coverage(rfl_trajectories, "Reflectance"), visit_coverage(disease, "Disease"),
                       visit_coverage(exports, "Joined reflectance"))
 visit_counts <- coverage |>
@@ -453,7 +460,7 @@ coverage_plot <- visit_counts |>
   scale_shape_manual(values = c(17, 1, 4)) +
   labs(title = "Sampling coverage by visit", x = "Calendar date", y = "Candidate units with a record",
        colour = NULL, shape = NULL,
-       caption = "Marsden 2019 uses the two workbook identifier fields together. Other panels use the recorded quadrat or plot ID.") +
+       caption = "Marsden panels count quadrats. Hinds panels count microplots.") +
   plot_theme
 save_plot(coverage_plot, "sampling_coverage", 11, 8)
 
@@ -493,7 +500,7 @@ rfl_plot <- coverage |>
   scale_colour_manual(values = c("#AA4934", "#216C60"), guide = "none") +
   labs(title = "Observed red and near-infrared reflectance", x = "Acquisition date",
        y = "Recorded reflectance",
-       caption = "One line per candidate unit. Duplicate unit-date-band records are omitted from this figure.") +
+       caption = "Marsden 2019 shows two-reading quadrat means. Conflicting Hinds duplicate keys are omitted.") +
   plot_theme
 save_plot(rfl_plot, "observed_reflectance", 15, 6)
 

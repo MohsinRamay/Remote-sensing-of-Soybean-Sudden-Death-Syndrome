@@ -6,7 +6,7 @@ The research uses functional data analysis (FDA), functional mixed models, and s
 
 ## Current status
 
-Updated November 22, 2026. The reproducible Phase 1 repository audit and targeted SDS Paper archive checks are complete. Canonical plot assignments, the handheld calibration record, and formal FDA analyses remain pending.
+Updated November 22, 2026. The reproducible Phase 1 repository audit and targeted SDS Paper archive checks are complete. The Marsden slides corroborate the 2017–2018 main-plot labels, and the Hinds combine sequence verifies the archived harvest keys. Acquisition-level checks, canonical analysis tables, and formal FDA analyses remain pending.
 
 Read the [audit report](audit/REPORT.md), [data dictionary](audit/DATA_DICTIONARY.md), [issue register](audit/ISSUE_REGISTER.md), and [research plan](RESEARCH_PLAN.md). Run `Rscript analysis/01_audit.R` from the repository root to regenerate the inventory, discrepancy tables and observed trajectory figures.
 
@@ -35,7 +35,7 @@ Each question remains in scope. The sequence follows data availability and the s
 | Marsden 2017 | 120 | 240 | 10 / 5 |
 | Marsden 2018 | 127, of which 115 appear in the join | 115 | 8 / 5 |
 | Hinds 2018 | 60 | 60, with linkage disputed | 7 / 8 |
-| Marsden 2019 | 240 workbook identifier pairs | No outcome file found | 8 / — |
+| Marsden 2019 | 120 quadrats | No outcome file found | 8 / — |
 | Hinds 2019 | 60 | No outcome file found | 10 / — |
 
 Units are within-season recorded identifiers or candidate identifier pairs. See the [sampling figure](audit/figures/sampling_coverage.png) and [join counts](audit/tables/join_integrity.csv).
@@ -62,7 +62,7 @@ The earlier notebooks document the original workflow. Check their input paths, p
 
 ## Immediate work
 
-1. Resolve Hinds 2018 linkage against the original field and harvest crosswalk, and verify the flagged Marsden plot-year and acquisition records.
+1. Prepare source-keyed Hinds data from the original field and harvest records. Resolve the flagged acquisition records and rating-version differences.
 2. Freeze a provenance-bearing unit registry and eligible analysis cohorts.
 3. Draft a Marsden 2016 within-season analysis protocol and compare design-aware longitudinal baselines with FDA on shared time support.
 4. Extend the analysis to additional cohorts as the corresponding identity and measurement issues are resolved.
