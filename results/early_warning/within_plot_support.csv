@@ -1,0 +1,19 @@
+"year","definition","denominator","plot_landmarks","mixed_outcome_plot_landmarks","opportunities","events"
+2016,"Incidence above zero","All eligible",54,38,811,181
+2016,"Incidence above zero","Spectrum matched",45,30,731,148
+2016,"Severity above zero","All eligible",54,37,806,181
+2016,"Severity above zero","Spectrum matched",45,30,731,153
+2016,"Severity at least 5%","All eligible",54,39,834,189
+2016,"Severity at least 5%","Spectrum matched",45,31,758,160
+2017,"Incidence above zero","All eligible",42,20,590,131
+2017,"Incidence above zero","Spectrum matched",41,16,281,70
+2017,"Severity above zero","All eligible",42,20,590,131
+2017,"Severity above zero","Spectrum matched",41,16,281,70
+2017,"Severity at least 5%","All eligible",44,24,620,131
+2017,"Severity at least 5%","Spectrum matched",42,17,291,70
+2018,"Incidence above zero","All eligible",38,26,236,97
+2018,"Incidence above zero","Spectrum matched",29,22,198,80
+2018,"Severity above zero","All eligible",38,26,238,97
+2018,"Severity above zero","Spectrum matched",29,22,199,79
+2018,"Severity at least 5%","All eligible",47,22,377,78
+2018,"Severity at least 5%","Spectrum matched",35,12,280,34

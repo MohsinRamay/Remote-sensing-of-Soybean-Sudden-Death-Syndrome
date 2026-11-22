@@ -1,6 +1,6 @@
 # Living research plan for functional analysis of SDS
 
-Version 0.7. Updated November 22, 2026.
+Version 0.8. Updated November 22, 2026.
 
 Research owner and field-design lead — Muhammad Mohsin Raza.
 
@@ -53,7 +53,7 @@ Q1, Q2, and Q4 form the proposed core. Q3 and Q5 support interpretation. Q6 depe
 | 1. Data reconstruction and quality control | Repository audit complete. Field reconciliation open | [Inventory](audit/tables/inventory.csv), [dictionary and hierarchy](audit/DATA_DICTIONARY.md), [candidate registry](audit/tables/candidate_units.csv), [issue and decision register](audit/ISSUE_REGISTER.md) | Freeze field-verified identifiers, treatment allocation and eligible cohorts. Keep discrepancies and exclusions auditable |
 | 2. Temporal exploration and protocol | Marsden 2016 exploratory protocol and Hinds source preparation complete | [Protocol](results/phase2/PROTOCOL.md), [cohort and baseline report](results/phase2/REPORT.md) | Common support and model complexity justified by observed data |
 | 3. Core epidemiological models | Marsden 2016–2018 disease and Q4 comparisons plus Hinds severity-version sensitivity complete | Q1–Q5 models, design-aware contrasts, uncertainty bands, sensitivity analyses | Findings supported by diagnostics and appropriate experimental replication |
-| 4. Yield, early warning, and transfer | Conditional | Q6–Q8 analyses and comparisons | Dependencies satisfied and validation matches each claim |
+| 4. Yield, early warning, and transfer | Marsden eligibility and non-spectral baselines complete. Other analyses conditional | Q6–Q8 analyses and comparisons | Dependencies satisfied and validation matches each claim |
 | 5. Evidence synthesis and manuscript | Pending | Decision memo, figures, tables, manuscript, reproducibility supplement | Claims match evidence, scope is coherent, and analysis reruns from a documented environment |
 
 ## 5. Phase 1 — reconstruct the data
@@ -87,7 +87,7 @@ The [audit issue register](audit/ISSUE_REGISTER.md) documents D01–D13, the sou
 | Q1–Q2, Q5 · Disease trajectories and timing | Start with within-season Marsden 2016 and descriptive Marsden 2017–2018 disease streams. Use actual assessment dates and compare candidate onset definitions. Prepare Hinds severity from the dated field lineage with independent design and harvest keys. Check rating versions and incidence denominators. |
 | Q3–Q4 · Shape and spectral associations | Start with observed support and simple longitudinal comparators. Pair Marsden 2016 on eligible IDs after the registry is frozen. Use the slide-backed Marsden 2018 assignments. Flag the unresolved acquisition IDs and prepare Hinds linkage from the dated field lineage. |
 | Q6 · Yield | Marsden harvest files now identified for 2016–2018. Verify units, crosswalks and sampling coverage. Use the sequence-verified Hinds combine workbook. Keep the legacy join quarantined. |
-| Q7–Q8 · Prediction and transfer | Pilot unreproduced. Design eligible landmarks and validation after freezing endpoints and physical plot linkage. Treat 2019 as reflectance-only pending recovery of labeled ratings. |
+| Q7–Q8 · Prediction and transfer | Eligibility and whole-block baseline are reproducible for within-season comparisons. The earlier pilot is unreproduced. Physical plot linkage is pending before seasonal transfer. Treat 2019 as reflectance-only pending recovery of labeled ratings. |
 
 Keep original design assignments and observation-level metadata traceable. A reproducible candidate match remains provisional until the corresponding field evidence supports it.
 
@@ -232,6 +232,12 @@ At the end of a session, update the phase tracker and issue register, then appen
 - Extended the disease-only protocol to the full 2017 and 2018 disease cohorts. Verified the 2017–2018 labels against the archived maps, retained all rated quadrats, and gave each main plot equal weight in its rotation. Reran 2016 on the shared definitions. [Results](results/marsden_disease/REPORT.md)
 - S4 had the lowest final severity in each season, with season-dependent contrast magnitudes and timing. Compared the above-zero severity endpoint with incidence and 5% severity. In 2018, 95 of 115 quadrats changed their first-detection date or detection status when the higher threshold was used. Recorded paired final-severity components and eligible next-visit progression descriptions as descriptive checks.
 - Next action is to prepare an early-warning landmark eligibility and outcome table and a rotation-only comparator. Hinds incidence denominator reconciliation remains open.
+
+#### 2026-11-22 — Marsden early-warning eligibility and baselines
+
+- Built the landmark eligibility table for first recorded detection at the next visit within ten days, retaining ineligibility and strict prior-spectrum availability for three rating endpoints. Matched primary denominators were 731, 281 and 199 opportunities in 2016, 2017 and 2018.
+- Fit training-only risk baselines for constant, cropping-system, visit, and visit-by-cropping-system models with whole blocks held out. Cropping-system risk improved matched Brier scores in 2016 and 2017. The visit interaction gave the lowest Brier scores in those seasons but performed worse than constant risk in 2018.
+- Next action is to fit the latest-spectrum comparator on the frozen matched rows and folds and assess within-plot discrimination. [Eligibility and baseline report](results/early_warning/REPORT.md)
 
 ### Template for the next entry
 

@@ -1,0 +1,96 @@
+"year","definition","landmark","status","n"
+2016,"Incidence above zero",2016-07-27,"Already detected",12
+2016,"Incidence above zero",2016-07-27,"Eligible",228
+2016,"Incidence above zero",2016-08-05,"Already detected",15
+2016,"Incidence above zero",2016-08-05,"Eligible",225
+2016,"Incidence above zero",2016-08-15,"Already detected",83
+2016,"Incidence above zero",2016-08-15,"Eligible",157
+2016,"Incidence above zero",2016-08-22,"Already detected",119
+2016,"Incidence above zero",2016-08-22,"Eligible",121
+2016,"Incidence above zero",2016-08-29,"Already detected",160
+2016,"Incidence above zero",2016-08-29,"Eligible",80
+2016,"Incidence above zero",2016-09-06,"Already detected",193
+2016,"Incidence above zero",2016-09-06,"No next assessment",47
+2016,"Severity above zero",2016-07-27,"Already detected",12
+2016,"Severity above zero",2016-07-27,"Eligible",228
+2016,"Severity above zero",2016-08-05,"Already detected",15
+2016,"Severity above zero",2016-08-05,"Eligible",225
+2016,"Severity above zero",2016-08-15,"Already detected",83
+2016,"Severity above zero",2016-08-15,"Eligible",157
+2016,"Severity above zero",2016-08-22,"Already detected",119
+2016,"Severity above zero",2016-08-22,"Eligible",121
+2016,"Severity above zero",2016-08-29,"Already detected",165
+2016,"Severity above zero",2016-08-29,"Eligible",75
+2016,"Severity above zero",2016-09-06,"Already detected",193
+2016,"Severity above zero",2016-09-06,"No next assessment",47
+2016,"Severity at least 5%",2016-07-27,"Already detected",4
+2016,"Severity at least 5%",2016-07-27,"Eligible",236
+2016,"Severity at least 5%",2016-08-05,"Already detected",13
+2016,"Severity at least 5%",2016-08-05,"Eligible",227
+2016,"Severity at least 5%",2016-08-15,"Already detected",67
+2016,"Severity at least 5%",2016-08-15,"Eligible",173
+2016,"Severity at least 5%",2016-08-22,"Already detected",118
+2016,"Severity at least 5%",2016-08-22,"Eligible",122
+2016,"Severity at least 5%",2016-08-29,"Already detected",164
+2016,"Severity at least 5%",2016-08-29,"Eligible",76
+2016,"Severity at least 5%",2016-09-06,"Already detected",193
+2016,"Severity at least 5%",2016-09-06,"No next assessment",47
+2017,"Incidence above zero",2017-08-17,"Already detected",3
+2017,"Incidence above zero",2017-08-17,"Eligible",237
+2017,"Incidence above zero",2017-08-24,"Already detected",107
+2017,"Incidence above zero",2017-08-24,"Eligible",133
+2017,"Incidence above zero",2017-08-31,"Already detected",126
+2017,"Incidence above zero",2017-08-31,"Eligible",114
+2017,"Incidence above zero",2017-09-09,"Already detected",134
+2017,"Incidence above zero",2017-09-09,"Eligible",106
+2017,"Incidence above zero",2017-09-13,"Already detected",134
+2017,"Incidence above zero",2017-09-13,"No next assessment",106
+2017,"Severity above zero",2017-08-17,"Already detected",3
+2017,"Severity above zero",2017-08-17,"Eligible",237
+2017,"Severity above zero",2017-08-24,"Already detected",107
+2017,"Severity above zero",2017-08-24,"Eligible",133
+2017,"Severity above zero",2017-08-31,"Already detected",126
+2017,"Severity above zero",2017-08-31,"Eligible",114
+2017,"Severity above zero",2017-09-09,"Already detected",134
+2017,"Severity above zero",2017-09-09,"Eligible",106
+2017,"Severity above zero",2017-09-13,"Already detected",134
+2017,"Severity above zero",2017-09-13,"No next assessment",106
+2017,"Severity at least 5%",2017-08-17,"Already detected",3
+2017,"Severity at least 5%",2017-08-17,"Eligible",237
+2017,"Severity at least 5%",2017-08-24,"Already detected",86
+2017,"Severity at least 5%",2017-08-24,"Eligible",154
+2017,"Severity at least 5%",2017-08-31,"Already detected",117
+2017,"Severity at least 5%",2017-08-31,"Eligible",123
+2017,"Severity at least 5%",2017-09-09,"Already detected",134
+2017,"Severity at least 5%",2017-09-09,"Eligible",106
+2017,"Severity at least 5%",2017-09-13,"Already detected",134
+2017,"Severity at least 5%",2017-09-13,"No next assessment",106
+2018,"Incidence above zero",2018-08-17,"Already detected",2
+2018,"Incidence above zero",2018-08-17,"Eligible",113
+2018,"Incidence above zero",2018-08-24,"Already detected",51
+2018,"Incidence above zero",2018-08-24,"Eligible",64
+2018,"Incidence above zero",2018-08-31,"Already detected",77
+2018,"Incidence above zero",2018-08-31,"Eligible",38
+2018,"Incidence above zero",2018-09-07,"Already detected",94
+2018,"Incidence above zero",2018-09-07,"Eligible",21
+2018,"Incidence above zero",2018-09-14,"Already detected",99
+2018,"Incidence above zero",2018-09-14,"No next assessment",16
+2018,"Severity above zero",2018-08-17,"Already detected",2
+2018,"Severity above zero",2018-08-17,"Eligible",113
+2018,"Severity above zero",2018-08-24,"Already detected",50
+2018,"Severity above zero",2018-08-24,"Eligible",65
+2018,"Severity above zero",2018-08-31,"Already detected",76
+2018,"Severity above zero",2018-08-31,"Eligible",39
+2018,"Severity above zero",2018-09-07,"Already detected",94
+2018,"Severity above zero",2018-09-07,"Eligible",21
+2018,"Severity above zero",2018-09-14,"Already detected",99
+2018,"Severity above zero",2018-09-14,"No next assessment",16
+2018,"Severity at least 5%",2018-08-17,"Eligible",115
+2018,"Severity at least 5%",2018-08-24,"Already detected",3
+2018,"Severity at least 5%",2018-08-24,"Eligible",112
+2018,"Severity at least 5%",2018-08-31,"Already detected",18
+2018,"Severity at least 5%",2018-08-31,"Eligible",97
+2018,"Severity at least 5%",2018-09-07,"Already detected",62
+2018,"Severity at least 5%",2018-09-07,"Eligible",53
+2018,"Severity at least 5%",2018-09-14,"Already detected",78
+2018,"Severity at least 5%",2018-09-14,"No next assessment",37
