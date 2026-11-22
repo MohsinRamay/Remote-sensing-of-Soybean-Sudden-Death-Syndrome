@@ -1,6 +1,6 @@
 # Living research plan for functional analysis of SDS
 
-Version 0.6. Updated November 22, 2026.
+Version 0.7. Updated November 22, 2026.
 
 Research owner and field-design lead — Muhammad Mohsin Raza.
 
@@ -52,7 +52,7 @@ Q1, Q2, and Q4 form the proposed core. Q3 and Q5 support interpretation. Q6 depe
 | 0. Feasibility and planning | Initial review complete | Repository overview, preliminary literature map, questions, issue register | Living documents available in version control |
 | 1. Data reconstruction and quality control | Repository audit complete. Field reconciliation open | [Inventory](audit/tables/inventory.csv), [dictionary and hierarchy](audit/DATA_DICTIONARY.md), [candidate registry](audit/tables/candidate_units.csv), [issue and decision register](audit/ISSUE_REGISTER.md) | Freeze field-verified identifiers, treatment allocation and eligible cohorts. Keep discrepancies and exclusions auditable |
 | 2. Temporal exploration and protocol | Marsden 2016 exploratory protocol and Hinds source preparation complete | [Protocol](results/phase2/PROTOCOL.md), [cohort and baseline report](results/phase2/REPORT.md) | Common support and model complexity justified by observed data |
-| 3. Core epidemiological models | Marsden 2016 comparator, exploratory 2016–2018 Q4 comparison and Hinds severity-version sensitivity complete | Q1–Q5 models, design-aware contrasts, uncertainty bands, sensitivity analyses | Findings supported by diagnostics and appropriate experimental replication |
+| 3. Core epidemiological models | Marsden 2016–2018 disease and Q4 comparisons plus Hinds severity-version sensitivity complete | Q1–Q5 models, design-aware contrasts, uncertainty bands, sensitivity analyses | Findings supported by diagnostics and appropriate experimental replication |
 | 4. Yield, early warning, and transfer | Conditional | Q6–Q8 analyses and comparisons | Dependencies satisfied and validation matches each claim |
 | 5. Evidence synthesis and manuscript | Pending | Decision memo, figures, tables, manuscript, reproducibility supplement | Claims match evidence, scope is coherent, and analysis reruns from a documented environment |
 
@@ -226,6 +226,12 @@ At the end of a session, update the phase tracker and issue register, then appen
 - Compared all 480 source-keyed ratings from two archived severity versions. Two plots have earlier first detections in the field entries, by 9 and 22 days. One becomes left-censored. The 5% detection threshold and all final severity ratings agree across versions.
 - Estimated cultivar and pooled dose contrasts within each block. The source switch shifts the early cumulative detection contrast for nonzero vs zero dose by up to 8.33 percentage points, with smaller changes in season-long AUDPC contrasts. Keep the long sheet as the working reference and retain both sources for first-positive sensitivity. [Hinds sensitivity report](results/hinds_severity/REPORT.md)
 - Next action is to extend Marsden disease-only treatment and timing analyses to 2017–2018. Hinds incidence and the two disputed spectra remain separate reconciliation tasks.
+
+#### 2026-11-22 — Marsden disease trajectories and symptom timing across seasons
+
+- Extended the disease-only protocol to the full 2017 and 2018 disease cohorts. Verified the 2017–2018 labels against the archived maps, retained all rated quadrats, and gave each main plot equal weight in its rotation. Reran 2016 on the shared definitions. [Results](results/marsden_disease/REPORT.md)
+- S4 had the lowest final severity in each season, with season-dependent contrast magnitudes and timing. Compared the above-zero severity endpoint with incidence and 5% severity. In 2018, 95 of 115 quadrats changed their first-detection date or detection status when the higher threshold was used. Recorded paired final-severity components and eligible next-visit progression descriptions as descriptive checks.
+- Next action is to prepare an early-warning landmark eligibility and outcome table and a rotation-only comparator. Hinds incidence denominator reconciliation remains open.
 
 ### Template for the next entry
 

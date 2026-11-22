@@ -1,0 +1,7 @@
+"year","statistic","observed","assignments","as_or_more_extreme","permutation_p"
+2016,"trajectory_mean_squared_pp",80.0148492547426,1296,30,0.0231481481481481
+2016,"audpc_variation_pp_days_squared",65701.1751388889,1296,30,0.0231481481481481
+2017,"trajectory_mean_squared_pp",14.4309825102881,1296,114,0.087962962962963
+2017,"audpc_variation_pp_days_squared",7019.20558159722,1296,96,0.0740740740740741
+2018,"trajectory_mean_squared_pp",4.23330358216854,1296,798,0.615740740740741
+2018,"audpc_variation_pp_days_squared",1592.71409967448,1296,780,0.601851851851852

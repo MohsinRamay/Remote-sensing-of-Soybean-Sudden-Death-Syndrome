@@ -1,0 +1,66 @@
+"year","rotation","definition","censoring","n"
+2016,"S2","Incidence above zero","interval",69
+2016,"S2","Incidence above zero","left",11
+2016,"S2","Severity above zero","interval",69
+2016,"S2","Severity above zero","left",11
+2016,"S2","Severity at least 5%","interval",77
+2016,"S2","Severity at least 5%","left",3
+2016,"S3","Incidence above zero","interval",64
+2016,"S3","Incidence above zero","left",1
+2016,"S3","Incidence above zero","right",15
+2016,"S3","Severity above zero","interval",64
+2016,"S3","Severity above zero","left",1
+2016,"S3","Severity above zero","right",15
+2016,"S3","Severity at least 5%","interval",64
+2016,"S3","Severity at least 5%","left",1
+2016,"S3","Severity at least 5%","right",15
+2016,"S4","Incidence above zero","interval",48
+2016,"S4","Incidence above zero","right",32
+2016,"S4","Severity above zero","interval",48
+2016,"S4","Severity above zero","right",32
+2016,"S4","Severity at least 5%","interval",48
+2016,"S4","Severity at least 5%","right",32
+2017,"S2","Incidence above zero","interval",72
+2017,"S2","Incidence above zero","left",2
+2017,"S2","Incidence above zero","right",6
+2017,"S2","Severity above zero","interval",72
+2017,"S2","Severity above zero","left",2
+2017,"S2","Severity above zero","right",6
+2017,"S2","Severity at least 5%","interval",72
+2017,"S2","Severity at least 5%","left",2
+2017,"S2","Severity at least 5%","right",6
+2017,"S3","Incidence above zero","interval",48
+2017,"S3","Incidence above zero","left",1
+2017,"S3","Incidence above zero","right",31
+2017,"S3","Severity above zero","interval",48
+2017,"S3","Severity above zero","left",1
+2017,"S3","Severity above zero","right",31
+2017,"S3","Severity at least 5%","interval",48
+2017,"S3","Severity at least 5%","left",1
+2017,"S3","Severity at least 5%","right",31
+2017,"S4","Incidence above zero","interval",11
+2017,"S4","Incidence above zero","right",69
+2017,"S4","Severity above zero","interval",11
+2017,"S4","Severity above zero","right",69
+2017,"S4","Severity at least 5%","interval",11
+2017,"S4","Severity at least 5%","right",69
+2018,"S2","Incidence above zero","interval",39
+2018,"S2","Incidence above zero","left",1
+2018,"S2","Severity above zero","interval",39
+2018,"S2","Severity above zero","left",1
+2018,"S2","Severity at least 5%","interval",36
+2018,"S2","Severity at least 5%","right",4
+2018,"S3","Incidence above zero","interval",30
+2018,"S3","Incidence above zero","left",1
+2018,"S3","Incidence above zero","right",7
+2018,"S3","Severity above zero","interval",30
+2018,"S3","Severity above zero","left",1
+2018,"S3","Severity above zero","right",7
+2018,"S3","Severity at least 5%","interval",26
+2018,"S3","Severity at least 5%","right",12
+2018,"S4","Incidence above zero","interval",28
+2018,"S4","Incidence above zero","right",9
+2018,"S4","Severity above zero","interval",28
+2018,"S4","Severity above zero","right",9
+2018,"S4","Severity at least 5%","interval",16
+2018,"S4","Severity at least 5%","right",21

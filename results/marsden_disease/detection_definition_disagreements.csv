@@ -1,0 +1,10 @@
+"year","rotation","quadrats","first_visit_diff_incidence","first_visit_diff_5pct","censoring_diff_incidence","censoring_diff_5pct"
+2016,"S2",80,0,24,0,8
+2016,"S3",80,0,3,0,0
+2016,"S4",80,5,1,0,0
+2017,"S2",80,0,13,0,0
+2017,"S3",80,0,12,0,0
+2017,"S4",80,0,2,0,0
+2018,"S2",40,1,39,0,5
+2018,"S3",38,0,29,0,6
+2018,"S4",37,0,27,0,12
