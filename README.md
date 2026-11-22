@@ -6,9 +6,9 @@ The research uses functional data analysis (FDA), functional mixed models, and s
 
 ## Current status
 
-Updated November 22, 2026. The Phase 1 audit, archive checks, and exploratory Marsden 2016 longitudinal baseline are complete. The source-keyed Hinds severity cohort is prepared for sensitivity analysis. The Marsden slides corroborate the 2017–2018 main-plot labels, and the Hinds combine sequence verifies the archived harvest keys. Remaining work includes acquisition-level checks and formal FDA analyses.
+Updated November 22, 2026. The Phase 1 audit, archive checks, and exploratory Marsden 2016 longitudinal and disease–reflectance analyses are complete. The source-keyed Hinds severity cohort is prepared for sensitivity analysis. The Marsden slides corroborate the 2017–2018 main-plot labels, and the Hinds combine sequence verifies the archived harvest keys. Remaining work includes acquisition-level checks and formal FDA analyses.
 
-Read the [Phase 2 results](results/phase2/REPORT.md), [analysis protocol](results/phase2/PROTOCOL.md), [audit report](audit/REPORT.md), [data dictionary](audit/DATA_DICTIONARY.md), [issue register](audit/ISSUE_REGISTER.md), and [research plan](RESEARCH_PLAN.md). Run `Rscript analysis/01_audit.R` from the repository root to regenerate the inventory, discrepancy tables and observed trajectory figures.
+Read the [Marsden 2016 disease–reflectance results](results/phase3/REPORT.md), [Phase 2 results](results/phase2/REPORT.md), [analysis protocol](results/phase2/PROTOCOL.md), [audit report](audit/REPORT.md), [data dictionary](audit/DATA_DICTIONARY.md), [issue register](audit/ISSUE_REGISTER.md), and [research plan](RESEARCH_PLAN.md). Run `Rscript analysis/01_audit.R` from the repository root to regenerate the inventory, discrepancy tables and observed trajectory figures.
 
 The most consequential new finding is that the Hinds 2018 repository rating and yield values appear under different plot IDs in the field and harvest workbook lineage. The Marsden 2017 disease table also contains twice as many quadrats as the reflectance table. Archived Marsden yield records have been located for 2016–2018. The preliminary prediction pilot remains exploratory.
 
@@ -58,12 +58,13 @@ Treatment replication occurs at the experimental unit established by the field d
 | `analysis/` | Reproducible R audit and optional archive checks |
 | `audit/` | Audit report, documentation, tables and figures |
 | `results/phase2/` | Cohort summaries, longitudinal baseline and observed symptom detection figures |
+| `results/phase3/` | Marsden 2016 disease–reflectance estimates and date sensitivity |
 
 The earlier notebooks document the original workflow. Check their input paths, package versions, and metadata handling before execution.
 
 ## Immediate work
 
-1. Specify a Marsden 2016 disease–reflectance association analysis using actual dates and the visit-factor disease baseline.
+1. Check whether the adjusted Marsden 2016 disease–reflectance associations recur in 2017–2018 on comparable date support.
 2. Check Hinds severity and onset results across the two archived rating versions. Continue incidence denominator reconciliation.
 3. Extend the Marsden analysis to 2017–2018 using the field-backed corrections and a common-support check.
 

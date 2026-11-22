@@ -1,6 +1,6 @@
 # Living research plan for functional analysis of SDS
 
-Version 0.3. Updated November 22, 2026.
+Version 0.4. Updated November 22, 2026.
 
 Research owner and field-design lead — Muhammad Mohsin Raza.
 
@@ -52,7 +52,7 @@ Q1, Q2, and Q4 form the proposed core. Q3 and Q5 support interpretation. Q6 depe
 | 0. Feasibility and planning | Initial review complete | Repository overview, preliminary literature map, questions, issue register | Living documents available in version control |
 | 1. Data reconstruction and quality control | Repository audit complete. Field reconciliation open | [Inventory](audit/tables/inventory.csv), [dictionary and hierarchy](audit/DATA_DICTIONARY.md), [candidate registry](audit/tables/candidate_units.csv), [issue and decision register](audit/ISSUE_REGISTER.md) | Freeze field-verified identifiers, treatment allocation and eligible cohorts. Keep discrepancies and exclusions auditable |
 | 2. Temporal exploration and protocol | Marsden 2016 exploratory protocol and Hinds source preparation complete | [Protocol](results/phase2/PROTOCOL.md), [cohort and baseline report](results/phase2/REPORT.md) | Common support and model complexity justified by observed data |
-| 3. Core epidemiological models | First Marsden 2016 comparator fitted. Core inference pending | Q1–Q5 models, design-aware contrasts, uncertainty bands, sensitivity analyses | Findings supported by diagnostics and appropriate experimental replication |
+| 3. Core epidemiological models | Marsden 2016 comparator and exploratory Q4 associations fitted. Seasonal comparison pending | Q1–Q5 models, design-aware contrasts, uncertainty bands, sensitivity analyses | Findings supported by diagnostics and appropriate experimental replication |
 | 4. Yield, early warning, and transfer | Conditional | Q6–Q8 analyses and comparisons | Dependencies satisfied and validation matches each claim |
 | 5. Evidence synthesis and manuscript | Pending | Decision memo, figures, tables, manuscript, reproducibility supplement | Claims match evidence, scope is coherent, and analysis reruns from a documented environment |
 
@@ -208,6 +208,12 @@ At the end of a session, update the phase tracker and issue register, then appen
 - Wrote the [exploratory protocol](results/phase2/PROTOCOL.md) and fitted the visit-factor baseline and spline comparison at the main-plot level. The four-block paired S2 minus S3 difference was 33.0 percentage points at the final assessment. The conditional curve and AUDPC tests had the same tail area. Leave-one-block-out RMSE was essentially unchanged by smoothing, which generated small negative early predictions. Retain the visit-factor baseline for this cohort.
 - Used last-negative and first-positive bounds for recorded onset, with incidence as a sensitivity definition. The timing descriptions are exploratory. Read the [baseline report](results/phase2/REPORT.md) for the differences, held-out metrics and remaining uncertainties.
 - Next analysis is a Marsden 2016 disease–reflectance association protocol using the separate dates, followed by severity-version sensitivity checks at Hinds and extension of the Marsden cohort.
+
+#### 2026-11-22 — Marsden 2016 disease–reflectance associations
+
+- Defined the [Q4 protocol](results/phase3/PROTOCOL.md) and fitted the red and near-infrared associations at five eligible assessment dates using spectra acquired one to four days earlier. Compared pooled estimates with plot-by-visit and quadrat adjustment. The [results](results/phase3/REPORT.md) include block estimates, date-alignment sensitivity and leave-one-assessment-out estimates.
+- Adjusted slopes were small, with descriptive between-block intervals spanning zero. Both primary signs changed when the final assessment was removed. Interpolating spectra increased the association magnitudes on three common dates. Interpret the result as exploratory and dependent on date alignment.
+- Next analysis is a source-corrected, year-specific repeat in Marsden 2017–2018. Establish temporal support for each season before comparing patterns. Keep the Hinds severity-version work separate.
 
 ### Template for the next entry
 
