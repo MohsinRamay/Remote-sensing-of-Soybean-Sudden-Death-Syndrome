@@ -1,0 +1,11 @@
+"comparison","expected_rows","observed_rows","matched","expected_only","observed_only","different_values"
+"Marsden 2018 workbook to replicate CSV",2050,2050,2050,0,0,0
+"Marsden 2018 replicate means to intermediate",7280,7280,7280,0,0,0
+"Hinds 2018 workbook to replicate CSV",840,840,795,0,0,45
+"Hinds 2018 replicate means to intermediate",3368,3368,3368,0,0,0
+"Marsden 2016 workbook to intermediate",23040,23040,23040,0,0,0
+"Marsden 2017 workbook to intermediate",9600,9600,9600,0,0,0
+"Reconstructed join to HRS_2018.csv",3368,3368,3368,0,0,0
+"Reconstructed join to MRS_2016.csv",23040,23040,23040,0,0,0
+"Reconstructed join to MRS_2017.csv",9600,9600,9600,0,0,0
+"Reconstructed join to MRS_2018.csv",7176,7176,5426,0,0,1750

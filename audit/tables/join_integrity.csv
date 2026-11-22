@@ -1,0 +1,5 @@
+"export","site","year","intermediate_rows","intermediate_units","disease_units","intermediate_only_units","disease_only_units","explicitly_excluded_rows","selected_rows","reconstructed_rows","rows_added_by_join","export_rows","export_units","export_only_units","export_without_disease_units","disease_without_export_units"
+"HRS_2018.csv","Hinds",2018,3368,60,60,0,0,0,3368,3368,0,3368,60,0,0,0
+"MRS_2016.csv","Marsden",2016,23040,240,240,0,0,0,23040,23040,0,23040,240,0,0,0
+"MRS_2017.csv","Marsden",2017,9600,120,240,0,120,0,9600,9600,0,9600,120,0,0,120
+"MRS_2018.csv","Marsden",2018,7280,127,115,12,0,24,7176,7176,0,7176,115,0,0,0

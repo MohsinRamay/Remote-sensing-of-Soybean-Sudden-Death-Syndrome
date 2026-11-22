@@ -1,0 +1,28 @@
+"site","year","unit","date","block","plot","rotation","treatment","variety","concentration","Incidence","Severity","disagreement",".source",".source_row"
+"Marsden",2016,"3606",2016-08-22,"3","36","S3",,,,0,15,"severity_positive_only","Marsden_SDS.csv",887
+"Marsden",2016,"3108",2016-08-29,"3","31","S4",,,,0,20,"severity_positive_only","Marsden_SDS.csv",1089
+"Marsden",2016,"3110",2016-08-29,"3","31","S4",,,,0,5,"severity_positive_only","Marsden_SDS.csv",1091
+"Marsden",2016,"3111",2016-08-29,"3","31","S4",,,,0,10,"severity_positive_only","Marsden_SDS.csv",1092
+"Marsden",2016,"3112",2016-08-29,"3","31","S4",,,,0,3,"severity_positive_only","Marsden_SDS.csv",1093
+"Marsden",2016,"3113",2016-08-29,"3","31","S4",,,,0,30,"severity_positive_only","Marsden_SDS.csv",1094
+"Marsden",2016,"3118",2016-08-29,"3","31","S4",,,,0,20,"severity_positive_only","Marsden_SDS.csv",1099
+"Marsden",2018,"1919",2018-08-24,"1","19","S2",,,,1.87476571428571,0,"incidence_positive_only","Marsden_SDS.csv",2943
+"Hinds",2018,"102",2018-08-06,"1","102",,"T6","Syngenta NK Soybean S24-K2",2,0.865800866,0,"incidence_positive_only","Hinds_SDS.csv",13
+"Hinds",2018,"109",2018-07-22,"1","109",,"T10","Syngenta NK Soybean S24-K2",0,0.772200772,0,"incidence_positive_only","Hinds_SDS.csv",67
+"Hinds",2018,"201",2018-07-28,"2","201",,"T9","Syngenta NK Soybean S24-K2",5,0.386100386,0,"incidence_positive_only","Hinds_SDS.csv",84
+"Hinds",2018,"205",2018-07-28,"2","205",,"T8","Syngenta NK Soybean S24-K2",4,1.207243461,0,"incidence_positive_only","Hinds_SDS.csv",116
+"Hinds",2018,"209",2018-07-22,"2","209",,"T3","Pioneer P20T79R2",4,0.751879699,0,"incidence_positive_only","Hinds_SDS.csv",147
+"Hinds",2018,"301",2018-08-06,"3","301",,"T5","Pioneer P20T79R2",0,0.460829493,0,"incidence_positive_only","Hinds_SDS.csv",165
+"Hinds",2018,"302",2018-07-22,"3","302",,"T6","Syngenta NK Soybean S24-K2",2,0.680272109,0,"incidence_positive_only","Hinds_SDS.csv",171
+"Hinds",2018,"305",2018-07-22,"3","305",,"T9","Syngenta NK Soybean S24-K2",5,0,2,"severity_positive_only","Hinds_SDS.csv",195
+"Hinds",2018,"305",2018-07-28,"3","305",,"T9","Syngenta NK Soybean S24-K2",5,0,4,"severity_positive_only","Hinds_SDS.csv",196
+"Hinds",2018,"306",2018-07-22,"3","306",,"T4","Pioneer P20T79R2",5,0.879120879,0,"incidence_positive_only","Hinds_SDS.csv",203
+"Hinds",2018,"307",2018-07-22,"3","307",,"T1","Pioneer P20T79R2",2,0.396825397,0,"incidence_positive_only","Hinds_SDS.csv",211
+"Hinds",2018,"309",2018-07-22,"3","309",,"T7","Syngenta NK Soybean S24-K2",3,0.804828974,0,"incidence_positive_only","Hinds_SDS.csv",227
+"Hinds",2018,"401",2018-07-22,"4","401",,"T3","Pioneer P20T79R2",4,0.761904762,0,"incidence_positive_only","Hinds_SDS.csv",243
+"Hinds",2018,"402",2018-07-28,"4","402",,"T6","Syngenta NK Soybean S24-K2",2,0.37593985,0,"incidence_positive_only","Hinds_SDS.csv",252
+"Hinds",2018,"403",2018-07-22,"4","403",,"T5","Pioneer P20T79R2",0,0.332225914,0,"incidence_positive_only","Hinds_SDS.csv",259
+"Hinds",2018,"405",2018-07-22,"4","405",,"T1","Pioneer P20T79R2",2,0.723327306,0,"incidence_positive_only","Hinds_SDS.csv",275
+"Hinds",2018,"608",2018-07-22,"6","608",,"T9","Syngenta NK Soybean S24-K2",5,0.391389432,0,"incidence_positive_only","Hinds_SDS.csv",459
+"Hinds",2018,"610",2018-07-28,"6","610",,"T10","Syngenta NK Soybean S24-K2",0,0.414078675,0,"incidence_positive_only","Hinds_SDS.csv",476
+"Hinds",2018,"610",2018-08-06,"6","610",,"T10","Syngenta NK Soybean S24-K2",0,0.414078675,0,"incidence_positive_only","Hinds_SDS.csv",477

@@ -6,11 +6,11 @@ The research uses functional data analysis (FDA), functional mixed models, and s
 
 ## Current status
 
-Updated November 21, 2026. Planning and preliminary audit are complete. Data reconciliation, reproducible analysis, formal FDA model fitting, uncertainty estimation, and manuscript development are pending.
+Updated November 22, 2026. The reproducible Phase 1 repository audit and targeted SDS Paper archive checks are complete. Canonical plot assignments, the handheld calibration record, and formal FDA analyses remain pending.
 
-The initial analysis identified potential metadata conflicts and inconsistent performance across seasons in a simple trajectory prediction pilot. Its results are exploratory. Publication feasibility remains under evaluation.
+Read the [audit report](audit/REPORT.md), [data dictionary](audit/DATA_DICTIONARY.md), [issue register](audit/ISSUE_REGISTER.md), and [research plan](RESEARCH_PLAN.md). Run `Rscript analysis/01_audit.R` from the repository root to regenerate the inventory, discrepancy tables and observed trajectory figures.
 
-Read [RESEARCH_PLAN.md](RESEARCH_PLAN.md) for the hypotheses, analysis sequence, data issue register, completion criteria, and dated progress log. That document is the working record for this project.
+The most consequential new finding is that the Hinds 2018 repository rating and yield values appear under different plot IDs in the field and harvest workbook lineage. The Marsden 2017 disease table also contains twice as many quadrats as the reflectance table. Archived Marsden yield records have been located for 2016–2018. The preliminary prediction pilot remains exploratory.
 
 ## Research questions
 
@@ -29,15 +29,16 @@ Each question remains in scope. The sequence follows data availability and the s
 
 ## Available field data
 
-| Site and year | Disease-linked observational units in existing CSV files | Reflectance visits | Disease-rating visits | Notes |
-|---|---|---|---|---|
-| Marsden 2016 | 240 distinct quadrat IDs | 12 | 6 | Four blocks and 12 distinct plot IDs in the joined file |
-| Marsden 2017 | 120 distinct quadrat IDs | 10 | 5 | Some reflectance metadata conflict on June 30 |
-| Marsden 2018 | 115 distinct quadrat IDs | 8 | 5 | Visit coverage varies among quadrats. Rotation labels require reconciliation |
-| Hinds 2018 | 60 distinct plot IDs | 7 | 8 | All plots eventually had positive recorded incidence. Yield is present |
-| Marsden and Hinds 2019 | Reflectance workbooks present | To inventory | Disease labels unavailable in the repository | Notebook describes very few symptomatic units |
+| Site and year | Reflectance units | Disease units | Reflectance / disease dates |
+|---|---:|---:|---:|
+| Marsden 2016 | 240 | 240 | 12 / 6 |
+| Marsden 2017 | 120 | 240 | 10 / 5 |
+| Marsden 2018 | 127, of which 115 appear in the join | 115 | 8 / 5 |
+| Hinds 2018 | 60 | 60, with linkage disputed | 7 / 8 |
+| Marsden 2019 | 240 workbook identifier pairs | No outcome file found | 8 / — |
+| Hinds 2019 | 60 | No outcome file found | 10 / — |
 
-Counts describe the files audited at commit `a9db68a6de8327c57d0f755ca8a554f7886b7d25`. They require reproduction in the audit pipeline. The 2017 file produces additional apparent groups if inconsistent plot metadata are included in the key. Counts are based on distinct quadrat IDs within year.
+Units are within-season recorded identifiers or candidate identifier pairs. See the [sampling figure](audit/figures/sampling_coverage.png) and [join counts](audit/tables/join_integrity.csv).
 
 Eight recorded bands are centered at 460, 510, 560, 610, 660, 710, 760, and 810 nm. Time is the principal functional domain. Bands will initially be represented as separate channels.
 
@@ -54,22 +55,23 @@ Treatment replication occurs at the experimental unit established by the field d
 | `images/` | Field photographs, experimental layouts, and illustrative trajectories |
 | `Remote-sensing-of-Soybean-Sudden-Death-Syndrome.Rproj` | RStudio project |
 | `RESEARCH_PLAN.md` | Living research plan and progress record |
+| `analysis/` | Reproducible R audit and optional archive checks |
+| `audit/` | Audit report, documentation, tables and figures |
 
 The earlier notebooks document the original workflow. Check their input paths, package versions, and metadata handling before execution.
 
 ## Immediate work
 
-1. Build a reproducible inventory and data dictionary from all original and derived files.
-2. Reconcile unit identifiers and treatment labels against field layouts and original records.
-3. Produce observed disease and reflectance trajectories with sampling coverage visible.
-4. Specify a core protocol for treatment curves and disease–reflectance associations.
-5. Fit design-aware longitudinal baselines and FDA models, then evaluate uncertainty and robustness.
+1. Resolve Hinds 2018 linkage against the original field and harvest crosswalk, and verify the flagged Marsden plot-year and acquisition records.
+2. Freeze a provenance-bearing unit registry and eligible analysis cohorts.
+3. Draft a Marsden 2016 within-season analysis protocol and compare design-aware longitudinal baselines with FDA on shared time support.
+4. Extend the analysis to additional cohorts as the corresponding identity and measurement issues are resolved.
 
 ## Updating this project
 
 At the end of each work session, update the phase tracker, affected question status, data issue register, and dated progress log in `RESEARCH_PLAN.md`. Link the code commit and outputs supporting each finding. Record changes in endpoints, exclusions, or model choices before presenting the associated results.
 
-Maintain source data and record corrections in a separate, reproducible transformation with the evidence used. Future analysis work will add scripts, derived data, and reports as their phases begin. The intended implementation language is R, matching the existing project.
+Maintain source data and record corrections in a separate, reproducible transformation with the evidence used. Add R scripts, derived data and reports as the next phases begin.
 
 ## Related research
 

@@ -1,6 +1,6 @@
 # Living research plan for functional analysis of SDS
 
-Version 0.1. Updated November 21, 2026.
+Version 0.2. Updated November 22, 2026.
 
 Research owner and field-design lead — Muhammad Mohsin Raza.
 
@@ -26,7 +26,7 @@ The full set of questions remains available for exploration. Select a small prim
 | 2019 disease data are unavailable | Repository notebook describes very few symptomatic units. Reflectance workbooks exist. Search original records before deciding their analytical role |
 | Pilot prediction performance varies across seasons | Exploratory Python analysis used linear levels and slopes, fixed model settings, and preliminary metadata reconciliation. A formal FDA model and inferential validation are pending |
 | Broader epidemiological FDA analyses have potential | Research hypotheses. Formal results are pending |
-| Dissertation context | Title and full abstract were read in the ISU catalog. Full dissertation text was inaccessible during the initial review |
+| Dissertation context | Full dissertation located in the SDS Paper archive. Chapters 2–4 inform rating definitions, design, yield methods and overlap with earlier work. Formal novelty review remains pending |
 
 The earlier pilot values depend on endpoint definition, metadata assumptions, exclusions, and model representation. Reproduce them in version-controlled code before using them in a report. The planning documents carry forward their qualitative findings only.
 
@@ -50,8 +50,8 @@ Q1, Q2, and Q4 form the proposed core. Q3 and Q5 support interpretation. Q6 depe
 | Phase | Status | Deliverables | Completion criterion |
 |---|---|---|---|
 | 0. Feasibility and planning | Initial review complete | Repository overview, preliminary literature map, questions, issue register | Living documents available in version control |
-| 1. Data reconstruction and quality control | Pending | File inventory, dictionary, canonical tables, correction and exclusion ledger, design diagram | Identifiers and treatment allocation verified or affected records transparently excluded. Counts reconcile |
-| 2. Temporal exploration and protocol | Pending | Observed trajectories, visit coverage, endpoint definitions, primary analysis protocol | Common support and model complexity justified by observed data |
+| 1. Data reconstruction and quality control | Repository audit complete. Field reconciliation open | [Inventory](audit/tables/inventory.csv), [dictionary and hierarchy](audit/DATA_DICTIONARY.md), [candidate registry](audit/tables/candidate_units.csv), [issue and decision register](audit/ISSUE_REGISTER.md) | Freeze field-verified identifiers, treatment allocation and eligible cohorts. Keep discrepancies and exclusions auditable |
+| 2. Temporal exploration and protocol | Observed figures generated. Protocol pending | Observed trajectories, visit coverage, endpoint definitions, primary analysis protocol | Common support and model complexity justified by observed data |
 | 3. Core epidemiological models | Pending | Q1–Q5 models, design-aware contrasts, uncertainty bands, sensitivity analyses | Findings supported by diagnostics and appropriate experimental replication |
 | 4. Yield, early warning, and transfer | Conditional | Q6–Q8 analyses and comparisons | Dependencies satisfied and validation matches each claim |
 | 5. Evidence synthesis and manuscript | Pending | Decision memo, figures, tables, manuscript, reproducibility supplement | Claims match evidence, scope is coherent, and analysis reruns from a documented environment |
@@ -80,21 +80,16 @@ Keep disease and reflectance observations at their actual dates. Construct analy
 
 ### Known issue register
 
-| ID | Observation from initial audit | Required resolution | Status |
-|---|---|---|---|
-| D01 | Six Marsden quadrat IDs carry conflicting plot labels on June 30, 2017. Five also have conflicting rotation labels | Compare original sheet, field layout, and stable within-year registry. Verify which identifier is reliable | Open |
-| D02 | Marsden 2018 rotation labels conflict with the disease table for 60 quadrats on each visit after the first reflectance date | Establish authoritative rotation-to-plot-year allocation. Record any correction with evidence | Open |
-| D03 | Hinds plot 508 has conflicting treatment and variety records on August 3, 2018, resulting in eight repeated unit-date-band keys | Inspect raw readings and plot map. Resolve unit identity before averaging or excluding observations | Open |
-| D04 | Marsden 2018 visit coverage varies. Five quadrats were explicitly excluded in the original joining code | Recover reasons for exclusions and missing visits. Quantify effects on treatment representation | Open |
-| D05 | Some incidence and severity records disagree about whether symptoms are present | Review scales, rounding, denominators, and assessment notes. Prespecify primary and sensitivity onset definitions | Open |
-| D06 | Hinds 2018 has no plots remaining incidence-negative through the last recorded assessment | Use defined near-term windows for early warning or onset timing, with suitable at-risk sets | Endpoint limitation verified |
-| D07 | Disease-linked data for 2019 are unavailable in the repository | Search original records. Assign a role supported by available labels and metadata | Open |
-| D08 | Marsden yield is absent from the inspected disease tables. Hinds yield is present, with units unresolved | Locate harvest files and verify grain yield units, moisture correction, sampled area, and join keys | Open |
-| D09 | Reflectance and disease dates differ, and onset is recorded at periodic visits | Retain actual dates. Represent onset by last-negative and first-positive intervals | Design constraint verified |
-| D10 | Severity wording in the notebook needs clarification | Recover field rating protocol, scale, and whether denominator is leaf area, canopy area, or quadrat area | Open |
-| D11 | Exact experimental hierarchy and repeated physical plots across years require confirmation | Recover randomization and plot maps. Distinguish experimental units, subsamples, and repeated observations | Open |
+The [audit issue register](audit/ISSUE_REGISTER.md) documents D01–D13, the source evidence, proposed handling, and the field records needed. The main analysis decisions are below.
 
-Unresolved records can be quarantined to permit independent analyses on verified subsets. Record the resulting scope and sample sizes. Ask the research owner for original field records after identifying the exact information still missing from the repository.
+| Scope | Current decision |
+|---|---|
+| Q1–Q2, Q5 · Disease trajectories and timing | Start with within-season Marsden 2016 and descriptive Marsden 2017–2018 disease streams. Use actual assessment dates and compare candidate onset definitions. Keep Hinds source versions separate until plot identity is resolved. |
+| Q3–Q4 · Shape and spectral associations | Start with observed support and simple longitudinal comparators. Pair Marsden 2016 on eligible IDs after the registry is frozen. Disputed acquisitions, 2019 identity semantics, and Hinds plot mapping need resolution before affected paired analyses. |
+| Q6 · Yield | Marsden harvest files now identified for 2016–2018. Verify units, crosswalks and sampling coverage. The Hinds repository harvest values require plot-level reconciliation before joining. |
+| Q7–Q8 · Prediction and transfer | Pilot unreproduced. Design eligible landmarks and validation after freezing endpoints and physical plot linkage. Treat 2019 as reflectance-only pending recovery of labeled ratings. |
+
+Keep original design assignments and observation-level metadata traceable. A reproducible candidate match remains provisional until the corresponding field evidence supports it.
 
 ## 6. Phase 2 — exploration and protocol
 
@@ -164,11 +159,11 @@ Treat these as evidence-based scope decisions. Publication value depends on biol
 
 Planned figures are the verified design and sampling coverage, observed and fitted treatment curves, contrast functions with uncertainty, supported onset/progression differences, interpretable functional modes, and disease–reflectance associations. Yield and prediction figures are conditional. Planned tables cover data provenance, issue resolution, experimental replication, model comparisons, and sensitivity results.
 
-Compare the contribution with the existing SDS papers, including the original handheld abstract and published satellite and onset–yield studies. Recover and read the full dissertation before finalizing novelty. Map data overlap, established results, and genuinely new questions in the manuscript record.
+Compare the contribution with the existing SDS papers, including the original handheld abstract and published satellite and onset–yield studies. Use the recovered dissertation chapters and source crosswalks when finalizing novelty. Map data overlap, established results, and genuinely new questions in the manuscript record.
 
 ## 10. Reproducibility and implementation
 
-Use R for the analysis, consistent with the existing project. Evaluate `mgcv`, suitable mixed-model tools, and FDA implementations such as `refund`, `fdapace`, or `r4pde` for the chosen estimands after checking current documentation. Add dependencies and an environment lockfile when analysis implementation starts.
+Use R for the analysis, consistent with the existing project. Evaluate `mgcv`, suitable mixed-model tools, and FDA implementations such as `refund`, `fdapace`, or `r4pde` for the chosen estimands after checking current documentation. The audit records the R and package versions used. Add an environment lockfile for the modeling workflow.
 
 Create numbered audit, preparation, exploration, model, and report scripts as those phases begin. Keep source inputs intact, place generated tables and figures in documented output paths, and record software versions, random seeds, model settings, and source revision. A documented command should regenerate each reported result from verified inputs. Store field-record corrections separately with their evidence and merge them reproducibly.
 
@@ -197,6 +192,14 @@ At the end of a session, update the phase tracker and issue register, then appen
 - Reviewed methodological and plant pathology literature. FDA has precedents in disease progress analysis and crop phenotyping. The novelty assessment remains specific to the biological questions and joint disease–reflectance evidence.
 - Prepared the README and this living plan. The source data and earlier analysis notebooks remain the inputs for Phase 1.
 - Next action is a version-controlled inventory and identifier reconciliation report, beginning with D01–D03 and D11.
+
+#### 2026-11-22 — Phase 1 audit and archive corroboration
+
+- Based `codex/sds-fda-phase1-audit` on the verified open draft PR #1 planning revision `aa05890b55021707da68aa0176572e7d82601260`. Repository input data remain at the audited source revision.
+- Created the [R audit](analysis/01_audit.R), [audit report](audit/REPORT.md), [candidate unit registry](audit/tables/candidate_units.csv), [sampling coverage](audit/figures/sampling_coverage.png), and detailed evidence linked from the report. Preserved all source observations and flagged unresolved records without applying corrections.
+- Cross-checked the separate SDS Paper project with a [reproducible archive script](analysis/02_check_sds_paper_sources.R). Located the full dissertation and Marsden yield files for all three seasons. Observed that the Hinds repository rating and yield values point to a different field-to-plot mapping, with 56 full trajectory and yield matches jointly pointing to the same archive plot.
+- Kept 2019 reflectance descriptive. Documented a provisional Marsden 2019 two-field identifier and the archive evidence for visual visits without plot-level ratings. Retained actual assessment dates and provisional onset bounds.
+- Next action is to resolve D12 with the dated Hinds field sheets and combine linkage, obtain the targeted Marsden crosswalks, and freeze analysis-specific data. Prepare a within-season Marsden 2016 protocol in parallel with those checks.
 
 ### Template for the next entry
 

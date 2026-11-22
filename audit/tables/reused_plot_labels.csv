@@ -1,0 +1,132 @@
+"site","year","block","plot","rotation","treatment","variety","concentration"
+"Hinds",2018,"1","101",,"T8","Syngenta NK Soybean S24-K2",4
+"Hinds",2019,"1","101",,"T8","P27A17V",4
+"Hinds",2018,"1","102",,"T6","Syngenta NK Soybean S24-K2",2
+"Hinds",2019,"1","102",,"T6","P27A17V",2
+"Hinds",2018,"1","103",,"T4","Pioneer P20T79R2",5
+"Hinds",2019,"1","103",,"T4","P23A32X",5
+"Hinds",2018,"1","104",,"T7","Syngenta NK Soybean S24-K2",3
+"Hinds",2019,"1","104",,"T7","P27A17V",3
+"Hinds",2018,"1","105",,"T9","Syngenta NK Soybean S24-K2",5
+"Hinds",2019,"1","105",,"T9","P27A17V",5
+"Hinds",2018,"1","106",,"T2","Pioneer P20T79R2",3
+"Hinds",2019,"1","106",,"T2","P23A32X",3
+"Hinds",2018,"1","107",,"T5","Pioneer P20T79R2",0
+"Hinds",2019,"1","107",,"T5","P23A32X",0
+"Hinds",2018,"1","108",,"T3","Pioneer P20T79R2",4
+"Hinds",2019,"1","108",,"T3","P23A32X",4
+"Hinds",2018,"1","109",,"T10","Syngenta NK Soybean S24-K2",0
+"Hinds",2019,"1","109",,"T10","P27A17V",0
+"Hinds",2018,"1","110",,"T1","Pioneer P20T79R2",2
+"Hinds",2019,"1","110",,"T1","P23A32X",2
+"Hinds",2018,"2","201",,"T9","Syngenta NK Soybean S24-K2",5
+"Hinds",2019,"2","201",,"T9","P27A17V",5
+"Hinds",2018,"2","202",,"T2","Pioneer P20T79R2",3
+"Hinds",2019,"2","202",,"T2","P23A32X",3
+"Hinds",2018,"2","203",,"T1","Pioneer P20T79R2",2
+"Hinds",2019,"2","203",,"T1","P23A32X",2
+"Hinds",2018,"2","204",,"T5","Pioneer P20T79R2",0
+"Hinds",2019,"2","204",,"T5","P23A32X",0
+"Hinds",2018,"2","205",,"T8","Syngenta NK Soybean S24-K2",4
+"Hinds",2019,"2","205",,"T8","P27A17V",4
+"Hinds",2018,"2","206",,"T6","Syngenta NK Soybean S24-K2",2
+"Hinds",2019,"2","206",,"T6","P27A17V",2
+"Hinds",2018,"2","207",,"T7","Syngenta NK Soybean S24-K2",3
+"Hinds",2019,"2","207",,"T7","P27A17V",3
+"Hinds",2018,"2","208",,"T4","Pioneer P20T79R2",5
+"Hinds",2019,"2","208",,"T4","P23A32X",5
+"Hinds",2018,"2","209",,"T3","Pioneer P20T79R2",4
+"Hinds",2019,"2","209",,"T3","P23A32X",4
+"Hinds",2018,"2","210",,"T10","Syngenta NK Soybean S24-K2",0
+"Hinds",2019,"2","210",,"T10","P27A17V",0
+"Hinds",2018,"3","301",,"T5","Pioneer P20T79R2",0
+"Hinds",2019,"3","301",,"T5","P23A32X",0
+"Hinds",2018,"3","302",,"T6","Syngenta NK Soybean S24-K2",2
+"Hinds",2019,"3","302",,"T6","P27A17V",2
+"Hinds",2018,"3","303",,"T3","Pioneer P20T79R2",4
+"Hinds",2019,"3","303",,"T3","P23A32X",4
+"Hinds",2018,"3","304",,"T8","Syngenta NK Soybean S24-K2",4
+"Hinds",2019,"3","304",,"T8","P27A17V",4
+"Hinds",2018,"3","305",,"T9","Syngenta NK Soybean S24-K2",5
+"Hinds",2019,"3","305",,"T9","P27A17V",5
+"Hinds",2018,"3","306",,"T4","Pioneer P20T79R2",5
+"Hinds",2019,"3","306",,"T4","P23A32X",5
+"Hinds",2018,"3","307",,"T1","Pioneer P20T79R2",2
+"Hinds",2019,"3","307",,"T1","P23A32X",2
+"Hinds",2018,"3","308",,"T10","Syngenta NK Soybean S24-K2",0
+"Hinds",2019,"3","308",,"T10","P27A17V",0
+"Hinds",2018,"3","309",,"T7","Syngenta NK Soybean S24-K2",3
+"Hinds",2019,"3","309",,"T7","P27A17V",3
+"Hinds",2018,"3","310",,"T2","Pioneer P20T79R2",3
+"Hinds",2019,"3","310",,"T2","P23A32X",3
+"Hinds",2018,"4","401",,"T3","Pioneer P20T79R2",4
+"Hinds",2019,"4","401",,"T3","P23A32X",4
+"Hinds",2018,"4","402",,"T6","Syngenta NK Soybean S24-K2",2
+"Hinds",2019,"4","402",,"T6","P27A17V",2
+"Hinds",2018,"4","403",,"T5","Pioneer P20T79R2",0
+"Hinds",2019,"4","403",,"T5","P23A32X",0
+"Hinds",2018,"4","404",,"T2","Pioneer P20T79R2",3
+"Hinds",2019,"4","404",,"T2","P23A32X",3
+"Hinds",2018,"4","405",,"T1","Pioneer P20T79R2",2
+"Hinds",2019,"4","405",,"T1","P23A32X",2
+"Hinds",2018,"4","406",,"T4","Pioneer P20T79R2",5
+"Hinds",2019,"4","406",,"T4","P23A32X",5
+"Hinds",2018,"4","407",,"T10","Syngenta NK Soybean S24-K2",0
+"Hinds",2019,"4","407",,"T10","P27A17V",0
+"Hinds",2018,"4","408",,"T8","Syngenta NK Soybean S24-K2",4
+"Hinds",2019,"4","408",,"T8","P27A17V",4
+"Hinds",2018,"4","409",,"T7","Syngenta NK Soybean S24-K2",3
+"Hinds",2019,"4","409",,"T7","P27A17V",3
+"Hinds",2018,"4","410",,"T9","Syngenta NK Soybean S24-K2",5
+"Hinds",2019,"4","410",,"T9","P27A17V",5
+"Hinds",2018,"5","501",,"T10","Syngenta NK Soybean S24-K2",0
+"Hinds",2019,"5","501",,"T10","P27A17V",0
+"Hinds",2018,"5","502",,"T2","Pioneer P20T79R2",3
+"Hinds",2019,"5","502",,"T2","P23A32X",3
+"Hinds",2018,"5","503",,"T5","Pioneer P20T79R2",0
+"Hinds",2019,"5","503",,"T5","P23A32X",0
+"Hinds",2018,"5","504",,"T8","Syngenta NK Soybean S24-K2",4
+"Hinds",2019,"5","504",,"T8","P27A17V",4
+"Hinds",2018,"5","505",,"T7","Syngenta NK Soybean S24-K2",3
+"Hinds",2019,"5","505",,"T7","P27A17V",3
+"Hinds",2018,"5","506",,"T9","Syngenta NK Soybean S24-K2",5
+"Hinds",2019,"5","506",,"T9","P27A17V",5
+"Hinds",2018,"5","507",,"T6","Syngenta NK Soybean S24-K2",2
+"Hinds",2019,"5","507",,"T6","P27A17V",2
+"Hinds",2018,"5","508",,"T4","Pioneer P20T79R2",5
+"Hinds",2018,"5","508",,"T6","Syngenta NK Soybean S24-K2",2
+"Hinds",2019,"5","508",,"T4","P23A32X",5
+"Hinds",2018,"5","509",,"T3","Pioneer P20T79R2",4
+"Hinds",2019,"5","509",,"T3","P23A32X",4
+"Hinds",2018,"5","510",,"T1","Pioneer P20T79R2",2
+"Hinds",2019,"5","510",,"T1","P23A32X",2
+"Hinds",2018,"6","601",,"T3","Pioneer P20T79R2",4
+"Hinds",2019,"6","601",,"T3","P23A32X",4
+"Hinds",2018,"6","602",,"T6","Syngenta NK Soybean S24-K2",2
+"Hinds",2019,"6","602",,"T6","P27A17V",2
+"Hinds",2018,"6","603",,"T1","Pioneer P20T79R2",2
+"Hinds",2019,"6","603",,"T1","P23A32X",2
+"Hinds",2018,"6","604",,"T5","Pioneer P20T79R2",0
+"Hinds",2019,"6","604",,"T5","P23A32X",0
+"Hinds",2018,"6","605",,"T8","Syngenta NK Soybean S24-K2",4
+"Hinds",2019,"6","605",,"T8","P27A17V",4
+"Hinds",2018,"6","606",,"T7","Syngenta NK Soybean S24-K2",3
+"Hinds",2019,"6","606",,"T7","P27A17V",3
+"Hinds",2018,"6","607",,"T4","Pioneer P20T79R2",5
+"Hinds",2019,"6","607",,"T4","P23A32X",5
+"Hinds",2018,"6","608",,"T9","Syngenta NK Soybean S24-K2",5
+"Hinds",2019,"6","608",,"T9","P27A17V",5
+"Hinds",2018,"6","609",,"T2","Pioneer P20T79R2",3
+"Hinds",2019,"6","609",,"T2","P23A32X",3
+"Hinds",2018,"6","610",,"T10","Syngenta NK Soybean S24-K2",0
+"Hinds",2019,"6","610",,"T10","P27A17V",0
+"Marsden",2016,"1","19","S2",,,
+"Marsden",2018,"1","19","S2",,,
+"Marsden",2018,"1","19","S3",,,
+"Marsden",2016,"2","27","S2",,,
+"Marsden",2018,"2","27","S2",,,
+"Marsden",2018,"2","27","S4",,,
+"Marsden",2016,"3","35","S2",,,
+"Marsden",2018,"3","35","S2",,,
+"Marsden",2016,"4","45","S2",,,
+"Marsden",2018,"4","45","S2",,,

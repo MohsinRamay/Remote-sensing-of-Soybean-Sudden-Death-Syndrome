@@ -1,0 +1,500 @@
+"site","year","stream","block","plot","rotation","treatment","variety","concentration","candidate_units"
+"Hinds",2018,"disease","1","101",,"T8","Syngenta NK Soybean S24-K2",4,1
+"Hinds",2018,"disease","1","102",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"disease","1","103",,"T4","Pioneer P20T79R2",5,1
+"Hinds",2018,"disease","1","104",,"T7","Syngenta NK Soybean S24-K2",3,1
+"Hinds",2018,"disease","1","105",,"T9","Syngenta NK Soybean S24-K2",5,1
+"Hinds",2018,"disease","1","106",,"T2","Pioneer P20T79R2",3,1
+"Hinds",2018,"disease","1","107",,"T5","Pioneer P20T79R2",0,1
+"Hinds",2018,"disease","1","108",,"T3","Pioneer P20T79R2",4,1
+"Hinds",2018,"disease","1","109",,"T10","Syngenta NK Soybean S24-K2",0,1
+"Hinds",2018,"disease","1","110",,"T1","Pioneer P20T79R2",2,1
+"Hinds",2018,"disease","2","201",,"T9","Syngenta NK Soybean S24-K2",5,1
+"Hinds",2018,"disease","2","202",,"T2","Pioneer P20T79R2",3,1
+"Hinds",2018,"disease","2","203",,"T1","Pioneer P20T79R2",2,1
+"Hinds",2018,"disease","2","204",,"T5","Pioneer P20T79R2",0,1
+"Hinds",2018,"disease","2","205",,"T8","Syngenta NK Soybean S24-K2",4,1
+"Hinds",2018,"disease","2","206",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"disease","2","207",,"T7","Syngenta NK Soybean S24-K2",3,1
+"Hinds",2018,"disease","2","208",,"T4","Pioneer P20T79R2",5,1
+"Hinds",2018,"disease","2","209",,"T3","Pioneer P20T79R2",4,1
+"Hinds",2018,"disease","2","210",,"T10","Syngenta NK Soybean S24-K2",0,1
+"Hinds",2018,"disease","3","301",,"T5","Pioneer P20T79R2",0,1
+"Hinds",2018,"disease","3","302",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"disease","3","303",,"T3","Pioneer P20T79R2",4,1
+"Hinds",2018,"disease","3","304",,"T8","Syngenta NK Soybean S24-K2",4,1
+"Hinds",2018,"disease","3","305",,"T9","Syngenta NK Soybean S24-K2",5,1
+"Hinds",2018,"disease","3","306",,"T4","Pioneer P20T79R2",5,1
+"Hinds",2018,"disease","3","307",,"T1","Pioneer P20T79R2",2,1
+"Hinds",2018,"disease","3","308",,"T10","Syngenta NK Soybean S24-K2",0,1
+"Hinds",2018,"disease","3","309",,"T7","Syngenta NK Soybean S24-K2",3,1
+"Hinds",2018,"disease","3","310",,"T2","Pioneer P20T79R2",3,1
+"Hinds",2018,"disease","4","401",,"T3","Pioneer P20T79R2",4,1
+"Hinds",2018,"disease","4","402",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"disease","4","403",,"T5","Pioneer P20T79R2",0,1
+"Hinds",2018,"disease","4","404",,"T2","Pioneer P20T79R2",3,1
+"Hinds",2018,"disease","4","405",,"T1","Pioneer P20T79R2",2,1
+"Hinds",2018,"disease","4","406",,"T4","Pioneer P20T79R2",5,1
+"Hinds",2018,"disease","4","407",,"T10","Syngenta NK Soybean S24-K2",0,1
+"Hinds",2018,"disease","4","408",,"T8","Syngenta NK Soybean S24-K2",4,1
+"Hinds",2018,"disease","4","409",,"T7","Syngenta NK Soybean S24-K2",3,1
+"Hinds",2018,"disease","4","410",,"T9","Syngenta NK Soybean S24-K2",5,1
+"Hinds",2018,"disease","5","501",,"T10","Syngenta NK Soybean S24-K2",0,1
+"Hinds",2018,"disease","5","502",,"T2","Pioneer P20T79R2",3,1
+"Hinds",2018,"disease","5","503",,"T5","Pioneer P20T79R2",0,1
+"Hinds",2018,"disease","5","504",,"T8","Syngenta NK Soybean S24-K2",4,1
+"Hinds",2018,"disease","5","505",,"T7","Syngenta NK Soybean S24-K2",3,1
+"Hinds",2018,"disease","5","506",,"T9","Syngenta NK Soybean S24-K2",5,1
+"Hinds",2018,"disease","5","507",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"disease","5","508",,"T4","Pioneer P20T79R2",5,1
+"Hinds",2018,"disease","5","509",,"T3","Pioneer P20T79R2",4,1
+"Hinds",2018,"disease","5","510",,"T1","Pioneer P20T79R2",2,1
+"Hinds",2018,"disease","6","601",,"T3","Pioneer P20T79R2",4,1
+"Hinds",2018,"disease","6","602",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"disease","6","603",,"T1","Pioneer P20T79R2",2,1
+"Hinds",2018,"disease","6","604",,"T5","Pioneer P20T79R2",0,1
+"Hinds",2018,"disease","6","605",,"T8","Syngenta NK Soybean S24-K2",4,1
+"Hinds",2018,"disease","6","606",,"T7","Syngenta NK Soybean S24-K2",3,1
+"Hinds",2018,"disease","6","607",,"T4","Pioneer P20T79R2",5,1
+"Hinds",2018,"disease","6","608",,"T9","Syngenta NK Soybean S24-K2",5,1
+"Hinds",2018,"disease","6","609",,"T2","Pioneer P20T79R2",3,1
+"Hinds",2018,"disease","6","610",,"T10","Syngenta NK Soybean S24-K2",0,1
+"Hinds",2018,"reflectance","1","101",,"T8","Syngenta NK Soybean S24-K2",4,1
+"Hinds",2018,"reflectance","1","102",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"reflectance","1","103",,"T4","Pioneer P20T79R2",5,1
+"Hinds",2018,"reflectance","1","104",,"T7","Syngenta NK Soybean S24-K2",3,1
+"Hinds",2018,"reflectance","1","105",,"T9","Syngenta NK Soybean S24-K2",5,1
+"Hinds",2018,"reflectance","1","106",,"T2","Pioneer P20T79R2",3,1
+"Hinds",2018,"reflectance","1","107",,"T5","Pioneer P20T79R2",0,1
+"Hinds",2018,"reflectance","1","108",,"T3","Pioneer P20T79R2",4,1
+"Hinds",2018,"reflectance","1","109",,"T10","Syngenta NK Soybean S24-K2",0,1
+"Hinds",2018,"reflectance","1","110",,"T1","Pioneer P20T79R2",2,1
+"Hinds",2018,"reflectance","2","201",,"T9","Syngenta NK Soybean S24-K2",5,1
+"Hinds",2018,"reflectance","2","202",,"T2","Pioneer P20T79R2",3,1
+"Hinds",2018,"reflectance","2","203",,"T1","Pioneer P20T79R2",2,1
+"Hinds",2018,"reflectance","2","204",,"T5","Pioneer P20T79R2",0,1
+"Hinds",2018,"reflectance","2","205",,"T8","Syngenta NK Soybean S24-K2",4,1
+"Hinds",2018,"reflectance","2","206",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"reflectance","2","207",,"T7","Syngenta NK Soybean S24-K2",3,1
+"Hinds",2018,"reflectance","2","208",,"T4","Pioneer P20T79R2",5,1
+"Hinds",2018,"reflectance","2","209",,"T3","Pioneer P20T79R2",4,1
+"Hinds",2018,"reflectance","2","210",,"T10","Syngenta NK Soybean S24-K2",0,1
+"Hinds",2018,"reflectance","3","301",,"T5","Pioneer P20T79R2",0,1
+"Hinds",2018,"reflectance","3","302",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"reflectance","3","303",,"T3","Pioneer P20T79R2",4,1
+"Hinds",2018,"reflectance","3","304",,"T8","Syngenta NK Soybean S24-K2",4,1
+"Hinds",2018,"reflectance","3","305",,"T9","Syngenta NK Soybean S24-K2",5,1
+"Hinds",2018,"reflectance","3","306",,"T4","Pioneer P20T79R2",5,1
+"Hinds",2018,"reflectance","3","307",,"T1","Pioneer P20T79R2",2,1
+"Hinds",2018,"reflectance","3","308",,"T10","Syngenta NK Soybean S24-K2",0,1
+"Hinds",2018,"reflectance","3","309",,"T7","Syngenta NK Soybean S24-K2",3,1
+"Hinds",2018,"reflectance","3","310",,"T2","Pioneer P20T79R2",3,1
+"Hinds",2018,"reflectance","4","401",,"T3","Pioneer P20T79R2",4,1
+"Hinds",2018,"reflectance","4","402",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"reflectance","4","403",,"T5","Pioneer P20T79R2",0,1
+"Hinds",2018,"reflectance","4","404",,"T2","Pioneer P20T79R2",3,1
+"Hinds",2018,"reflectance","4","405",,"T1","Pioneer P20T79R2",2,1
+"Hinds",2018,"reflectance","4","406",,"T4","Pioneer P20T79R2",5,1
+"Hinds",2018,"reflectance","4","407",,"T10","Syngenta NK Soybean S24-K2",0,1
+"Hinds",2018,"reflectance","4","408",,"T8","Syngenta NK Soybean S24-K2",4,1
+"Hinds",2018,"reflectance","4","409",,"T7","Syngenta NK Soybean S24-K2",3,1
+"Hinds",2018,"reflectance","4","410",,"T9","Syngenta NK Soybean S24-K2",5,1
+"Hinds",2018,"reflectance","5","501",,"T10","Syngenta NK Soybean S24-K2",0,1
+"Hinds",2018,"reflectance","5","502",,"T2","Pioneer P20T79R2",3,1
+"Hinds",2018,"reflectance","5","503",,"T5","Pioneer P20T79R2",0,1
+"Hinds",2018,"reflectance","5","504",,"T8","Syngenta NK Soybean S24-K2",4,1
+"Hinds",2018,"reflectance","5","505",,"T7","Syngenta NK Soybean S24-K2",3,1
+"Hinds",2018,"reflectance","5","506",,"T9","Syngenta NK Soybean S24-K2",5,1
+"Hinds",2018,"reflectance","5","507",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"reflectance","5","508",,"T4","Pioneer P20T79R2",5,1
+"Hinds",2018,"reflectance","5","508",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"reflectance","5","509",,"T3","Pioneer P20T79R2",4,1
+"Hinds",2018,"reflectance","5","510",,"T1","Pioneer P20T79R2",2,1
+"Hinds",2018,"reflectance","6","601",,"T3","Pioneer P20T79R2",4,1
+"Hinds",2018,"reflectance","6","602",,"T6","Syngenta NK Soybean S24-K2",2,1
+"Hinds",2018,"reflectance","6","603",,"T1","Pioneer P20T79R2",2,1
+"Hinds",2018,"reflectance","6","604",,"T5","Pioneer P20T79R2",0,1
+"Hinds",2018,"reflectance","6","605",,"T8","Syngenta NK Soybean S24-K2",4,1
+"Hinds",2018,"reflectance","6","606",,"T7","Syngenta NK Soybean S24-K2",3,1
+"Hinds",2018,"reflectance","6","607",,"T4","Pioneer P20T79R2",5,1
+"Hinds",2018,"reflectance","6","608",,"T9","Syngenta NK Soybean S24-K2",5,1
+"Hinds",2018,"reflectance","6","609",,"T2","Pioneer P20T79R2",3,1
+"Hinds",2018,"reflectance","6","610",,"T10","Syngenta NK Soybean S24-K2",0,1
+"Hinds",2019,"reflectance","1","101",,"T8","P27A17V",4,1
+"Hinds",2019,"reflectance","1","102",,"T6","P27A17V",2,1
+"Hinds",2019,"reflectance","1","103",,"T4","P23A32X",5,1
+"Hinds",2019,"reflectance","1","104",,"T7","P27A17V",3,1
+"Hinds",2019,"reflectance","1","105",,"T9","P27A17V",5,1
+"Hinds",2019,"reflectance","1","106",,"T2","P23A32X",3,1
+"Hinds",2019,"reflectance","1","107",,"T5","P23A32X",0,1
+"Hinds",2019,"reflectance","1","108",,"T3","P23A32X",4,1
+"Hinds",2019,"reflectance","1","109",,"T10","P27A17V",0,1
+"Hinds",2019,"reflectance","1","110",,"T1","P23A32X",2,1
+"Hinds",2019,"reflectance","2","201",,"T9","P27A17V",5,1
+"Hinds",2019,"reflectance","2","202",,"T2","P23A32X",3,1
+"Hinds",2019,"reflectance","2","203",,"T1","P23A32X",2,1
+"Hinds",2019,"reflectance","2","204",,"T5","P23A32X",0,1
+"Hinds",2019,"reflectance","2","205",,"T8","P27A17V",4,1
+"Hinds",2019,"reflectance","2","206",,"T6","P27A17V",2,1
+"Hinds",2019,"reflectance","2","207",,"T7","P27A17V",3,1
+"Hinds",2019,"reflectance","2","208",,"T4","P23A32X",5,1
+"Hinds",2019,"reflectance","2","209",,"T3","P23A32X",4,1
+"Hinds",2019,"reflectance","2","210",,"T10","P27A17V",0,1
+"Hinds",2019,"reflectance","3","301",,"T5","P23A32X",0,1
+"Hinds",2019,"reflectance","3","302",,"T6","P27A17V",2,1
+"Hinds",2019,"reflectance","3","303",,"T3","P23A32X",4,1
+"Hinds",2019,"reflectance","3","304",,"T8","P27A17V",4,1
+"Hinds",2019,"reflectance","3","305",,"T9","P27A17V",5,1
+"Hinds",2019,"reflectance","3","306",,"T4","P23A32X",5,1
+"Hinds",2019,"reflectance","3","307",,"T1","P23A32X",2,1
+"Hinds",2019,"reflectance","3","308",,"T10","P27A17V",0,1
+"Hinds",2019,"reflectance","3","309",,"T7","P27A17V",3,1
+"Hinds",2019,"reflectance","3","310",,"T2","P23A32X",3,1
+"Hinds",2019,"reflectance","4","401",,"T3","P23A32X",4,1
+"Hinds",2019,"reflectance","4","402",,"T6","P27A17V",2,1
+"Hinds",2019,"reflectance","4","403",,"T5","P23A32X",0,1
+"Hinds",2019,"reflectance","4","404",,"T2","P23A32X",3,1
+"Hinds",2019,"reflectance","4","405",,"T1","P23A32X",2,1
+"Hinds",2019,"reflectance","4","406",,"T4","P23A32X",5,1
+"Hinds",2019,"reflectance","4","407",,"T10","P27A17V",0,1
+"Hinds",2019,"reflectance","4","408",,"T8","P27A17V",4,1
+"Hinds",2019,"reflectance","4","409",,"T7","P27A17V",3,1
+"Hinds",2019,"reflectance","4","410",,"T9","P27A17V",5,1
+"Hinds",2019,"reflectance","5","501",,"T10","P27A17V",0,1
+"Hinds",2019,"reflectance","5","502",,"T2","P23A32X",3,1
+"Hinds",2019,"reflectance","5","503",,"T5","P23A32X",0,1
+"Hinds",2019,"reflectance","5","504",,"T8","P27A17V",4,1
+"Hinds",2019,"reflectance","5","505",,"T7","P27A17V",3,1
+"Hinds",2019,"reflectance","5","506",,"T9","P27A17V",5,1
+"Hinds",2019,"reflectance","5","507",,"T6","P27A17V",2,1
+"Hinds",2019,"reflectance","5","508",,"T4","P23A32X",5,1
+"Hinds",2019,"reflectance","5","509",,"T3","P23A32X",4,1
+"Hinds",2019,"reflectance","5","510",,"T1","P23A32X",2,1
+"Hinds",2019,"reflectance","6","601",,"T3","P23A32X",4,1
+"Hinds",2019,"reflectance","6","602",,"T6","P27A17V",2,1
+"Hinds",2019,"reflectance","6","603",,"T1","P23A32X",2,1
+"Hinds",2019,"reflectance","6","604",,"T5","P23A32X",0,1
+"Hinds",2019,"reflectance","6","605",,"T8","P27A17V",4,1
+"Hinds",2019,"reflectance","6","606",,"T7","P27A17V",3,1
+"Hinds",2019,"reflectance","6","607",,"T4","P23A32X",5,1
+"Hinds",2019,"reflectance","6","608",,"T9","P27A17V",5,1
+"Hinds",2019,"reflectance","6","609",,"T2","P23A32X",3,1
+"Hinds",2019,"reflectance","6","610",,"T10","P27A17V",0,1
+"Marsden",2016,"disease","1","12","S4",,,,20
+"Marsden",2016,"disease","1","15","S3",,,,20
+"Marsden",2016,"disease","1","19","S2",,,,20
+"Marsden",2016,"disease","2","21","S4",,,,20
+"Marsden",2016,"disease","2","26","S3",,,,20
+"Marsden",2016,"disease","2","27","S2",,,,20
+"Marsden",2016,"disease","3","31","S4",,,,20
+"Marsden",2016,"disease","3","35","S2",,,,20
+"Marsden",2016,"disease","3","36","S3",,,,20
+"Marsden",2016,"disease","4","43","S4",,,,20
+"Marsden",2016,"disease","4","45","S2",,,,20
+"Marsden",2016,"disease","4","47","S3",,,,20
+"Marsden",2016,"reflectance","1","12","S4",,,,20
+"Marsden",2016,"reflectance","1","15","S3",,,,20
+"Marsden",2016,"reflectance","1","19","S2",,,,20
+"Marsden",2016,"reflectance","2","21","S4",,,,20
+"Marsden",2016,"reflectance","2","26","S3",,,,20
+"Marsden",2016,"reflectance","2","27","S2",,,,20
+"Marsden",2016,"reflectance","3","31","S4",,,,20
+"Marsden",2016,"reflectance","3","35","S2",,,,20
+"Marsden",2016,"reflectance","3","36","S3",,,,20
+"Marsden",2016,"reflectance","4","43","S4",,,,20
+"Marsden",2016,"reflectance","4","45","S2",,,,20
+"Marsden",2016,"reflectance","4","47","S3",,,,20
+"Marsden",2017,"disease","1","13","S2",,,,20
+"Marsden",2017,"disease","1","16","S3",,,,20
+"Marsden",2017,"disease","1","17","S4",,,,20
+"Marsden",2017,"disease","2","22","S4",,,,20
+"Marsden",2017,"disease","2","24","S2",,,,20
+"Marsden",2017,"disease","2","25","S3",,,,20
+"Marsden",2017,"disease","3","33","S3",,,,20
+"Marsden",2017,"disease","3","34","S2",,,,20
+"Marsden",2017,"disease","3","39","S4",,,,20
+"Marsden",2017,"disease","4","41","S4",,,,20
+"Marsden",2017,"disease","4","42","S3",,,,20
+"Marsden",2017,"disease","4","44","S2",,,,20
+"Marsden",2017,"reflectance","1","13","S2",,,,11
+"Marsden",2017,"reflectance","1","16","S3",,,,11
+"Marsden",2017,"reflectance","1","17","S4",,,,11
+"Marsden",2017,"reflectance","2","22","S4",,,,11
+"Marsden",2017,"reflectance","2","24","S2",,,,11
+"Marsden",2017,"reflectance","2","25","S3",,,,11
+"Marsden",2017,"reflectance","3","33","S3",,,,10
+"Marsden",2017,"reflectance","3","34","S2",,,,10
+"Marsden",2017,"reflectance","3","39","S4",,,,10
+"Marsden",2017,"reflectance","4","41","S4",,,,10
+"Marsden",2017,"reflectance","4","42","S3",,,,10
+"Marsden",2017,"reflectance","4","44","S2",,,,10
+"Marsden",2018,"disease","1","11","S3",,,,10
+"Marsden",2018,"disease","1","14","S4",,,,10
+"Marsden",2018,"disease","1","19","S2",,,,10
+"Marsden",2018,"disease","2","23","S3",,,,10
+"Marsden",2018,"disease","2","27","S2",,,,10
+"Marsden",2018,"disease","2","29","S4",,,,10
+"Marsden",2018,"disease","3","32","S4",,,,10
+"Marsden",2018,"disease","3","35","S2",,,,10
+"Marsden",2018,"disease","3","38","S3",,,,10
+"Marsden",2018,"disease","4","45","S2",,,,10
+"Marsden",2018,"disease","4","48","S3",,,,8
+"Marsden",2018,"disease","4","49","S4",,,,7
+"Marsden",2018,"reflectance","1","11","S3",,,,10
+"Marsden",2018,"reflectance","1","11","S4",,,,10
+"Marsden",2018,"reflectance","1","14","S2",,,,10
+"Marsden",2018,"reflectance","1","14","S4",,,,10
+"Marsden",2018,"reflectance","1","19","S2",,,,10
+"Marsden",2018,"reflectance","1","19","S3",,,,10
+"Marsden",2018,"reflectance","2","23","S2",,,,10
+"Marsden",2018,"reflectance","2","23","S3",,,,10
+"Marsden",2018,"reflectance","2","27","S2",,,,10
+"Marsden",2018,"reflectance","2","27","S4",,,,10
+"Marsden",2018,"reflectance","2","29","S3",,,,10
+"Marsden",2018,"reflectance","2","29","S4",,,,10
+"Marsden",2018,"reflectance","3","32","S4",,,,10
+"Marsden",2018,"reflectance","3","35","S2",,,,10
+"Marsden",2018,"reflectance","3","38","S3",,,,10
+"Marsden",2018,"reflectance","4","45","S2",,,,10
+"Marsden",2018,"reflectance","4","48","S3",,,,10
+"Marsden",2018,"reflectance","4","49","S4",,,,17
+"Marsden",2019,"reflectance","1","100","S3",,,,1
+"Marsden",2019,"reflectance","1","101","S2",,,,1
+"Marsden",2019,"reflectance","1","102","S2",,,,1
+"Marsden",2019,"reflectance","1","103","S2",,,,1
+"Marsden",2019,"reflectance","1","104","S2",,,,1
+"Marsden",2019,"reflectance","1","105","S2",,,,1
+"Marsden",2019,"reflectance","1","106","S2",,,,1
+"Marsden",2019,"reflectance","1","107","S2",,,,1
+"Marsden",2019,"reflectance","1","108","S2",,,,1
+"Marsden",2019,"reflectance","1","109","S2",,,,1
+"Marsden",2019,"reflectance","1","110","S2",,,,1
+"Marsden",2019,"reflectance","1","111","S2",,,,1
+"Marsden",2019,"reflectance","1","112","S2",,,,1
+"Marsden",2019,"reflectance","1","113","S2",,,,1
+"Marsden",2019,"reflectance","1","114","S2",,,,1
+"Marsden",2019,"reflectance","1","115","S2",,,,1
+"Marsden",2019,"reflectance","1","116","S2",,,,1
+"Marsden",2019,"reflectance","1","117","S2",,,,1
+"Marsden",2019,"reflectance","1","118","S2",,,,1
+"Marsden",2019,"reflectance","1","119","S2",,,,1
+"Marsden",2019,"reflectance","1","120","S2",,,,1
+"Marsden",2019,"reflectance","1","61","S4",,,,1
+"Marsden",2019,"reflectance","1","62","S4",,,,1
+"Marsden",2019,"reflectance","1","63","S4",,,,1
+"Marsden",2019,"reflectance","1","64","S4",,,,1
+"Marsden",2019,"reflectance","1","65","S4",,,,1
+"Marsden",2019,"reflectance","1","66","S4",,,,1
+"Marsden",2019,"reflectance","1","67","S4",,,,1
+"Marsden",2019,"reflectance","1","68","S4",,,,1
+"Marsden",2019,"reflectance","1","69","S4",,,,1
+"Marsden",2019,"reflectance","1","70","S4",,,,1
+"Marsden",2019,"reflectance","1","71","S4",,,,1
+"Marsden",2019,"reflectance","1","72","S4",,,,1
+"Marsden",2019,"reflectance","1","73","S4",,,,1
+"Marsden",2019,"reflectance","1","74","S4",,,,1
+"Marsden",2019,"reflectance","1","75","S4",,,,1
+"Marsden",2019,"reflectance","1","76","S4",,,,1
+"Marsden",2019,"reflectance","1","77","S4",,,,1
+"Marsden",2019,"reflectance","1","78","S4",,,,1
+"Marsden",2019,"reflectance","1","79","S4",,,,1
+"Marsden",2019,"reflectance","1","80","S4",,,,1
+"Marsden",2019,"reflectance","1","81","S3",,,,1
+"Marsden",2019,"reflectance","1","82","S3",,,,1
+"Marsden",2019,"reflectance","1","83","S3",,,,1
+"Marsden",2019,"reflectance","1","84","S3",,,,1
+"Marsden",2019,"reflectance","1","85","S3",,,,1
+"Marsden",2019,"reflectance","1","86","S3",,,,1
+"Marsden",2019,"reflectance","1","87","S3",,,,1
+"Marsden",2019,"reflectance","1","88","S3",,,,1
+"Marsden",2019,"reflectance","1","89","S3",,,,1
+"Marsden",2019,"reflectance","1","90","S3",,,,1
+"Marsden",2019,"reflectance","1","91","S3",,,,1
+"Marsden",2019,"reflectance","1","92","S3",,,,1
+"Marsden",2019,"reflectance","1","93","S3",,,,1
+"Marsden",2019,"reflectance","1","94","S3",,,,1
+"Marsden",2019,"reflectance","1","95","S3",,,,1
+"Marsden",2019,"reflectance","1","96","S3",,,,1
+"Marsden",2019,"reflectance","1","97","S3",,,,1
+"Marsden",2019,"reflectance","1","98","S3",,,,1
+"Marsden",2019,"reflectance","1","99","S3",,,,1
+"Marsden",2019,"reflectance","2","1","S4",,,,1
+"Marsden",2019,"reflectance","2","10","S4",,,,1
+"Marsden",2019,"reflectance","2","11","S4",,,,1
+"Marsden",2019,"reflectance","2","12","S4",,,,1
+"Marsden",2019,"reflectance","2","13","S4",,,,1
+"Marsden",2019,"reflectance","2","14","S4",,,,1
+"Marsden",2019,"reflectance","2","15","S4",,,,1
+"Marsden",2019,"reflectance","2","16","S4",,,,1
+"Marsden",2019,"reflectance","2","17","S4",,,,1
+"Marsden",2019,"reflectance","2","18","S4",,,,1
+"Marsden",2019,"reflectance","2","19","S4",,,,1
+"Marsden",2019,"reflectance","2","2","S4",,,,1
+"Marsden",2019,"reflectance","2","20","S4",,,,1
+"Marsden",2019,"reflectance","2","21","S3",,,,1
+"Marsden",2019,"reflectance","2","22","S3",,,,1
+"Marsden",2019,"reflectance","2","23","S3",,,,1
+"Marsden",2019,"reflectance","2","24","S3",,,,1
+"Marsden",2019,"reflectance","2","25","S3",,,,1
+"Marsden",2019,"reflectance","2","26","S3",,,,1
+"Marsden",2019,"reflectance","2","27","S3",,,,1
+"Marsden",2019,"reflectance","2","28","S3",,,,1
+"Marsden",2019,"reflectance","2","29","S3",,,,1
+"Marsden",2019,"reflectance","2","3","S4",,,,1
+"Marsden",2019,"reflectance","2","30","S3",,,,1
+"Marsden",2019,"reflectance","2","31","S3",,,,1
+"Marsden",2019,"reflectance","2","32","S3",,,,1
+"Marsden",2019,"reflectance","2","33","S3",,,,1
+"Marsden",2019,"reflectance","2","34","S3",,,,1
+"Marsden",2019,"reflectance","2","35","S3",,,,1
+"Marsden",2019,"reflectance","2","36","S3",,,,1
+"Marsden",2019,"reflectance","2","37","S3",,,,1
+"Marsden",2019,"reflectance","2","38","S3",,,,1
+"Marsden",2019,"reflectance","2","39","S3",,,,1
+"Marsden",2019,"reflectance","2","4","S4",,,,1
+"Marsden",2019,"reflectance","2","40","S3",,,,1
+"Marsden",2019,"reflectance","2","41","S2",,,,1
+"Marsden",2019,"reflectance","2","42","S2",,,,1
+"Marsden",2019,"reflectance","2","43","S2",,,,1
+"Marsden",2019,"reflectance","2","44","S2",,,,1
+"Marsden",2019,"reflectance","2","45","S2",,,,1
+"Marsden",2019,"reflectance","2","46","S2",,,,1
+"Marsden",2019,"reflectance","2","47","S2",,,,1
+"Marsden",2019,"reflectance","2","48","S2",,,,1
+"Marsden",2019,"reflectance","2","49","S2",,,,1
+"Marsden",2019,"reflectance","2","5","S4",,,,1
+"Marsden",2019,"reflectance","2","50","S2",,,,1
+"Marsden",2019,"reflectance","2","51","S2",,,,1
+"Marsden",2019,"reflectance","2","52","S2",,,,1
+"Marsden",2019,"reflectance","2","53","S2",,,,1
+"Marsden",2019,"reflectance","2","54","S2",,,,1
+"Marsden",2019,"reflectance","2","55","S2",,,,1
+"Marsden",2019,"reflectance","2","56","S2",,,,1
+"Marsden",2019,"reflectance","2","57","S2",,,,1
+"Marsden",2019,"reflectance","2","58","S2",,,,1
+"Marsden",2019,"reflectance","2","59","S2",,,,1
+"Marsden",2019,"reflectance","2","6","S4",,,,1
+"Marsden",2019,"reflectance","2","60","S2",,,,1
+"Marsden",2019,"reflectance","2","7","S4",,,,1
+"Marsden",2019,"reflectance","2","8","S4",,,,1
+"Marsden",2019,"reflectance","2","9","S4",,,,1
+"Marsden",2019,"reflectance","3","121","S2",,,,1
+"Marsden",2019,"reflectance","3","122","S2",,,,1
+"Marsden",2019,"reflectance","3","123","S2",,,,1
+"Marsden",2019,"reflectance","3","124","S2",,,,1
+"Marsden",2019,"reflectance","3","125","S2",,,,1
+"Marsden",2019,"reflectance","3","126","S2",,,,1
+"Marsden",2019,"reflectance","3","127","S2",,,,1
+"Marsden",2019,"reflectance","3","128","S2",,,,1
+"Marsden",2019,"reflectance","3","129","S2",,,,1
+"Marsden",2019,"reflectance","3","130","S2",,,,1
+"Marsden",2019,"reflectance","3","131","S2",,,,1
+"Marsden",2019,"reflectance","3","132","S2",,,,1
+"Marsden",2019,"reflectance","3","133","S2",,,,1
+"Marsden",2019,"reflectance","3","134","S2",,,,1
+"Marsden",2019,"reflectance","3","135","S2",,,,1
+"Marsden",2019,"reflectance","3","136","S2",,,,1
+"Marsden",2019,"reflectance","3","137","S2",,,,1
+"Marsden",2019,"reflectance","3","138","S2",,,,1
+"Marsden",2019,"reflectance","3","139","S2",,,,1
+"Marsden",2019,"reflectance","3","140","S2",,,,1
+"Marsden",2019,"reflectance","3","141","S3",,,,1
+"Marsden",2019,"reflectance","3","142","S3",,,,1
+"Marsden",2019,"reflectance","3","143","S3",,,,1
+"Marsden",2019,"reflectance","3","144","S3",,,,1
+"Marsden",2019,"reflectance","3","145","S3",,,,1
+"Marsden",2019,"reflectance","3","146","S3",,,,1
+"Marsden",2019,"reflectance","3","147","S3",,,,1
+"Marsden",2019,"reflectance","3","148","S3",,,,1
+"Marsden",2019,"reflectance","3","149","S3",,,,1
+"Marsden",2019,"reflectance","3","150","S3",,,,1
+"Marsden",2019,"reflectance","3","151","S3",,,,1
+"Marsden",2019,"reflectance","3","152","S3",,,,1
+"Marsden",2019,"reflectance","3","153","S3",,,,1
+"Marsden",2019,"reflectance","3","154","S3",,,,1
+"Marsden",2019,"reflectance","3","155","S3",,,,1
+"Marsden",2019,"reflectance","3","156","S3",,,,1
+"Marsden",2019,"reflectance","3","157","S3",,,,1
+"Marsden",2019,"reflectance","3","158","S3",,,,1
+"Marsden",2019,"reflectance","3","159","S3",,,,1
+"Marsden",2019,"reflectance","3","160","S3",,,,1
+"Marsden",2019,"reflectance","3","161","S4",,,,1
+"Marsden",2019,"reflectance","3","162","S4",,,,1
+"Marsden",2019,"reflectance","3","163","S4",,,,1
+"Marsden",2019,"reflectance","3","164","S4",,,,1
+"Marsden",2019,"reflectance","3","165","S4",,,,1
+"Marsden",2019,"reflectance","3","166","S4",,,,1
+"Marsden",2019,"reflectance","3","167","S4",,,,1
+"Marsden",2019,"reflectance","3","168","S4",,,,1
+"Marsden",2019,"reflectance","3","169","S4",,,,1
+"Marsden",2019,"reflectance","3","170","S4",,,,1
+"Marsden",2019,"reflectance","3","171","S4",,,,1
+"Marsden",2019,"reflectance","3","172","S4",,,,1
+"Marsden",2019,"reflectance","3","173","S4",,,,1
+"Marsden",2019,"reflectance","3","174","S4",,,,1
+"Marsden",2019,"reflectance","3","175","S4",,,,1
+"Marsden",2019,"reflectance","3","176","S4",,,,1
+"Marsden",2019,"reflectance","3","177","S4",,,,1
+"Marsden",2019,"reflectance","3","178","S4",,,,1
+"Marsden",2019,"reflectance","3","179","S4",,,,1
+"Marsden",2019,"reflectance","3","180","S4",,,,1
+"Marsden",2019,"reflectance","4","181","S2",,,,1
+"Marsden",2019,"reflectance","4","182","S2",,,,1
+"Marsden",2019,"reflectance","4","183","S2",,,,1
+"Marsden",2019,"reflectance","4","184","S2",,,,1
+"Marsden",2019,"reflectance","4","185","S2",,,,1
+"Marsden",2019,"reflectance","4","186","S2",,,,1
+"Marsden",2019,"reflectance","4","187","S2",,,,1
+"Marsden",2019,"reflectance","4","188","S2",,,,1
+"Marsden",2019,"reflectance","4","189","S2",,,,1
+"Marsden",2019,"reflectance","4","190","S2",,,,1
+"Marsden",2019,"reflectance","4","191","S2",,,,1
+"Marsden",2019,"reflectance","4","192","S2",,,,1
+"Marsden",2019,"reflectance","4","193","S2",,,,1
+"Marsden",2019,"reflectance","4","194","S2",,,,1
+"Marsden",2019,"reflectance","4","195","S2",,,,1
+"Marsden",2019,"reflectance","4","196","S2",,,,1
+"Marsden",2019,"reflectance","4","197","S2",,,,1
+"Marsden",2019,"reflectance","4","198","S2",,,,1
+"Marsden",2019,"reflectance","4","199","S2",,,,1
+"Marsden",2019,"reflectance","4","200","S2",,,,1
+"Marsden",2019,"reflectance","4","201","S4",,,,1
+"Marsden",2019,"reflectance","4","202","S4",,,,1
+"Marsden",2019,"reflectance","4","203","S4",,,,1
+"Marsden",2019,"reflectance","4","204","S4",,,,1
+"Marsden",2019,"reflectance","4","205","S4",,,,1
+"Marsden",2019,"reflectance","4","206","S4",,,,1
+"Marsden",2019,"reflectance","4","207","S4",,,,1
+"Marsden",2019,"reflectance","4","208","S4",,,,1
+"Marsden",2019,"reflectance","4","209","S4",,,,1
+"Marsden",2019,"reflectance","4","210","S4",,,,1
+"Marsden",2019,"reflectance","4","211","S4",,,,1
+"Marsden",2019,"reflectance","4","212","S4",,,,1
+"Marsden",2019,"reflectance","4","213","S4",,,,1
+"Marsden",2019,"reflectance","4","214","S4",,,,1
+"Marsden",2019,"reflectance","4","215","S4",,,,1
+"Marsden",2019,"reflectance","4","216","S4",,,,1
+"Marsden",2019,"reflectance","4","217","S4",,,,1
+"Marsden",2019,"reflectance","4","218","S4",,,,1
+"Marsden",2019,"reflectance","4","219","S4",,,,1
+"Marsden",2019,"reflectance","4","220","S4",,,,1
+"Marsden",2019,"reflectance","4","221","S3",,,,1
+"Marsden",2019,"reflectance","4","222","S3",,,,1
+"Marsden",2019,"reflectance","4","223","S3",,,,1
+"Marsden",2019,"reflectance","4","224","S3",,,,1
+"Marsden",2019,"reflectance","4","225","S3",,,,1
+"Marsden",2019,"reflectance","4","226","S3",,,,1
+"Marsden",2019,"reflectance","4","227","S3",,,,1
+"Marsden",2019,"reflectance","4","228","S3",,,,1
+"Marsden",2019,"reflectance","4","229","S3",,,,1
+"Marsden",2019,"reflectance","4","230","S3",,,,1
+"Marsden",2019,"reflectance","4","231","S3",,,,1
+"Marsden",2019,"reflectance","4","232","S3",,,,1
+"Marsden",2019,"reflectance","4","233","S3",,,,1
+"Marsden",2019,"reflectance","4","234","S3",,,,1
+"Marsden",2019,"reflectance","4","235","S3",,,,1
+"Marsden",2019,"reflectance","4","236","S3",,,,1
+"Marsden",2019,"reflectance","4","237","S3",,,,1
+"Marsden",2019,"reflectance","4","238","S3",,,,1
+"Marsden",2019,"reflectance","4","239","S3",,,,1
+"Marsden",2019,"reflectance","4","240","S3",,,,1

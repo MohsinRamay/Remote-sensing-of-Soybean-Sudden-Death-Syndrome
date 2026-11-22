@@ -1,0 +1,9 @@
+"date","plots","plots_with_plant_counts","comparable_incidence","incidence_reproduced","field_long_matches","field_long_incidence_differences","field_long_severity_differences"
+2018-07-13,60,60,60,60,60,0,1
+2018-07-22,60,60,60,60,60,0,1
+2018-07-28,60,60,60,60,60,1,1
+2018-08-06,60,60,60,60,60,2,0
+2018-08-13,60,60,60,59,60,0,0
+2018-08-18,60,29,29,29,60,0,0
+2018-08-25,60,0,0,0,60,0,0
+2018-09-01,60,0,0,0,60,0,0

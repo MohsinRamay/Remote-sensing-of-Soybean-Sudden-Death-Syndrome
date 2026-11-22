@@ -1,0 +1,208 @@
+"file","sheet","column_index","variable","imported_type","missing","present","distinct_present","numeric_min","numeric_max"
+"data/Hinds RFL 2018.csv",,1,"DATE","character",0,840,7,,
+"data/Hinds RFL 2018.csv",,2,"Variety","integer",0,840,2,1,2
+"data/Hinds RFL 2018.csv",,3,"Treatment","character",0,840,10,,
+"data/Hinds RFL 2018.csv",,4,"Conc","integer",0,840,5,0,5
+"data/Hinds RFL 2018.csv",,5,"Block","integer",0,840,6,1,6
+"data/Hinds RFL 2018.csv",,6,"Plot","integer",0,840,60,101,610
+"data/Hinds RFL 2018.csv",,7,"Reading","integer",0,840,120,1011,6102
+"data/Hinds RFL 2018.csv",,8,"W460","numeric",0,840,244,1.23,5.31
+"data/Hinds RFL 2018.csv",,9,"W510","numeric",0,840,288,1.68,6.78
+"data/Hinds RFL 2018.csv",,10,"W560","numeric",0,840,364,3.23,8.74
+"data/Hinds RFL 2018.csv",,11,"W610","numeric",0,840,358,2.34,8.91
+"data/Hinds RFL 2018.csv",,12,"W660","numeric",0,840,337,1.64,8.66
+"data/Hinds RFL 2018.csv",,13,"W710","numeric",0,840,462,7.23,15.41
+"data/Hinds RFL 2018.csv",,14,"W760","numeric",0,840,711,20.38,50.3
+"data/Hinds RFL 2018.csv",,15,"W810","numeric",0,840,725,24.98,57.21
+"data/Hinds RFL 2018.xlsx","Sheet1",1,"DATE","character",0,840,7,,
+"data/Hinds RFL 2018.xlsx","Sheet1",2,"Variety","numeric",0,840,2,1,2
+"data/Hinds RFL 2018.xlsx","Sheet1",3,"Treatment","character",0,840,10,,
+"data/Hinds RFL 2018.xlsx","Sheet1",4,"Conc","numeric",0,840,5,0,5
+"data/Hinds RFL 2018.xlsx","Sheet1",5,"Block","numeric",0,840,6,1,6
+"data/Hinds RFL 2018.xlsx","Sheet1",6,"Plot","numeric",0,840,71,101,610
+"data/Hinds RFL 2018.xlsx","Sheet1",7,"Reading","numeric",0,840,120,1011,6102
+"data/Hinds RFL 2018.xlsx","Sheet1",8,"W460","numeric",0,840,244,1.23,5.31
+"data/Hinds RFL 2018.xlsx","Sheet1",9,"W510","numeric",0,840,288,1.68,6.78
+"data/Hinds RFL 2018.xlsx","Sheet1",10,"W560","numeric",0,840,364,3.23,8.74
+"data/Hinds RFL 2018.xlsx","Sheet1",11,"W610","numeric",0,840,358,2.34,8.91
+"data/Hinds RFL 2018.xlsx","Sheet1",12,"W660","numeric",0,840,337,1.64,8.66
+"data/Hinds RFL 2018.xlsx","Sheet1",13,"W710","numeric",0,840,462,7.23,15.41
+"data/Hinds RFL 2018.xlsx","Sheet1",14,"W760","numeric",0,840,711,20.38,50.3
+"data/Hinds RFL 2018.xlsx","Sheet1",15,"W810","numeric",0,840,725,24.98,57.21
+"data/Hinds RFL 2019.xlsx","Sheet 1",1,"DATE","POSIXct/POSIXt",0,4800,10,,
+"data/Hinds RFL 2019.xlsx","Sheet 1",2,"Block","numeric",0,4800,6,1,6
+"data/Hinds RFL 2019.xlsx","Sheet 1",3,"Plot","numeric",0,4800,60,101,610
+"data/Hinds RFL 2019.xlsx","Sheet 1",4,"Treatment","character",0,4800,10,,
+"data/Hinds RFL 2019.xlsx","Sheet 1",5,"Variety","character",0,4800,2,,
+"data/Hinds RFL 2019.xlsx","Sheet 1",6,"Concentration","numeric",0,4800,5,0,5
+"data/Hinds RFL 2019.xlsx","Sheet 1",7,"Wavelength","numeric",0,4800,8,460,810
+"data/Hinds RFL 2019.xlsx","Sheet 1",8,"Reflectance","numeric",0,4800,2701,1.63,109.3
+"data/Hinds_RFL.csv",,1,"","integer",0,3368,3368,1,3368
+"data/Hinds_RFL.csv",,2,"DATE","character",0,3368,7,,
+"data/Hinds_RFL.csv",,3,"Block","integer",0,3368,6,1,6
+"data/Hinds_RFL.csv",,4,"Plot","integer",0,3368,60,101,610
+"data/Hinds_RFL.csv",,5,"Treatment","character",0,3368,10,,
+"data/Hinds_RFL.csv",,6,"Variety","character",0,3368,2,,
+"data/Hinds_RFL.csv",,7,"Concentration","integer",0,3368,5,0,5
+"data/Hinds_RFL.csv",,8,"Wavelength","integer",0,3368,8,460,810
+"data/Hinds_RFL.csv",,9,"Reflectance","numeric",0,3368,2020,1.265,56.13
+"data/Hinds_SDS.csv",,1,"Doy","character",0,480,8,,
+"data/Hinds_SDS.csv",,2,"Block","integer",0,480,6,1,6
+"data/Hinds_SDS.csv",,3,"Plot","integer",0,480,60,101,610
+"data/Hinds_SDS.csv",,4,"Treatment","character",0,480,10,,
+"data/Hinds_SDS.csv",,5,"Variety","integer",0,480,2,1,2
+"data/Hinds_SDS.csv",,6,"Concentration","integer",0,480,5,0,5
+"data/Hinds_SDS.csv",,7,"Incidence","numeric",0,480,199,0,98
+"data/Hinds_SDS.csv",,8,"Severity","numeric",0,480,44,0,99
+"data/Hinds_SDS.csv",,9,"Yield","numeric",0,480,60,45.56499408,62.98985431
+"data/HRS_2018.csv",,1,"","integer",0,3368,3368,1,3368
+"data/HRS_2018.csv",,2,"DATE","character",0,3368,7,,
+"data/HRS_2018.csv",,3,"Block","integer",0,3368,6,1,6
+"data/HRS_2018.csv",,4,"Plot","integer",0,3368,60,101,610
+"data/HRS_2018.csv",,5,"Treatment","character",0,3368,10,,
+"data/HRS_2018.csv",,6,"Variety","character",0,3368,2,,
+"data/HRS_2018.csv",,7,"Concentration","integer",0,3368,5,0,5
+"data/HRS_2018.csv",,8,"Wavelength","integer",0,3368,8,460,810
+"data/HRS_2018.csv",,9,"Reflectance","numeric",0,3368,2020,1.265,56.13
+"data/HRS_2018.csv",,10,"Yield","numeric",0,3368,60,45.56499408,62.98985431
+"data/HRS_2018.csv",,11,"2018-07-13_Incidence","numeric",0,3368,7,0,1.020408163
+"data/HRS_2018.csv",,12,"2018-07-13_Severity","numeric",0,3368,2,0,0.5
+"data/HRS_2018.csv",,13,"2018-07-22_Incidence","numeric",0,3368,21,0,3.03030303
+"data/HRS_2018.csv",,14,"2018-07-22_Severity","integer",0,3368,3,0,2
+"data/HRS_2018.csv",,15,"2018-07-28_Incidence","numeric",0,3368,36,0,6.493506494
+"data/HRS_2018.csv",,16,"2018-07-28_Severity","numeric",0,3368,7,0,5
+"data/HRS_2018.csv",,17,"2018-08-06_Incidence","numeric",0,3368,44,0,8.225108225
+"data/HRS_2018.csv",,18,"2018-08-06_Severity","numeric",0,3368,8,0,8
+"data/HRS_2018.csv",,19,"2018-08-13_Incidence","numeric",0,3368,60,3.047619048,40
+"data/HRS_2018.csv",,20,"2018-08-13_Severity","integer",0,3368,17,1,45
+"data/HRS_2018.csv",,21,"2018-08-18_Incidence","numeric",0,3368,39,10.52631579,65
+"data/HRS_2018.csv",,22,"2018-08-18_Severity","integer",0,3368,16,3,70
+"data/HRS_2018.csv",,23,"2018-08-25_Incidence","integer",0,3368,24,45,92
+"data/HRS_2018.csv",,24,"2018-08-25_Severity","integer",0,3368,17,10,85
+"data/HRS_2018.csv",,25,"2018-09-01_Incidence","integer",0,3368,17,58,98
+"data/HRS_2018.csv",,26,"2018-09-01_Severity","integer",0,3368,22,40,99
+"data/Marsden RFL 2016.xlsx","Sheet 1",1,"DATE","POSIXct/POSIXt",0,23040,12,,
+"data/Marsden RFL 2016.xlsx","Sheet 1",2,"Block","numeric",0,23040,4,1,4
+"data/Marsden RFL 2016.xlsx","Sheet 1",3,"Plot","numeric",0,23040,12,12,47
+"data/Marsden RFL 2016.xlsx","Sheet 1",4,"Rotation","character",0,23040,3,,
+"data/Marsden RFL 2016.xlsx","Sheet 1",5,"Quadrat","numeric",0,23040,240,1201,4720
+"data/Marsden RFL 2016.xlsx","Sheet 1",6,"Wavelength","numeric",0,23040,8,460,810
+"data/Marsden RFL 2016.xlsx","Sheet 1",7,"Reflectance","numeric",0,23040,7333,1.36,124.86
+"data/Marsden RFL 2017.xlsx","Sheet 1",1,"DATE","POSIXct/POSIXt",0,9600,10,,
+"data/Marsden RFL 2017.xlsx","Sheet 1",2,"Block","character",0,9600,4,,
+"data/Marsden RFL 2017.xlsx","Sheet 1",3,"Plot","character",0,9600,12,,
+"data/Marsden RFL 2017.xlsx","Sheet 1",4,"Rotation","character",0,9600,3,,
+"data/Marsden RFL 2017.xlsx","Sheet 1",5,"Quadrat","character",0,9600,120,,
+"data/Marsden RFL 2017.xlsx","Sheet 1",6,"Wavelength","numeric",0,9600,8,460,810
+"data/Marsden RFL 2017.xlsx","Sheet 1",7,"Reflectance","numeric",0,9600,3199,1.23,62.3
+"data/Marsden RFL 2018.csv",,1,"DATE","character",0,2050,8,,
+"data/Marsden RFL 2018.csv",,2,"Block","integer",0,2050,4,1,4
+"data/Marsden RFL 2018.csv",,3,"Plot","integer",0,2050,12,11,49
+"data/Marsden RFL 2018.csv",,4,"Rotation","character",0,2050,3,,
+"data/Marsden RFL 2018.csv",,5,"Quadrat","integer",0,2050,127,1101,4920
+"data/Marsden RFL 2018.csv",,6,"Reading","integer",0,2050,255,11013,49204
+"data/Marsden RFL 2018.csv",,7,"W460","numeric",0,2050,425,1.64,8.19
+"data/Marsden RFL 2018.csv",,8,"W510","numeric",0,2050,495,2.08,10
+"data/Marsden RFL 2018.csv",,9,"W560","numeric",0,2050,539,3.66,11.99
+"data/Marsden RFL 2018.csv",,10,"W610","numeric",0,2050,677,2.36,13.74
+"data/Marsden RFL 2018.csv",,11,"W660","numeric",0,2050,658,1.79,15.54
+"data/Marsden RFL 2018.csv",,12,"W710","numeric",0,2050,726,6.1,21.48
+"data/Marsden RFL 2018.csv",,13,"W760","numeric",0,2050,1425,7.12,52.66
+"data/Marsden RFL 2018.csv",,14,"W810","numeric",0,2050,1540,8.37,59.95
+"data/Marsden RFL 2018.csv",,15,"","logical",2050,0,0,,
+"data/Marsden RFL 2018.xlsx","Sheet1",1,"DATE","character",0,2050,8,,
+"data/Marsden RFL 2018.xlsx","Sheet1",2,"Block","numeric",0,2050,4,1,4
+"data/Marsden RFL 2018.xlsx","Sheet1",3,"Plot","numeric",0,2050,12,11,49
+"data/Marsden RFL 2018.xlsx","Sheet1",4,"Rotation","character",0,2050,3,,
+"data/Marsden RFL 2018.xlsx","Sheet1",5,"Quadrat","numeric",0,2050,127,1101,4920
+"data/Marsden RFL 2018.xlsx","Sheet1",6,"Reading","numeric",0,2050,255,11013,49204
+"data/Marsden RFL 2018.xlsx","Sheet1",7,"W460","numeric",0,2050,425,1.64,8.19
+"data/Marsden RFL 2018.xlsx","Sheet1",8,"W510","numeric",0,2050,495,2.08,10
+"data/Marsden RFL 2018.xlsx","Sheet1",9,"W560","numeric",0,2050,539,3.66,11.99
+"data/Marsden RFL 2018.xlsx","Sheet1",10,"W610","numeric",0,2050,677,2.36,13.74
+"data/Marsden RFL 2018.xlsx","Sheet1",11,"W660","numeric",0,2050,658,1.79,15.54
+"data/Marsden RFL 2018.xlsx","Sheet1",12,"W710","numeric",0,2050,726,6.1,21.48
+"data/Marsden RFL 2018.xlsx","Sheet1",13,"W760","numeric",0,2050,1425,7.12,52.66
+"data/Marsden RFL 2018.xlsx","Sheet1",14,"W810","numeric",0,2050,1540,8.37,59.95
+"data/Marsden RFL 2019.xlsx","Sheet 1",1,"DATE","POSIXct/POSIXt",0,15360,8,,
+"data/Marsden RFL 2019.xlsx","Sheet 1",2,"Block","character",0,15360,4,,
+"data/Marsden RFL 2019.xlsx","Sheet 1",3,"Plot","character",0,15360,240,,
+"data/Marsden RFL 2019.xlsx","Sheet 1",4,"Rotation","character",0,15360,3,,
+"data/Marsden RFL 2019.xlsx","Sheet 1",5,"Quadrat","character",0,15360,120,,
+"data/Marsden RFL 2019.xlsx","Sheet 1",6,"Wavelength","numeric",0,15360,8,460,810
+"data/Marsden RFL 2019.xlsx","Sheet 1",7,"Reflectance","numeric",0,15360,3663,1.64,126.44
+"data/Marsden_RFL.csv",,1,"","integer",0,39920,39920,1,39920
+"data/Marsden_RFL.csv",,2,"DATE","character",0,39920,30,,
+"data/Marsden_RFL.csv",,3,"Block","integer",0,39920,4,1,4
+"data/Marsden_RFL.csv",,4,"Plot","integer",0,39920,32,11,49
+"data/Marsden_RFL.csv",,5,"Rotation","character",0,39920,3,,
+"data/Marsden_RFL.csv",,6,"Quadrat","integer",0,39920,447,1101,4920
+"data/Marsden_RFL.csv",,7,"Wavelength","integer",0,39920,8,460,810
+"data/Marsden_RFL.csv",,8,"Reflectance","numeric",0,39920,9053,1.23,124.86
+"data/Marsden_SDS.csv",,1,"ID","character",0,3215,3,,
+"data/Marsden_SDS.csv",,2,"Date","character",0,3215,16,,
+"data/Marsden_SDS.csv",,3,"Block","integer",0,3215,4,1,4
+"data/Marsden_SDS.csv",,4,"Plot","integer",0,3215,32,11,49
+"data/Marsden_SDS.csv",,5,"Rotation","character",0,3215,3,,
+"data/Marsden_SDS.csv",,6,"Quadrat","integer",0,3215,555,1101,4920
+"data/Marsden_SDS.csv",,7,"Severity","numeric",0,3215,56,0,100
+"data/Marsden_SDS.csv",,8,"Incidence","numeric",0,3215,317,0,100
+"data/MRS_2016.csv",,1,"","integer",0,23040,23040,1,23040
+"data/MRS_2016.csv",,2,"DATE","character",0,23040,12,,
+"data/MRS_2016.csv",,3,"Block","integer",0,23040,4,1,4
+"data/MRS_2016.csv",,4,"Plot","integer",0,23040,12,12,47
+"data/MRS_2016.csv",,5,"Rotation","character",0,23040,3,,
+"data/MRS_2016.csv",,6,"Quadrat","integer",0,23040,240,1201,4720
+"data/MRS_2016.csv",,7,"Wavelength","integer",0,23040,8,460,810
+"data/MRS_2016.csv",,8,"Reflectance","numeric",0,23040,7333,1.36,124.86
+"data/MRS_2016.csv",,9,"ID","character",0,23040,1,,
+"data/MRS_2016.csv",,10,"2016-07-27_Incidence","numeric",0,23040,4,0,1.875
+"data/MRS_2016.csv",,11,"2016-07-27_Severity","integer",0,23040,4,0,5
+"data/MRS_2016.csv",,12,"2016-08-05_Incidence","numeric",0,23040,8,0,11.875
+"data/MRS_2016.csv",,13,"2016-08-05_Severity","integer",0,23040,7,0,20
+"data/MRS_2016.csv",,14,"2016-08-15_Incidence","numeric",0,23040,30,0,75
+"data/MRS_2016.csv",,15,"2016-08-15_Severity","integer",0,23040,13,0,30
+"data/MRS_2016.csv",,16,"2016-08-22_Incidence","numeric",0,23040,27,0,100
+"data/MRS_2016.csv",,17,"2016-08-22_Severity","integer",0,23040,13,0,70
+"data/MRS_2016.csv",,18,"2016-08-29_Incidence","numeric",0,23040,41,0,100
+"data/MRS_2016.csv",,19,"2016-08-29_Severity","integer",0,23040,21,0,95
+"data/MRS_2016.csv",,20,"2016-09-06_Incidence","numeric",0,23040,62,0,100
+"data/MRS_2016.csv",,21,"2016-09-06_Severity","integer",0,23040,34,0,100
+"data/MRS_2017.csv",,1,"","integer",0,9600,9600,1,9600
+"data/MRS_2017.csv",,2,"DATE","character",0,9600,10,,
+"data/MRS_2017.csv",,3,"Block","integer",0,9600,4,1,4
+"data/MRS_2017.csv",,4,"Plot","integer",0,9600,12,13,44
+"data/MRS_2017.csv",,5,"Rotation","character",0,9600,3,,
+"data/MRS_2017.csv",,6,"Quadrat","integer",0,9600,120,1311,4410
+"data/MRS_2017.csv",,7,"Wavelength","integer",0,9600,8,460,810
+"data/MRS_2017.csv",,8,"Reflectance","numeric",0,9600,3199,1.23,62.3
+"data/MRS_2017.csv",,9,"ID","character",0,9600,1,,
+"data/MRS_2017.csv",,10,"2017-08-17_Incidence","numeric",0,9600,2,0,0.625
+"data/MRS_2017.csv",,11,"2017-08-17_Severity","integer",0,9600,2,0,5
+"data/MRS_2017.csv",,12,"2017-08-24_Incidence","numeric",0,9600,18,0,16.875
+"data/MRS_2017.csv",,13,"2017-08-24_Severity","integer",0,9600,8,0,25
+"data/MRS_2017.csv",,14,"2017-08-31_Incidence","numeric",0,9600,20,0,25
+"data/MRS_2017.csv",,15,"2017-08-31_Severity","integer",0,9600,9,0,30
+"data/MRS_2017.csv",,16,"2017-09-09_Incidence","numeric",0,9600,16,0,50
+"data/MRS_2017.csv",,17,"2017-09-09_Severity","integer",0,9600,12,0,50
+"data/MRS_2017.csv",,18,"2017-09-13_Incidence","numeric",0,9600,16,0,50
+"data/MRS_2017.csv",,19,"2017-09-13_Severity","integer",0,9600,13,0,50
+"data/MRS_2018.csv",,1,"","integer",0,7176,7176,1,7176
+"data/MRS_2018.csv",,2,"DATE","character",0,7176,8,,
+"data/MRS_2018.csv",,3,"Block","integer",0,7176,4,1,4
+"data/MRS_2018.csv",,4,"Plot","integer",0,7176,12,11,49
+"data/MRS_2018.csv",,5,"Rotation","character",0,7176,3,,
+"data/MRS_2018.csv",,6,"Quadrat","integer",0,7176,115,1101,4920
+"data/MRS_2018.csv",,7,"Wavelength","integer",0,7176,8,460,810
+"data/MRS_2018.csv",,8,"Reflectance","numeric",0,7176,3454,1.67,59.915
+"data/MRS_2018.csv",,9,"ID","character",0,7176,1,,
+"data/MRS_2018.csv",,10,"2018-08-17_Incidence","numeric",0,7176,5,0,3.3939724137931
+"data/MRS_2018.csv",,11,"2018-08-17_Severity","integer",0,7176,3,0,3
+"data/MRS_2018.csv",,12,"2018-08-24_Incidence","numeric",0,7176,79,0,25.3257824561403
+"data/MRS_2018.csv",,13,"2018-08-24_Severity","numeric",0,7176,9,0,5
+"data/MRS_2018.csv",,14,"2018-08-31_Incidence","numeric",0,7176,125,0,60
+"data/MRS_2018.csv",,15,"2018-08-31_Severity","numeric",0,7176,17,0,30
+"data/MRS_2018.csv",,16,"2018-09-07_Incidence","numeric",0,7176,149,0,85
+"data/MRS_2018.csv",,17,"2018-09-07_Severity","numeric",0,7176,23,0,60
+"data/MRS_2018.csv",,18,"2018-09-14_Incidence","numeric",0,7176,166,0,95
+"data/MRS_2018.csv",,19,"2018-09-14_Severity","integer",0,7176,31,0,90
