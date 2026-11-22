@@ -1,0 +1,9 @@
+# Marsden disease–reflectance comparison across seasons
+
+Extend the [2016 protocol](../phase3/PROTOCOL.md) to 2017 and 2018. Fit 660 nm and 810 nm separately by year. Retain the latest preceding or same-day acquisition within four calendar days. Use the archived rotation and plot corrections on the derived reflectance records, and verify the corrected metadata against the long disease table. Keep unmatched observations in the coverage accounting.
+
+Use the same pooled, plot-by-visit and plot-by-visit plus quadrat specifications as in 2016, with one slope per block and equal block weights. The primary model uses all eligible observations. In an incomplete panel, recover partial slopes by projection onto the actual fixed-effects design. Compare to a complete-quadrat panel where observations are missing. Use four-block descriptive t intervals. The comparison is observational and each season uses its own sampled quadrats, crop stages and date pairs. The same-calendar-day rule leaves the order of the field measurements within that day unknown.
+
+Repeat the retrospective bracketing interpolation check using at most seven days on either side of an assessment, on exactly the same quadrat-visit records as its preceding-spectrum counterpart. Report which bracketing pairs use a later acquisition. Drop the latest eligible assessment as a sensitivity check if at least two assessments remain for quadrat fixed effects. Also compare the latest two eligible assessments in every season to examine whether using the same count of visits improves agreement. The two-visit windows can cover different epidemic stages. This check is descriptive.
+
+Assess recurrence by the directions and sizes of the season-specific adjusted slopes and their sensitivity to alignment and date support. Leave seasons separate because they share a site, sample different quadrats and have different epidemic and acquisition windows. This comparison provides no test of advance warning.

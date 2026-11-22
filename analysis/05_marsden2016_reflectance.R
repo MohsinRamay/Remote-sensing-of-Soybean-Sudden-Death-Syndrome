@@ -4,6 +4,7 @@ suppressPackageStartupMessages({
   library(dplyr)
   library(ggplot2)
 })
+source("analysis/marsden_q4_methods.R")
 args <- commandArgs(trailingOnly = TRUE)
 stopifnot(length(args) <= 2L)
 out <- if (length(args)) args[[1]] else "results/phase3"
@@ -22,17 +23,7 @@ spectra <- read.csv(file.path(prepared, "local", "marsden2016_reflectance.csv"))
 stopifnot(!anyNA(disease), !anyNA(spectra), !anyDuplicated(disease[c("unit_id", "assessment")]),
           !anyDuplicated(spectra[c("unit_id", "acquisition", "wavelength_nm")]))
 
-acquisitions <- sort(unique(spectra$acquisition))
-assessments <- sort(unique(disease$assessment))
-pairs <- tibble(assessment = assessments) |>
-  rowwise() |>
-  mutate(previous = last(acquisitions[acquisitions <= assessment], default = as.Date(NA)),
-         following = first(acquisitions[acquisitions >= assessment], default = as.Date(NA)),
-         previous_days = as.integer(assessment - previous),
-         following_days = as.integer(following - assessment)) |>
-  ungroup() |>
-  mutate(use_preceding = coalesce(previous_days <= 4L, FALSE),
-         use_interpolation = coalesce(previous_days <= 7L & following_days <= 7L, FALSE))
+pairs <- marsden_date_support(disease, spectra)
 save_csv(pairs, "marsden2016_date_support.csv")
 same_dates <- filter(pairs, use_preceding, use_interpolation)
 prior <- disease |>
@@ -57,39 +48,6 @@ check_panel <- function(data, expected_dates) {
 check_panel(prior, sum(pairs$use_preceding))
 check_panel(interpolated, nrow(same_dates))
 
-slope <- function(x, y) sum(x * y) / sum(x^2)
-fit_block_slopes <- function(data) {
-  # With the same quadrats at each visit within a plot, first centering on
-  # plot-by-visit and then quadrat gives the joint fixed-effect residuals.
-  adjusted <- data |>
-    group_by(wavelength_nm, plot_id, assessment) |>
-    mutate(severity_plot = severity_10pp - mean(severity_10pp),
-           reflectance_plot = reflectance - mean(reflectance)) |>
-    group_by(wavelength_nm, unit_id) |>
-    mutate(severity_within = severity_plot - mean(severity_plot),
-           reflectance_within = reflectance_plot - mean(reflectance_plot)) |>
-    ungroup()
-  adjusted |>
-    group_by(wavelength_nm, block) |>
-    summarise(quadrat_visits = n(), assessments = n_distinct(assessment),
-              pooled = slope(severity_10pp - mean(severity_10pp), reflectance - mean(reflectance)),
-              plot_visit = slope(severity_plot, reflectance_plot),
-              quadrat_plot_visit = slope(severity_within, reflectance_within), .groups = "drop") |>
-    tidyr::pivot_longer(c(pooled, plot_visit, quadrat_plot_visit),
-                        names_to = "specification", values_to = "slope_pp") |>
-    arrange(wavelength_nm, specification, block)
-}
-summarize_blocks <- function(slopes) {
-  stopifnot(all(is.finite(slopes$slope_pp)))
-  slopes |>
-    group_by(wavelength_nm, specification) |>
-    summarise(blocks = n(), quadrat_visits = sum(quadrat_visits),
-              estimate_pp = mean(slope_pp),
-              margin = qt(0.975, df = blocks - 1) * sd(slope_pp) / sqrt(blocks),
-              minimum_block_pp = min(slope_pp), maximum_block_pp = max(slope_pp),
-              lower_pp = estimate_pp - margin, upper_pp = estimate_pp + margin, .groups = "drop") |>
-    select(-margin)
-}
 block_slopes <- fit_block_slopes(prior)
 estimates <- summarize_blocks(block_slopes)
 save_csv(block_slopes, "marsden2016_reflectance_block_slopes.csv")
