@@ -1,0 +1,21 @@
+# Marsden 2016 exploratory protocol
+
+## Cohort and estimand
+
+Use the six recorded disease assessment dates from July 27 through September 6, 2016. The primary outcome for this phase is the recorded percentage of quadrat area with foliar symptoms. Weight the 20 quadrats equally within each main plot, then weight the four independent block replicates equally within each cropping system. Use incidence and observed symptom onset as supporting descriptions. Keep the actual disease and reflectance dates in separate tables.
+
+The target is the mean severity trajectory for each cropping system over the observed 41-day window in this trial. Rotation contrasts refer to the assigned cropping systems, which encompass rotation and fertility practices. Keep the whole main-plot trajectory together for inference. The archival design identifies a subplot weed-management factor. The repository does not assign ratings to those subplots, so the baseline estimates plot-level cropping-system differences averaged over the sampled quadrats. The comparison is exploratory and uses a season chosen for coverage and source agreement. [Marsden experiment design](https://doi.org/10.1094/PDIS-11-16-1660-RE)
+
+## Longitudinal comparator and inference
+
+Fit separate cropping-system means at each observed visit, with block-by-visit adjustment. In the complete balanced design, the fitted marginal means equal the four block-weighted observed plot means. Estimate pairwise differences within blocks. Show pointwise 95% paired t intervals with three degrees of freedom as descriptive precision summaries.
+
+Use an omnibus statistic that integrates squared cropping-system deviations from the grand mean at the six dates using trapezoidal weights, then divides by the window length. Enumerate all 1,296 within-block assignments of the three cropping-system labels to the three complete soybean plot profiles per block. The permutation tail area includes ties. Interpret it conditionally on exchangeability of the three observed soybean-phase labels within each block under the sharp null. The original assignment record and the conditioning on active soybean plots need confirmation before using this as a confirmatory randomization test. The statistic detects any curve difference, including an overall level difference. [Randomized complete block design permutations](https://doi.org/10.1111/j.1467-9866.2006.00557.x)
+
+Compare the visit-factor model with a low-rank natural cubic spline with three basis columns plus an intercept for each system on the observed domain. Evaluate both at the measured dates by leaving one entire block out and using the three training blocks to estimate population means. Compare RMSE and report out-of-scale predictions as a diagnostic. This comparison probes whether smoothing helps over the observed dates within this trial. It provides no seasonal validation or estimate of precision between dates.
+
+Summarize final severity and trapezoidal AUDPC at plot level. Report paired within-block differences with pointwise intervals. Give severity-based first-positive symptom bounds with last-negative visit and first-positive visit where observed. Treat first-visit positives as left-censored and units that stay negative as right-censored. Compare with incidence-based bounds. Plot the fraction of quadrats that have shown symptoms at least once by each recorded visit, and summarize subsequent observed severity descriptively. This phase leaves formal timing versus progression, yield, and reflectance association models for later.
+
+## Hinds source preparation
+
+Use the archive's dated `SDS Hinds.xlsx` long sheet for candidate plot severity, the field-entry worksheet as a severity sensitivity source, the experiment sheet for design, and the sequence-verified combine workbook for yield. Retain both severity values and identify disagreements. Keep the two flagged August 3 reflectance acquisitions separate from eligible paired spectra. Incidence and its denominator remain outside the modeling cohort until their assignment is resolved. Individual records rebuilt from the SDS Paper archive stay in the ignored local output directory. Record source fingerprints, unit and date keys, and eligibility in the prepared outputs.

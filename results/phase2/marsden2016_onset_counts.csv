@@ -1,0 +1,15 @@
+"rotation","definition","censoring","n"
+"S2","incidence","interval",69
+"S2","incidence","left",11
+"S2","severity","interval",69
+"S2","severity","left",11
+"S3","incidence","interval",64
+"S3","incidence","left",1
+"S3","incidence","right",15
+"S3","severity","interval",64
+"S3","severity","left",1
+"S3","severity","right",15
+"S4","incidence","interval",48
+"S4","incidence","right",32
+"S4","severity","interval",48
+"S4","severity","right",32

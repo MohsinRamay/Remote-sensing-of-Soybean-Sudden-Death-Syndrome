@@ -1,6 +1,6 @@
 # Living research plan for functional analysis of SDS
 
-Version 0.2. Updated November 22, 2026.
+Version 0.3. Updated November 22, 2026.
 
 Research owner and field-design lead — Muhammad Mohsin Raza.
 
@@ -39,7 +39,7 @@ The earlier pilot values depend on endpoint definition, metadata assumptions, ex
 | Q3 | What epidemic phenotypes recur? Estimate leading functional modes and assess whether curves with similar AUDPC have distinct timing or shape | Low-rank FPCA and cautious clustering, compared with final severity, AUDPC, onset, and simple progression summaries | Components and clusters require stability checks. Largest variance may reflect year or treatment |
 | Q4 | How are disease and canopy trajectories associated? Estimate time-varying or low-rank joint associations, within treatment and year | Begin with concurrent smooth associations, then multivariate FDA or joint functional models. Compare with simple longitudinal regression | Seasonal development, senescence, measurement timing, and calibration can create shared trends |
 | Q5 | How do incidence and severity trajectories correspond? Estimate their joint modes and time-varying association | Joint curve analysis, compared with assessment-specific association and AUDPC correlations | Verify rating denominators and scales. Their ratio has no assumed biological interpretation |
-| Q6 | Which aspects of disease history are associated with yield? Estimate a regularized temporal association with final yield | Scalar-on-function regression, compared with treatment plus final severity, AUDPC, and onset | Availability of Marsden yield is unresolved. Hinds has 60 plots. Timing effects may be weakly identifiable |
+| Q6 | Which aspects of disease history are associated with yield? Estimate a regularized temporal association with final yield | Scalar-on-function regression, compared with treatment plus final severity, AUDPC, and onset | Marsden harvest records are located and linkage review is pending. Hinds has 60 source-keyed plot yields. Timing effects may be weakly identifiable |
 | Q7 | Do partial reflectance trajectories improve early warning? Estimate risk of first positive foliar rating within a defined future window among eligible symptom-free units | Low-rank functional regression, compared with treatment alone, latest spectrum, and simple trajectory summaries | Use information available at prediction time. Account for interval-censored onset and limited pre-onset visits |
 | Q8 | Which effects persist across environments? Estimate treatment-by-season trajectory differences and assess feature stability or transfer | Year-specific contrasts and interaction models. Hold out years or sites for predictive claims | Three Marsden seasons and one disease-labeled Hinds season limit broad environmental generalization |
 
@@ -51,8 +51,8 @@ Q1, Q2, and Q4 form the proposed core. Q3 and Q5 support interpretation. Q6 depe
 |---|---|---|---|
 | 0. Feasibility and planning | Initial review complete | Repository overview, preliminary literature map, questions, issue register | Living documents available in version control |
 | 1. Data reconstruction and quality control | Repository audit complete. Field reconciliation open | [Inventory](audit/tables/inventory.csv), [dictionary and hierarchy](audit/DATA_DICTIONARY.md), [candidate registry](audit/tables/candidate_units.csv), [issue and decision register](audit/ISSUE_REGISTER.md) | Freeze field-verified identifiers, treatment allocation and eligible cohorts. Keep discrepancies and exclusions auditable |
-| 2. Temporal exploration and protocol | Observed figures generated. Protocol pending | Observed trajectories, visit coverage, endpoint definitions, primary analysis protocol | Common support and model complexity justified by observed data |
-| 3. Core epidemiological models | Pending | Q1–Q5 models, design-aware contrasts, uncertainty bands, sensitivity analyses | Findings supported by diagnostics and appropriate experimental replication |
+| 2. Temporal exploration and protocol | Marsden 2016 exploratory protocol and Hinds source preparation complete | [Protocol](results/phase2/PROTOCOL.md), [cohort and baseline report](results/phase2/REPORT.md) | Common support and model complexity justified by observed data |
+| 3. Core epidemiological models | First Marsden 2016 comparator fitted. Core inference pending | Q1–Q5 models, design-aware contrasts, uncertainty bands, sensitivity analyses | Findings supported by diagnostics and appropriate experimental replication |
 | 4. Yield, early warning, and transfer | Conditional | Q6–Q8 analyses and comparisons | Dependencies satisfied and validation matches each claim |
 | 5. Evidence synthesis and manuscript | Pending | Decision memo, figures, tables, manuscript, reproducibility supplement | Claims match evidence, scope is coherent, and analysis reruns from a documented environment |
 
@@ -201,6 +201,13 @@ At the end of a session, update the phase tracker and issue register, then appen
 - Kept 2019 reflectance descriptive. Verified 120 Marsden 2019 quadrats with two readings each and determined that the Hinds 2019 GIS sheet duplicates 2018 ratings. Retained actual assessment dates and provisional onset bounds.
 - Followed up in the archive on the original layout and linkage. The 2017 tag map corroborates all six intended assignments, the phase diagram corroborates all 12 soybean plot rotations in 2018, and the Hinds combine sequence reproduces all 60 harvest plot keys. The original logger resolves the six Marsden spectra with one acquisition tag typo, and gives a candidate sequential pairing for Hinds 507/508. The archived radiometer draft and logger headers document CROPSCAN MSR87 and percent reflectance. See [audit evidence](audit/REPORT.md).
 - Next action is to build the provenance-bearing registry, prepare the original-source Hinds severity cohort, and draft the Marsden 2016 within-season protocol. Check the remaining unresolved acquisition identities and rating or denominator differences.
+
+#### 2026-11-22 — phase 2 cohorts and Marsden 2016 baseline
+
+- Rebuilt the [Marsden 2016 and Hinds 2018 cohorts](analysis/03_prepare_phase2.R) using input fingerprints and source-specific keys. Hinds has 60 sequence-verified harvest records and 480 dated severities. Three severity ratings differ across archived versions. Twenty-four band rows from the two disputed August 3 acquisitions are flagged. Archive-derived records stay local.
+- Wrote the [exploratory protocol](results/phase2/PROTOCOL.md) and fitted the visit-factor baseline and spline comparison at the main-plot level. The four-block paired S2 minus S3 difference was 33.0 percentage points at the final assessment. The conditional curve and AUDPC tests had the same tail area. Leave-one-block-out RMSE was essentially unchanged by smoothing, which generated small negative early predictions. Retain the visit-factor baseline for this cohort.
+- Used last-negative and first-positive bounds for recorded onset, with incidence as a sensitivity definition. The timing descriptions are exploratory. Read the [baseline report](results/phase2/REPORT.md) for the differences, held-out metrics and remaining uncertainties.
+- Next analysis is a Marsden 2016 disease–reflectance association protocol using the separate dates, followed by severity-version sensitivity checks at Hinds and extension of the Marsden cohort.
 
 ### Template for the next entry
 
