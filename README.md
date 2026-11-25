@@ -6,7 +6,7 @@ The research uses functional data analysis (FDA), functional mixed models, and s
 
 ## Current status
 
-Updated November 22, 2026. The Phase 1 audit, archive checks, and exploratory Marsden 2016 longitudinal and disease–reflectance analyses are complete. The Hinds severity-version sensitivity, Marsden disease-only comparison across 2016–2018, and Marsden latest-spectrum early-warning comparison are complete. The Marsden slides corroborate the 2017–2018 main-plot labels, and the Hinds combine sequence verifies the archived harvest keys. Remaining work includes acquisition-level checks and formal FDA analyses.
+Updated November 22, 2026. The Phase 1 audit, archive checks, and exploratory Marsden 2016 longitudinal and disease–reflectance analyses are complete. The Hinds severity-version sensitivity, Marsden disease-only comparison across 2016–2018, and Marsden latest-spectrum early-warning comparison are complete. The Marsden slides corroborate the 2017–2018 main-plot labels, and the Hinds combine sequence verifies the archived harvest keys. The Q1–Q8 exploration and cross-season checks are complete for the available cohorts. The [comprehensive report](output/pdf/soybean-sds-research-exploration.pdf) and [report source](results/exploration/REPORT.md) document the results and the evidence gaps before manuscript decisions.
 
 Read the [Marsden latest-spectrum comparison](results/early_warning/LATEST_SPECTRUM.md), [Marsden early-warning eligibility and baseline](results/early_warning/REPORT.md), [Marsden disease trajectories and timing comparison](results/marsden_disease/REPORT.md), [Hinds severity-version comparison](results/hinds_severity/REPORT.md), [2016–2018 disease–reflectance comparison](results/phase3_seasons/REPORT.md), [Marsden 2016 disease–reflectance results](results/phase3/REPORT.md), [Phase 2 results](results/phase2/REPORT.md), [analysis protocol](results/phase2/PROTOCOL.md), [audit report](audit/REPORT.md), [data dictionary](audit/DATA_DICTIONARY.md), [issue register](audit/ISSUE_REGISTER.md), and [research plan](RESEARCH_PLAN.md). Run `Rscript analysis/01_audit.R` from the repository root to regenerate the inventory, discrepancy tables and observed trajectory figures.
 
@@ -63,13 +63,13 @@ Treatment replication occurs at the experimental unit established by the field d
 | `results/hinds_severity/` | Hinds 2018 paired severity, first detection and treatment-contrast sensitivity |
 | `results/marsden_disease/` | Marsden 2016–2018 severity, first detection and progression descriptions |
 | `results/early_warning/` | Marsden scouting eligibility and held-out baseline and latest-spectrum comparisons |
+| `results/exploration/` | Closing Q1–Q8 protocols, aggregate tables, figures and report source |
 
 The earlier notebooks document the original workflow. Check their input paths, package versions, and metadata handling before execution.
 
-## Immediate work
+## Research review
 
-1. Assess whether pre-landmark level and slope summaries have enough coverage for a matched comparison against the latest-spectrum and non-spectral models. Retain whole-block folds and report mixed-plot-visit discrimination.
-2. Continue Hinds incidence denominator reconciliation and retain severity versions for early timing comparisons.
+Review the comprehensive report to select the manuscript direction and focused hypothesis family. The available analyses support annual disease trajectories and a season-specific early-warning result. Original Hinds stand assignments and an independent transfer cohort remain relevant if those questions are pursued further.
 
 ## Updating this project
 

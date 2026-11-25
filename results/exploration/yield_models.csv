@@ -1,0 +1,36 @@
+"site","year","version","model","units","plots","rmse_bu_ac","mae_bu_ac"
+"Hinds",2018,"Entry sheet","AUDPC",60,60,3.32916256984038,2.62028029483604
+"Hinds",2018,"Entry sheet","Final",60,60,3.45893900600086,2.93697640315867
+"Hinds",2018,"Entry sheet","Final + AUDPC + onset",60,60,3.14548083744563,2.56471202414515
+"Hinds",2018,"Entry sheet","Functional scores",60,60,3.36722071788969,2.68227388145592
+"Hinds",2018,"Entry sheet","Onset",60,60,4.34818636347387,3.52144019659588
+"Hinds",2018,"Entry sheet","Summaries + functional scores",60,60,3.38799353655178,2.68695265872022
+"Hinds",2018,"Entry sheet","Treatment",60,60,4.29421118882903,3.43350717730049
+"Hinds",2018,"Reference","AUDPC",60,60,3.33349172954337,2.63190649140507
+"Hinds",2018,"Reference","Final",60,60,3.45893900600086,2.93697640315867
+"Hinds",2018,"Reference","Final + AUDPC + onset",60,60,3.14936048939322,2.51914081195907
+"Hinds",2018,"Reference","Functional scores",60,60,3.36740793905891,2.68272973587954
+"Hinds",2018,"Reference","Onset",60,60,4.31840631582266,3.52068364703766
+"Hinds",2018,"Reference","Summaries + functional scores",60,60,3.41354599949351,2.63881257843483
+"Hinds",2018,"Reference","Treatment",60,60,4.29421118882903,3.43350717730049
+"Marsden",2016,"Reference","AUDPC",240,12,8.02388457944329,6.35015730125145
+"Marsden",2016,"Reference","Final",240,12,8.55729710466417,6.70093403387064
+"Marsden",2016,"Reference","Final + AUDPC + onset",240,12,8.22112156080218,6.53981258587933
+"Marsden",2016,"Reference","Functional scores",240,12,8.10842412330676,6.41863303709047
+"Marsden",2016,"Reference","Onset",240,12,8.33160151851587,6.60065369706655
+"Marsden",2016,"Reference","Summaries + functional scores",240,12,8.18470458105201,6.51404501354528
+"Marsden",2016,"Reference","Treatment",240,12,9.06994389145032,7.16973748842696
+"Marsden",2017,"Reference","AUDPC",103,12,7.30208816586013,6.05889606751368
+"Marsden",2017,"Reference","Final",103,12,7.30266205907941,6.11152421104834
+"Marsden",2017,"Reference","Final + AUDPC + onset",103,12,7.54657392075002,6.22122201827973
+"Marsden",2017,"Reference","Functional scores",103,12,7.31454092068552,6.1233779026084
+"Marsden",2017,"Reference","Onset",103,12,7.5457672585373,6.17620312837372
+"Marsden",2017,"Reference","Summaries + functional scores",103,12,7.5516221405213,6.26980768820691
+"Marsden",2017,"Reference","Treatment",103,12,7.29518661573308,6.01623661643502
+"Marsden",2018,"Reference","AUDPC",115,12,11.9115343911024,9.36729202661772
+"Marsden",2018,"Reference","Final",115,12,11.8660201024159,9.34932687095708
+"Marsden",2018,"Reference","Final + AUDPC + onset",115,12,12.7420300972133,9.96645383974412
+"Marsden",2018,"Reference","Functional scores",115,12,11.7526999542992,9.36205031714861
+"Marsden",2018,"Reference","Onset",115,12,12.417837809032,9.77441504335862
+"Marsden",2018,"Reference","Summaries + functional scores",115,12,12.7005336908844,10.0007156054142
+"Marsden",2018,"Reference","Treatment",115,12,11.1882220035705,8.92977536842673

@@ -60,31 +60,11 @@ fit_fold <- function(data, held_out) {
   stopifnot(!any(test$unit_id %in% training$unit_id))
   train <- baseline_rates(training, training)
   test <- baseline_rates(test, training)
-  x <- as.matrix(train[bands])
-  center <- colMeans(x)
-  spread <- apply(x, 2L, sd)
-  stopifnot(all(is.finite(spread) & spread > 0))
-  x <- scale(x, center = center, scale = spread)
-  test_x <- scale(as.matrix(test[bands]), center = center, scale = spread)
-  offset <- qlogis(train$joint_risk)
-
-  # Fixed ridge penalty of 1/2 times the squared slopes on the log-loss sum.
-  # The offset stays fixed and there is no additional intercept.
-  objective <- function(beta) {
-    eta <- offset + drop(x %*% beta)
-    sum(pmax(eta, 0) + log1p(exp(-abs(eta))) - train$event * eta) + sum(beta^2) / 2
-  }
-  gradient <- function(beta) {
-    eta <- offset + drop(x %*% beta)
-    drop(crossprod(x, plogis(eta) - train$event)) + beta
-  }
-  fit <- optim(rep(0, length(bands)), objective, gradient, method = "BFGS",
-               control = list(reltol = 1e-12))
-  stopifnot(fit$convergence == 0L, all(abs(gradient(fit$par)) < 1e-4))
+  risk <- spectral_ridge_risk(train, test, bands, qlogis(train$joint_risk), qlogis(test$joint_risk))
 
   test |>
     transmute(landmark, rotation, unit_id, plot, fold, event, fallback = is.na(joint_rate), offset_risk = joint_risk,
-              model = spectral_model, risk = plogis(qlogis(offset_risk) + drop(test_x %*% fit$par)))
+              model = spectral_model, risk)
 }
 
 added <- matched |>

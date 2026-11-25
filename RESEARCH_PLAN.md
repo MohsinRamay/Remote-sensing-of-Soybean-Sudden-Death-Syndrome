@@ -1,6 +1,6 @@
 # Living research plan for functional analysis of SDS
 
-Version 0.9. Updated November 22, 2026.
+Version 1.0. Updated November 22, 2026.
 
 Research owner and field-design lead — Muhammad Mohsin Raza.
 
@@ -39,7 +39,7 @@ The earlier pilot values depend on endpoint definition, metadata assumptions, ex
 | Q3 | What epidemic phenotypes recur? Estimate leading functional modes and assess whether curves with similar AUDPC have distinct timing or shape | Low-rank FPCA and cautious clustering, compared with final severity, AUDPC, onset, and simple progression summaries | Components and clusters require stability checks. Largest variance may reflect year or treatment |
 | Q4 | How are disease and canopy trajectories associated? Estimate time-varying or low-rank joint associations, within treatment and year | Begin with concurrent smooth associations, then multivariate FDA or joint functional models. Compare with simple longitudinal regression | Seasonal development, senescence, measurement timing, and calibration can create shared trends |
 | Q5 | How do incidence and severity trajectories correspond? Estimate their joint modes and time-varying association | Joint curve analysis, compared with assessment-specific association and AUDPC correlations | Verify rating denominators and scales. Their ratio has no assumed biological interpretation |
-| Q6 | Which aspects of disease history are associated with yield? Estimate a regularized temporal association with final yield | Scalar-on-function regression, compared with treatment plus final severity, AUDPC, and onset | Marsden harvest records are located and linkage review is pending. Hinds has 60 source-keyed plot yields. Timing effects may be weakly identifiable |
+| Q6 | Which aspects of disease history are associated with yield? Estimate a regularized temporal association with final yield | Scalar-on-function regression, compared with treatment plus final severity, AUDPC, and onset | Linked archive cohorts have 240, 103 and 115 Marsden quadrats by season and 60 Hinds microplots. 2017 harvest selection limits scope |
 | Q7 | Do partial reflectance trajectories improve early warning? Estimate risk of first positive foliar rating within a defined future window among eligible symptom-free units | Low-rank functional regression, compared with treatment alone, latest spectrum, and simple trajectory summaries | Use information available at prediction time. Account for interval-censored onset and limited pre-onset visits |
 | Q8 | Which effects persist across environments? Estimate treatment-by-season trajectory differences and assess feature stability or transfer | Year-specific contrasts and interaction models. Hold out years or sites for predictive claims | Three Marsden seasons and one disease-labeled Hinds season limit broad environmental generalization |
 
@@ -52,9 +52,9 @@ Q1, Q2, and Q4 form the proposed core. Q3 and Q5 support interpretation. Q6 depe
 | 0. Feasibility and planning | Initial review complete | Repository overview, preliminary literature map, questions, issue register | Living documents available in version control |
 | 1. Data reconstruction and quality control | Repository audit complete. Field reconciliation open | [Inventory](audit/tables/inventory.csv), [dictionary and hierarchy](audit/DATA_DICTIONARY.md), [candidate registry](audit/tables/candidate_units.csv), [issue and decision register](audit/ISSUE_REGISTER.md) | Freeze field-verified identifiers, treatment allocation and eligible cohorts. Keep discrepancies and exclusions auditable |
 | 2. Temporal exploration and protocol | Marsden 2016 exploratory protocol and Hinds source preparation complete | [Protocol](results/phase2/PROTOCOL.md), [cohort and baseline report](results/phase2/REPORT.md) | Common support and model complexity justified by observed data |
-| 3. Core epidemiological models | Marsden 2016–2018 disease and Q4 comparisons plus Hinds severity-version sensitivity complete | Q1–Q5 models, design-aware contrasts, uncertainty bands, sensitivity analyses | Findings supported by diagnostics and appropriate experimental replication |
-| 4. Yield, early warning, and transfer | Marsden eligibility, non-spectral baselines and latest-spectrum comparison complete. Other analyses conditional | Q6–Q8 analyses and comparisons | Dependencies satisfied and validation matches each claim |
-| 5. Evidence synthesis and manuscript | Pending | Decision memo, figures, tables, manuscript, reproducibility supplement | Claims match evidence, scope is coherent, and analysis reruns from a documented environment |
+| 3. Core epidemiological models | Q1–Q5 exploratory comparisons complete on available cohorts | Q1–Q5 models, design-aware contrasts, uncertainty bands, sensitivity analyses | Findings supported by diagnostics and appropriate experimental replication |
+| 4. Yield, early warning, and transfer | Q6–Q8 held-out model comparisons complete on available cohorts | Q6–Q8 analyses and comparisons | Dependencies satisfied and validation matches each claim |
+| 5. Evidence synthesis and manuscript | Exploration report ready for research-owner review. Manuscript direction pending | Decision memo, figures, tables, manuscript, reproducibility supplement | Claims match evidence, scope is coherent, and analysis reruns from a documented environment |
 
 ## 5. Phase 1 — reconstruct the data
 
@@ -86,8 +86,8 @@ The [audit issue register](audit/ISSUE_REGISTER.md) documents D01–D13, the sou
 |---|---|
 | Q1–Q2, Q5 · Disease trajectories and timing | Start with within-season Marsden 2016 and descriptive Marsden 2017–2018 disease streams. Use actual assessment dates and compare candidate onset definitions. Prepare Hinds severity from the dated field lineage with independent design and harvest keys. Check rating versions and incidence denominators. |
 | Q3–Q4 · Shape and spectral associations | Start with observed support and simple longitudinal comparators. Pair Marsden 2016 on eligible IDs after the registry is frozen. Use the slide-backed Marsden 2018 assignments. Flag the unresolved acquisition IDs and prepare Hinds linkage from the dated field lineage. |
-| Q6 · Yield | Marsden harvest files now identified for 2016–2018. Verify units, crosswalks and sampling coverage. Use the sequence-verified Hinds combine workbook. Keep the legacy join quarantined. |
-| Q7–Q8 · Prediction and transfer | Eligibility, whole-block baselines and the latest-spectrum comparison are reproducible within seasons. A within-plot-visit ranking gain is evident in 2018. The earlier trajectory pilot is unreproduced. Physical plot linkage is pending before seasonal transfer. Treat 2019 as reflectance-only pending recovery of labeled ratings. |
+| Q6 · Yield | Used verified Marsden harvest fields and the sequence-verified Hinds combine workbook. Reported 2017 selection and compared both Hinds rating versions. The legacy join remains quarantined. |
+| Q7–Q8 · Prediction and transfer | Eligibility, whole-block baselines and the latest-spectrum comparison are reproducible within seasons. A within-plot-visit ranking gain is evident in 2018. Tested linear slopes and quadratic basis terms on the eligible prefixes. The archive maps corroborate the four physical blocks, enabling same-farm transfer with joint year-and-block holdout. Treat 2019 as reflectance-only pending recovery of labeled ratings. |
 
 Keep original design assignments and observation-level metadata traceable. A reproducible candidate match remains provisional until the corresponding field evidence supports it.
 
@@ -244,6 +244,12 @@ At the end of a session, update the phase tracker and issue register, then appen
 - Used the matched risk sets and whole-block baseline predictions defined at `f76c160`. Verified that each 660/810 nm pair came from the latest acquisition strictly before the landmark and within seven days. Retained disease-registry block and treatment labels and the endpoint-specific risk sets. [Protocol](results/early_warning/PROTOCOL.md)
 - Added two reflectance terms to the visit-by-cropping-system baseline using training-fold scaling and a fixed ridge penalty. For primary severity, within-plot-visit AUROC was 0.503, 0.510 and 0.702 in 2016–2018. The 2018 gain persisted with incidence (0.696) and 5% severity (0.642), while visit alone gave the lowest 2018 Brier score for the primary endpoint. [Report](results/early_warning/LATEST_SPECTRUM.md) · [R code](analysis/10_marsden_latest_spectrum.R)
 - Rebuilt the disease bounds, frozen eligibility, baseline predictions, and latest-spectrum tables in fresh output directories and verified the CSVs against the working results. The next action is to check available pre-landmark history for an identical-row comparison of level and slope summaries. Physical plot continuity remains a dependency for new-plot seasonal transfer.
+
+#### 2026-11-22 — Closing Q1–Q8 exploration and synthesis
+
+- Extended the fixed folds to bounded severity curves, onset-aligned summaries, within-plot functional modes, Hinds incidence and spectral pairing checks, source-verified yield, observed spectral prefixes, and transfer holding out the physical target block and year. [Closing protocol](results/exploration/PROTOCOL.md)
+- Functional disease scores and spectral history yielded inconsistent gains. The main recurring treatment result is S4's lower final mean severity. The 2018 latest-spectrum within-plot ranking gain persisted across endpoint definitions, while calibration and simple transfer comparisons were weaker. [Exploration report source](results/exploration/REPORT.md) · [PDF](output/pdf/soybean-sds-research-exploration.pdf)
+- Cleanly regenerated all 103 CSVs from scripts 03–14, including ignored outputs. The field and archive inputs were unchanged. Hinds stand-to-plot records and independent external validation remain evidence gaps. Manuscript direction is for research-owner review.
 
 ### Template for the next entry
 
